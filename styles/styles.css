@@ -3,29 +3,29 @@ body {
 }
 
 div {
-    background-color: #308c29;
-    border: solid 1px #195526;
+    background-color: #ffd756;
+    border: solid 1px #ffd756;
     margin: 5px;
     padding: 5px;
 }
 
 p {
-    background-color: #ffcc85;
-    border: solid 1px #ffa436;
+    background-color: #ffd756;
+    border: solid 1px #ffd756;
     margin: 5px;
     padding: 5px;
     font-style: oblique
 }
 
 span {
-    background-color: #f55;
-    border: solid 1px #222;
+    background-color: #ffd756;
+    border: solid 1px #ffd756;
     padding: 5px;
     margin: 5px;
 }
 section {
-    background-color: #ffac6c;
-    border: solid 1px #222;
+    background-color: #ffd756;
+    border: solid 1px #ffd756;
     padding: 5px;
     margin: 5px;
     width: 50%;
