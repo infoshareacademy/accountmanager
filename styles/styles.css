@@ -36,21 +36,31 @@ section {
     height: 100px;
     display: inline;
     position: absolute;
-    background-color: white;
+    background-color: darkgrey;
 }
 nav {
     position: relative;
     height: 100px;
+    width: 1000px;
     background-color: red;
+    margin: 0 auto;
 }
-.nav {
+.navi {
     display: inline-block;
+    padding-left: 150px;
     height: 100px;
-    margin: 50px 400px;
-}
-.nav li {
+    width: 850px;
+      }
+.navi li {
     display: inline-block;
     padding: 20px;
+    height: 58px;
+    line-height: 58px;
+    width: 128px;
+    border: solid 1px black;
+    text-align: center;
+    float:left;
+
 }
 .zajawka {
     background-color: yellow;
