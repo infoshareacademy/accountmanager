@@ -23,10 +23,40 @@ span {
     padding: 5px;
     margin: 5px;
 }
+
 section {
     background-color: #ffd756;
     border: solid 1px #ffd756;
     padding: 5px;
     margin: 5px;
     width: 50%;
+}
+#logo {
+    width: 150px;
+    height: 100px;
+    display: inline;
+    position: absolute;
+    background-color: white;
+}
+nav {
+    position: relative;
+    height: 100px;
+    background-color: red;
+}
+.nav {
+    display: inline-block;
+    height: 100px;
+    margin: 50px 400px;
+}
+.nav li {
+    display: inline-block;
+    padding: 20px;
+}
+.zajawka {
+    background-color: yellow;
+    height: 300px;
+}
+.utilities {
+    background-color: green;
+    height: 500px;
 }
