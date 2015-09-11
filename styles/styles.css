@@ -4,10 +4,7 @@ body {
 
 div {
     background-color: #ffd756;
-    border: solid 1px #ffd756;
-    margin: 5px;
-    padding: 5px;
-}
+  }
 
 p {
     background-color: #ffd756;
@@ -37,8 +34,17 @@ section {
     height: 98px;
     display: inline;
     position: absolute;
-    background-color: darkgrey;
+    background-color: white;
     border: solid 1px black;
+    background-image: url("http://treasurechestofmemories.com/wp-content/uploads/2014/01/Cookie-jar.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo:hover {
+    background-image: url("http://4.bp.blogspot.com/-4_oTlZxoFNo/UQvZBrt1wnI/AAAAAAAAHwY/PoCj7aUvjhM/s1600/cookie_monster_by_neorame-d4yb0b5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 nav {
     position: relative;
@@ -64,6 +70,19 @@ nav {
     float:left;
     background-color: #386FA7;
 }
+.navi li:hover {
+    background-color: #589ADA;
+}
+.navi li:nth-child(2n) {
+    background-color: #589ADA;
+}
+.navi li:hover:nth-child(2n) {
+    background-color: #386FA7;
+   }
+.navi li a {
+    color: #fff;
+    text-decoration: none;
+}
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
@@ -81,14 +100,15 @@ nav {
     background-color: transparent;
     position: relative;
     top: 40%;
-    left: 400px;
-    width: 700px;
+    margin-left: 10%;
+    max-width: 700px;
     border: solid 1px #ffd756;
     padding: 20px;
 }
 
 #tekst_zajawki p {
     border: 0;
+    background-color: rgba(255,0,255,0.08);
 }
 
 /*************** formularz ***************************/
