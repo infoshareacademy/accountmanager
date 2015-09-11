@@ -81,7 +81,7 @@ nav {
     background-color: transparent;
     position: relative;
     top: 40%;
-    left: 10%;
+    margin-left: 10%;
     max-width: 700px;
     border: solid 1px #ffd756;
     padding: 20px;
