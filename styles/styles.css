@@ -79,6 +79,10 @@ nav {
 .navi li:hover:nth-child(2n) {
     background-color: #386FA7;
    }
+.navi li a {
+    color: #fff;
+    text-decoration: none;
+}
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
