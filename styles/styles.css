@@ -98,14 +98,24 @@ nav {
 
 #tekst_zajawki {
     background-color: transparent;
-    position: absolute;
-    top: 350px;
-    left: 400px;
-    width: 700px;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    max-width: 700px;
     border: solid 1px #ffd756;
     padding: 20px;
-
 }
+
+#tekst_zajawki p {
+    border: 0;
+    background-color: rgba(255,0,255,0.08);
+}
+
+/*************** formularz ***************************/
+.formularz {
+    display: none;
+}
+
 /****************** css zajawki **********************/
 
 .utilities {
@@ -115,21 +125,24 @@ nav {
 
 .utilities1 {
     position: relative;
-    width: 40%;
+    width: 30%;
+    margin: auto;
     background-color: white;
     border-color: white;
 }
 
 .utilities2 {
     position: relative;
-    width: 40%;
+    width: 30%;
+    margin: auto;
     background-color: white;
     border-color: white;
 }
 
 .utilities3 {
     position: relative;
-    width: 40%;
+    width: 30%;
+    margin: auto;
     background-color: white;
     border-color: white;
 
@@ -143,4 +156,19 @@ footer {
     clear:both;
     text-align:center;
     padding:5px;
+}
+
+div .txt {
+    width: 50%;
+float: left;
+background-color: transparent;
+    border-color: transparent;
+}
+
+div .photo {
+   /*align: right*/
+    margin-left: 50%;
+    /*width: 10%;*/
+    background-color: transparent;
+    border-color: transparent;
 }
