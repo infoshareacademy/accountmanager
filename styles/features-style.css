@@ -15,7 +15,6 @@
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
 }
 .icon-diamond:before{content:'\0041';}
 .icon-envelope:before{content:'\0042';}
@@ -29,6 +28,7 @@
 
 
 #features{
+    width: 100%;
     background-color: #589ADA;
     position: relative;
     margin:0;
