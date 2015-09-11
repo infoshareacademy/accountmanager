@@ -101,32 +101,17 @@ nav {
 .utilities {
     background-color: white;
     border-color: white;
-}
-
-.utilities1 {
-    position: relative;
-    width: 30%;
+    /*width: 50%;*/
     margin: auto;
-    background-color: white;
-    border-color: white;
 }
 
-.utilities2 {
-    position: relative;
-    width: 30%;
-    margin: auto;
-    background-color: white;
-    border-color: white;
-}
-
-.utilities3 {
-    position: relative;
-    width: 30%;
-    margin: auto;
-    background-color: white;
-    border-color: white;
-
-}
+/*.utilities1 {*/
+    /*position: relative;*/
+    /*width: 30%;*/
+    /*margin: auto;*/
+    /*background-color: white;*/
+    /*border-color: white;*/
+/*}*/
 
 div p {
     background-color: inherit;
@@ -140,14 +125,18 @@ footer {
 
 div .txt {
     width: 50%;
-float: left;
-background-color: transparent;
+    margin-top: auto;
+    /*margin-right: 50%;*/
+    float: left;
+    background-color: transparent;
     border-color: transparent;
-}
+    text-align: justify;
+    }
 
 div .photo {
    /*align: right*/
     margin-left: 50%;
+    margin-top: auto;
     /*width: 10%;*/
     background-color: transparent;
     border-color: transparent;
