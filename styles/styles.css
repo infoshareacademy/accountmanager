@@ -62,10 +62,20 @@ nav {
     float:left;
 
 }
+/****************** css zajawki **********************/
 .zajawka {
-    background-color: yellow;
+    background-color: #386FA7;
+    width: auto;
+    color: #EDF0F3;
     height: 300px;
 }
+
+#tekst_zajawki {
+    background-color: transparent;
+
+}
+/****************** css zajawki **********************/
+
 .utilities {
     background-color: green;
     height: 500px;
