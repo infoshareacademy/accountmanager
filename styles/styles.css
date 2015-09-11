@@ -40,6 +40,9 @@ section {
     background-color: darkgrey;
     border: solid 1px black;
 }
+#logo:hover {
+
+}
 nav {
     position: relative;
     height: 100px;
@@ -62,6 +65,15 @@ nav {
     border: solid 1px black;
     text-align: center;
     float:left;
+    background-color: #386FA7;
+}
+.navi li:hover {
+    background-color: #589ADA;
+}
+.navi li:nth-child(2n) {
+    background-color: #589ADA;
+}
+.navi li:hover:nth-child(2n) {
     background-color: #386FA7;
 }
 /****************** css logo menu **********************/
