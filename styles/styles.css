@@ -1,27 +1,27 @@
 body {
-    background-color: #ffd756;
+    /*background-color: #ffd756;*/
 }
 
 div {
-    background-color: #ffd756;
+    /*background-color: #ffd756;
     border: solid 1px #ffd756;
     margin: 5px;
-    padding: 5px;
+    padding: 5px;*/
 }
 
 p {
-    background-color: #ffd756;
+    /*background-color: #ffd756;
     border: solid 1px #ffd756;
     margin: 5px;
     padding: 5px;
-    font-style: oblique
+    font-style: oblique*/
 }
 
 span {
-    background-color: #ffd756;
+    /*background-color: #ffd756;
     border: solid 1px #ffd756;
     padding: 5px;
-    margin: 5px;
+    margin: 5px;*/
 }
 
 section {
@@ -64,14 +64,24 @@ nav {
 }
 /****************** css zajawki **********************/
 .zajawka {
-    background-color: #386FA7;
+    background-color: #192a27;
+    background-image: url("../images/zajawka.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
     width: auto;
+    height: 960px;
     color: #EDF0F3;
-    height: 300px;
+
 }
 
 #tekst_zajawki {
     background-color: transparent;
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    width: 700px;
+    border: solid 1px #ffd756;
+    padding: 20px;
 
 }
 /****************** css zajawki **********************/
