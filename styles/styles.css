@@ -31,12 +31,14 @@ section {
     margin: 5px;
     width: 50%;
 }
+/****************** css logo menu **********************/
 #logo {
     width: 150px;
-    height: 100px;
+    height: 98px;
     display: inline;
     position: absolute;
     background-color: darkgrey;
+    border: solid 1px black;
 }
 nav {
     position: relative;
@@ -60,8 +62,9 @@ nav {
     border: solid 1px black;
     text-align: center;
     float:left;
-
+    background-color: #386FA7;
 }
+/****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
     background-color: #386FA7;
@@ -106,4 +109,9 @@ nav {
 div p {
     background-color: inherit;
     border-color: inherit;
+}
+footer {
+    clear:both;
+    text-align:center;
+    padding:5px;
 }
