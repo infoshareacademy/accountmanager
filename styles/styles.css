@@ -1,27 +1,27 @@
 body {
-    /*background-color: #ffd756;*/
+    background-color: white;
 }
 
 div {
-    /*background-color: #ffd756;
+    background-color: #ffd756;
     border: solid 1px #ffd756;
     margin: 5px;
-    padding: 5px;*/
+    padding: 5px;
 }
 
 p {
-    /*background-color: #ffd756;
+    background-color: #ffd756;
     border: solid 1px #ffd756;
     margin: 5px;
     padding: 5px;
-    font-style: oblique*/
+    font-style: oblique;
 }
 
 span {
-    /*background-color: #ffd756;
+    background-color: #ffd756;
     border: solid 1px #ffd756;
     padding: 5px;
-    margin: 5px;*/
+    margin: 5px;
 }
 
 section {
@@ -87,6 +87,33 @@ nav {
 /****************** css zajawki **********************/
 
 .utilities {
-    background-color: green;
-    height: 500px;
+    background-color: white;
+    border-color: white;
+}
+
+.utilities1 {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+}
+
+.utilities2 {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+}
+
+.utilities3 {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+
+}
+
+div p {
+    background-color: inherit;
+    border-color: inherit;
 }
