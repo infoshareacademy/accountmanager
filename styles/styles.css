@@ -79,14 +79,23 @@ nav {
 
 #tekst_zajawki {
     background-color: transparent;
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: 40%;
     left: 400px;
     width: 700px;
     border: solid 1px #ffd756;
     padding: 20px;
-
 }
+
+#tekst_zajawki p {
+    border: 0;
+}
+
+/*************** formularz ***************************/
+.formularz {
+    display: none;
+}
+
 /****************** css zajawki **********************/
 
 .utilities {

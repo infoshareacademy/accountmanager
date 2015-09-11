@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Icons';
+    src: url('../fonts/Icons.eot');
+    src: url('../fonts/Icons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Icons.woff') format('woff'),
+    url('../fonts/Icons.ttf') format('truetype'),
+    url('../fonts/Icons.svg#Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+    display: inline-block;
+    font-family: 'Icons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.icon-diamond:before{content:'\0041';}
+.icon-envelope:before{content:'\0042';}
+.icon-facebook:before{content:'\0043';}
+.icon-gplus:before{content:'\0044';}
+.icon-shield:before{content:'\0045';}
+.icon-time:before{content:'\0046';}
+.icon-tree:before{content:'\0047';}
+.icon-twitter:before{content:'\0048';}
+
+
+
+#features{
+    background-color: #589ADA;
+    position: relative;
+    margin:0;
+    text-align: center;
+    min-height:180px;
+    padding: 50px 0;
+    border:none;
+}
+#features .column {
+    width:22%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+
+    vertical-align: text-top;
+}
+#features i {
+    font-size: 96px;
+    color: #fff;
+}
+#features p {
+    font-family: Arial, sans-serif;
+    color:#fff;
+    border:none;
+    font-style: normal;
+}
+
+
+
+
