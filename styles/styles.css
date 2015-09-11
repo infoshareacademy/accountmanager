@@ -1,5 +1,5 @@
 body {
-    background-color: #ffd756;
+    background-color: white;
 }
 
 div {
@@ -77,6 +77,33 @@ nav {
 /****************** css zajawki **********************/
 
 .utilities {
-    background-color: green;
-    height: 500px;
+    background-color: white;
+    border-color: white;
+}
+
+.utilities1 {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+}
+
+.utilities2 {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+}
+
+.utilities3 {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+
+}
+
+div p {
+    background-color: inherit;
+    border-color: inherit;
 }
