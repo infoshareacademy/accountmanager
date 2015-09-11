@@ -37,11 +37,16 @@ section {
     height: 98px;
     display: inline;
     position: absolute;
-    background-color: darkgrey;
+    background-color: white;
     border: solid 1px black;
+    background-image: url("http://treasurechestofmemories.com/wp-content/uploads/2014/01/Cookie-jar.jpg");
+    background-size: contain;
 }
 #logo:hover {
-
+    background-image: url("http://4.bp.blogspot.com/-4_oTlZxoFNo/UQvZBrt1wnI/AAAAAAAAHwY/PoCj7aUvjhM/s1600/cookie_monster_by_neorame-d4yb0b5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 nav {
     position: relative;
