@@ -4,10 +4,7 @@ body {
 
 div {
     background-color: #ffd756;
-    border: solid 1px #ffd756;
-    margin: 5px;
-    padding: 5px;
-}
+  }
 
 p {
     background-color: #ffd756;
@@ -41,6 +38,7 @@ section {
     border: solid 1px black;
     background-image: url("http://treasurechestofmemories.com/wp-content/uploads/2014/01/Cookie-jar.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 #logo:hover {
     background-image: url("http://4.bp.blogspot.com/-4_oTlZxoFNo/UQvZBrt1wnI/AAAAAAAAHwY/PoCj7aUvjhM/s1600/cookie_monster_by_neorame-d4yb0b5.png");
@@ -80,7 +78,7 @@ nav {
 }
 .navi li:hover:nth-child(2n) {
     background-color: #386FA7;
-}
+   }
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
