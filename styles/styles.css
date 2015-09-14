@@ -1,4 +1,7 @@
 /*FONTS + ICONS*/
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,300italic,300,600,600italic,700italic,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic&subset=latin,latin-ext);
+
 @font-face {
     font-family: 'Icons';
     src: url('../fonts/Icons.eot');
@@ -29,13 +32,95 @@
 /**/
 
 
-body {
-    background-color: white;
+/* TYPOGRAPHY */
+
+/* Links */
+a {
+    color: #008CBA;
+    line-height: inherit;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #0078a0;
+}
+a img {
+    border: none;
 }
 
-div {
-    background-color: #ffd756;
-  }
+/* Paragraph */
+p {
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+    text-rendering: optimizeLegibility;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #222222;
+    font-family: 'Titillium Web', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    font-size: 2.125em; }
+
+h2 {
+    font-size: 1.6875em; }
+
+h3 {
+    font-size: 1.375em; }
+
+h4 {
+    font-size: 1.125em; }
+
+h5 {
+    font-size: 1.125em; }
+
+h6 {
+    font-size: 1em; }
+
+
+/* BASIC BODY */
+
+html, body {
+    height: 100%; }
+
+html,
+body {
+    font-size: 100%; }
+
+body {
+    background: #fff;
+    color: #222;
+    cursor: auto;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto; }
+
+
+
+
+
 
 p {
     background-color: #ffd756;
