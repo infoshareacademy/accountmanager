@@ -14,7 +14,7 @@
 }
 [class*='icon-']:before{
     display: inline-block;
-    font-family: 'Icons';
+    font-family: 'Icons', sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -124,28 +124,6 @@ ul, li {
 
 
 
-p {
-    background-color: #ffd756;
-    border: solid 1px #ffd756;
-    margin: 5px;
-    padding: 5px;
-    font-style: oblique;
-}
-
-span {
-    background-color: #ffd756;
-    border: solid 1px #ffd756;
-    padding: 5px;
-    margin: 5px;
-}
-
-section {
-    background-color: #ffd756;
-    border: solid 1px #ffd756;
-    padding: 5px;
-    margin: 5px;
-    width: 50%;
-}
 /****************** css logo menu **********************/
 #logo {
     width: 150px;
@@ -220,13 +198,17 @@ nav {
     top: 40%;
     margin-left: 10%;
     max-width: 700px;
-    border: solid 1px #ffd756;
+    border: solid 1px #F3CA61;
     padding: 20px;
 }
 
 #tekst_zajawki p {
     border: 0;
-    background-color: rgba(255,0,255,0.08);
+    /*background-color: rgba(255,0,255,0.08);*/
+}
+
+#tekst_zajawki h1 {
+    color: #EDF0F3;
 }
 
 /*************** formularz ***************************/
@@ -295,7 +277,7 @@ div .photo {
     color:#fff;
     border:none;
     font-style: normal;
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 600;
 }
 #sm p {
@@ -310,7 +292,7 @@ div .photo {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 10px 30px 10px 30px;
     margin:5px;
     border: solid 1px #2f87bd;
@@ -383,11 +365,29 @@ div .photo {
     vertical-align: text-top;
 }
 #features i {
-    font-size: 96px;
+    font-size: 6em;
     color: #fff;
 }
 #features p {
     color:#fff;
     border:none;
     font-style: normal;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #556;
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .72em;
+    color: #bababf;
+}
+footer p span{
+    font-size: 1.16em;
+    color:#EDF0F3;
 }
