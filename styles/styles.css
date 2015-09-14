@@ -243,13 +243,13 @@ nav {
     margin: auto;
 }
 
-/*.utilities1 {*/
-    /*position: relative;*/
-    /*width: 30%;*/
+.utilities1 {
+    position: relative;
+    min-height: 512px;
     /*margin: auto;*/
     /*background-color: white;*/
     /*border-color: white;*/
-/*}*/
+}
 
 div p {
     background-color: inherit;
@@ -265,7 +265,7 @@ div .txt {
     width: 50%;
     margin-top: auto;
     /*margin-right: 50%;*/
-    float: left;
+    /*float: left;*/
     background-color: transparent;
     border-color: transparent;
     text-align: justify;
@@ -278,6 +278,9 @@ div .photo {
     /*width: 10%;*/
     background-color: transparent;
     border-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 
