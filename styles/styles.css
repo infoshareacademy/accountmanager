@@ -222,24 +222,20 @@ nav {
 /****************** css zajawki **********************/
 
 .utilities {
-    background-color: white;
-    border-color: white;
+    background-color: #589ADA;
+    color: white ;
     /*width: 50%;*/
     margin: auto;
 }
 
-/*.utilities1 {*/
-    /*position: relative;*/
-    /*width: 30%;*/
+.utilities1 {
+    position: relative;
+    min-height: 512px;
     /*margin: auto;*/
     /*background-color: white;*/
     /*border-color: white;*/
-/*}*/
-
-div p {
-    background-color: inherit;
-    border-color: inherit;
 }
+
 footer {
     clear:both;
     text-align:center;
@@ -248,12 +244,8 @@ footer {
 
 div .txt {
     width: 50%;
-    margin-top: auto;
-    /*margin-right: 50%;*/
-    float: left;
-    background-color: transparent;
-    border-color: transparent;
-    text-align: justify;
+    text-align: center;
+    display: block;
     }
 
 div .photo {
@@ -261,8 +253,9 @@ div .photo {
     margin-left: 50%;
     margin-top: auto;
     /*width: 10%;*/
-    background-color: transparent;
-    border-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 
