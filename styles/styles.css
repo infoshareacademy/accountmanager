@@ -152,39 +152,35 @@ ul, li {
 nav {
     position: relative;
     height: 100px;
-    width: 1000px;
-    background-color: red;
+    width: auto;
+    background-color: #589ADA;
     margin: 0 auto;
 }
 .navi {
     display: inline-block;
-    padding-left: 150px;
     height: 100px;
-    width: 850px;
-      }
+    width: 840px;
+    float: right;
+    }
 .navi li {
     display: inline-block;
-    padding: 20px;
-    height: 58px;
-    line-height: 58px;
-    width: 128px;
-    border: solid 1px black;
-    text-align: center;
-    float:left;
-    background-color: #386FA7;
+    float: left;
+    background-color: #589ADA;
+    height: 100px;
+    width: 168px;
 }
 .navi li:hover {
-    background-color: #589ADA;
-}
-.navi li:nth-child(2n) {
-    background-color: #589ADA;
-}
-.navi li:hover:nth-child(2n) {
     background-color: #386FA7;
-   }
+}
 .navi li a {
+    display: inline-block;
     color: #fff;
     text-decoration: none;
+    /*padding: 40px 20px;*/
+    height: 100px;
+    line-height: 100px;
+    width: 168px;
+    text-align: center;
 }
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
