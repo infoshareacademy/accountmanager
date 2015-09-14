@@ -246,6 +246,8 @@ div .txt {
     width: 50%;
     text-align: center;
     display: block;
+    padding-left: 3%;
+    padding-top: 5%;
     }
 
 div .photo {
@@ -258,7 +260,22 @@ div .photo {
     right: 0px;
 }
 
+div #core {
+    color:#fff;
+    border:none;
+    font-style: normal;
+    font-size: 2em;
+    font-weight: 600;
+}
 
+div #core2 {
+    color:#fff;
+    border:none;
+    font-style: normal;
+    margin:20px 20%;
+    background-color: transparent;
+    line-height: 1.8;
+}
 
 /*  FEATURES  */
 
