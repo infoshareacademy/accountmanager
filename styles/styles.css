@@ -207,7 +207,7 @@ nav {
 
 #tekst_zajawki p {
     border: 0;
-    /*background-color: rgba(255,0,255,0.08);*/
+
 }
 
 #tekst_zajawki h1 {
@@ -216,7 +216,34 @@ nav {
 
 /*************** formularz ***************************/
 .formularz {
+
+    width: 300PX;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #386FA7;
+
+}
+
+.formularz form {
+    border: solid 1px black;
+}
+
+.form {
     display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 222;
+    width: auto;
+    height: auto;
+    background-color: rgba(237,240,243,0.8);
+}
+
+.inp {
+
 }
 
 /****************** css zajawki **********************/
@@ -277,7 +304,7 @@ div #core2 {
     line-height: 1.8;
 }
 
-/*  FEATURES  */
+/*  F E A T U R E S  */
 
 #features{
     width: 100%;
@@ -307,24 +334,25 @@ div #core2 {
 }
 #features p {
     color:#fff;
+    font-size: 1.2em;
     border:none;
     font-style: normal;
 }
 
 
-/* TEAM */
+/* T E A M */
 
 #team {
     height:700px;
     max-height: 800px;
     background-color: #556;
     background-image: url(../images/team-photo.JPG);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 }
 
 
-/*  SOCIAL MEDIA  */
+/*  S O C I A L   M E D I A  */
 
 #sm {
     width: 100%;
@@ -403,7 +431,7 @@ div #core2 {
 
 
 
-/* FOOTER */
+/* F O O T E R */
 
 footer {
     background-color: #556;
