@@ -233,10 +233,6 @@ nav {
     /*border-color: white;*/
 }
 
-/*div p {*/
-    /*background-color: inherit;*/
-    /*border-color: transparent;*/
-/*}*/
 footer {
     clear:both;
     text-align:center;
@@ -245,10 +241,8 @@ footer {
 
 div .txt {
     width: 50%;
-    margin-top: auto;
-    /*margin-right: 50%;*/
-    /*float: left;*/
-    text-align: justify;
+    text-align: center;
+    display: block;
     }
 
 div .photo {
