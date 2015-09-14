@@ -14,7 +14,7 @@
 }
 [class*='icon-']:before{
     display: inline-block;
-    font-family: 'Icons';
+    font-family: 'Icons', sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -46,6 +46,13 @@ a:hover, a:focus {
 a img {
     border: none;
 }
+
+/* Clear fix */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+.clearfix:after {
+    clear: both; }
 
 /* Paragraph */
 p {
@@ -124,28 +131,6 @@ ul, li {
 
 
 
-p {
-    background-color: #ffd756;
-    border: solid 1px #ffd756;
-    margin: 5px;
-    padding: 5px;
-    font-style: oblique;
-}
-
-span {
-    background-color: #ffd756;
-    border: solid 1px #ffd756;
-    padding: 5px;
-    margin: 5px;
-}
-
-section {
-    background-color: #ffd756;
-    border: solid 1px #ffd756;
-    padding: 5px;
-    margin: 5px;
-    width: 50%;
-}
 /****************** css logo menu **********************/
 #logo {
     width: 150px;
@@ -167,39 +152,35 @@ section {
 nav {
     position: relative;
     height: 100px;
-    width: 1000px;
-    background-color: red;
+    width: auto;
+    background-color: #589ADA;
     margin: 0 auto;
 }
 .navi {
     display: inline-block;
-    padding-left: 150px;
     height: 100px;
-    width: 850px;
-      }
+    width: 840px;
+    float: right;
+    }
 .navi li {
     display: inline-block;
-    padding: 20px;
-    height: 58px;
-    line-height: 58px;
-    width: 128px;
-    border: solid 1px black;
-    text-align: center;
-    float:left;
-    background-color: #386FA7;
+    float: left;
+    background-color: #589ADA;
+    height: 100px;
+    width: 168px;
 }
 .navi li:hover {
-    background-color: #589ADA;
-}
-.navi li:nth-child(2n) {
-    background-color: #589ADA;
-}
-.navi li:hover:nth-child(2n) {
     background-color: #386FA7;
-   }
+}
 .navi li a {
+    display: inline-block;
     color: #fff;
     text-decoration: none;
+    /*padding: 40px 20px;*/
+    height: 100px;
+    line-height: 100px;
+    width: 168px;
+    text-align: center;
 }
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
@@ -268,24 +249,20 @@ nav {
 /****************** css zajawki **********************/
 
 .utilities {
-    background-color: white;
-    border-color: white;
+    background-color: #589ADA;
+    color: white ;
     /*width: 50%;*/
     margin: auto;
 }
 
-/*.utilities1 {*/
-    /*position: relative;*/
-    /*width: 30%;*/
+.utilities1 {
+    position: relative;
+    min-height: 512px;
     /*margin: auto;*/
     /*background-color: white;*/
     /*border-color: white;*/
-/*}*/
-
-div p {
-    background-color: inherit;
-    border-color: inherit;
 }
+
 footer {
     clear:both;
     text-align:center;
@@ -294,12 +271,8 @@ footer {
 
 div .txt {
     width: 50%;
-    margin-top: auto;
-    /*margin-right: 50%;*/
-    float: left;
-    background-color: transparent;
-    border-color: transparent;
-    text-align: justify;
+    text-align: center;
+    display: block;
     }
 
 div .photo {
@@ -307,12 +280,63 @@ div .photo {
     margin-left: 50%;
     margin-top: auto;
     /*width: 10%;*/
-    background-color: transparent;
-    border-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 
-/*  SOCIAL MEDIA  */
+
+/*  F E A T U R E S  */
+
+#features{
+    width: 100%;
+    background-color: #589ADA;
+    position: relative;
+    margin:0;
+    text-align: center;
+    min-height:180px;
+    padding: 50px 0;
+    border:none;
+}
+#features .column {
+    width:22%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+
+    vertical-align: text-top;
+}
+#features i {
+    font-size: 6em;
+    color: #fff;
+}
+#features p {
+    color:#fff;
+    font-size: 1.2em;
+    border:none;
+    font-style: normal;
+}
+
+
+/* T E A M */
+
+#team {
+    height:700px;
+    max-height: 800px;
+    background-color: #556;
+    background-image: url(../images/team-photo.JPG);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*  S O C I A L   M E D I A  */
+
 #sm {
     width: 100%;
     background-color: #589ADA;
@@ -327,7 +351,7 @@ div .photo {
     color:#fff;
     border:none;
     font-style: normal;
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 600;
 }
 #sm p {
@@ -342,7 +366,7 @@ div .photo {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 10px 30px 10px 30px;
     margin:5px;
     border: solid 1px #2f87bd;
@@ -389,37 +413,20 @@ div .photo {
 }
 
 
-/*  FEATURES  */
 
+/* F O O T E R */
 
-#features{
-    width: 100%;
-    background-color: #589ADA;
-    position: relative;
-    margin:0;
+footer {
+    background-color: #556;
+    padding: 20px;
+}
+footer p {
     text-align: center;
-    min-height:180px;
-    padding: 50px 0;
-    border:none;
+    text-transform: uppercase;
+    font-size: .72em;
+    color: #bababf;
 }
-#features .column {
-    width:22%;
-    display: inline-block;
-    margin:0;
-    padding:0;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    overflow: hidden;
-
-    vertical-align: text-top;
-}
-#features i {
-    font-size: 96px;
-    color: #fff;
-}
-#features p {
-    color:#fff;
-    border:none;
-    font-style: normal;
+footer p span{
+    font-size: 1.16em;
+    color:#EDF0F3;
 }
