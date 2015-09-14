@@ -198,13 +198,17 @@ nav {
     top: 40%;
     margin-left: 10%;
     max-width: 700px;
-    border: solid 1px #ffd756;
+    border: solid 1px #F3CA61;
     padding: 20px;
 }
 
 #tekst_zajawki p {
     border: 0;
-    background-color: rgba(255,0,255,0.08);
+    /*background-color: rgba(255,0,255,0.08);*/
+}
+
+#tekst_zajawki h1 {
+    color: #EDF0F3;
 }
 
 /*************** formularz ***************************/
