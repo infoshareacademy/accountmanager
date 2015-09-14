@@ -100,7 +100,7 @@ body {
     background: #fff;
     color: #222;
     cursor: auto;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1.5;
@@ -293,7 +293,6 @@ div .photo {
     border:none;
 }
 #sm h2 {
-    font-family: Arial, sans-serif;
     color:#fff;
     border:none;
     font-style: normal;
@@ -301,7 +300,6 @@ div .photo {
     font-weight: 600;
 }
 #sm p {
-    font-family: Arial, sans-serif;
     color:#fff;
     border:none;
     font-style: normal;
@@ -313,7 +311,6 @@ div .photo {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
     font-size: 20px;
     padding: 10px 30px 10px 30px;
     margin:5px;
@@ -351,7 +348,6 @@ div .photo {
     margin-right: 5px;
 }
 #sm div a{
-    font-family: Arial, sans-serif;
     color: #EDF0F3;
     text-decoration: none;
     margin-right: 10px;
@@ -392,7 +388,6 @@ div .photo {
     color: #fff;
 }
 #features p {
-    font-family: Arial, sans-serif;
     color:#fff;
     border:none;
     font-style: normal;
