@@ -47,6 +47,13 @@ a img {
     border: none;
 }
 
+/* Clear fix */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+.clearfix:after {
+    clear: both; }
+
 /* Paragraph */
 p {
     font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -263,7 +270,56 @@ div .photo {
 }
 
 
+
+/*  FEATURES  */
+
+#features{
+    width: 100%;
+    background-color: #589ADA;
+    position: relative;
+    margin:0;
+    text-align: center;
+    min-height:180px;
+    padding: 50px 0;
+    border:none;
+}
+#features .column {
+    width:22%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+
+    vertical-align: text-top;
+}
+#features i {
+    font-size: 6em;
+    color: #fff;
+}
+#features p {
+    color:#fff;
+    border:none;
+    font-style: normal;
+}
+
+
+/* TEAM */
+
+#team {
+    height:700px;
+    max-height: 800px;
+    background-color: #556;
+    background-image: url(../images/team-photo.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+
 /*  SOCIAL MEDIA  */
+
 #sm {
     width: 100%;
     background-color: #589ADA;
@@ -339,41 +395,6 @@ div .photo {
     color: #ffffff;
 }
 
-
-/*  FEATURES  */
-
-
-#features{
-    width: 100%;
-    background-color: #589ADA;
-    position: relative;
-    margin:0;
-    text-align: center;
-    min-height:180px;
-    padding: 50px 0;
-    border:none;
-}
-#features .column {
-    width:22%;
-    display: inline-block;
-    margin:0;
-    padding:0;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    overflow: hidden;
-
-    vertical-align: text-top;
-}
-#features i {
-    font-size: 6em;
-    color: #fff;
-}
-#features p {
-    color:#fff;
-    border:none;
-    font-style: normal;
-}
 
 
 /* FOOTER */
