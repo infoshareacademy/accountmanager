@@ -226,7 +226,7 @@ nav {
 
 #tekst_zajawki p {
     border: 0;
-    /*background-color: rgba(255,0,255,0.08);*/
+
 }
 
 #tekst_zajawki h1 {
@@ -235,7 +235,34 @@ nav {
 
 /*************** formularz ***************************/
 .formularz {
+
+    width: 300PX;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #386FA7;
+
+}
+
+.formularz form {
+    border: solid 1px black;
+}
+
+.form {
     display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 222;
+    width: auto;
+    height: auto;
+    background-color: rgba(237,240,243,0.8);
+}
+
+.inp {
+
 }
 
 /****************** css zajawki **********************/
