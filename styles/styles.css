@@ -4,30 +4,56 @@
 
 @font-face {
     font-family: 'Icons';
-    src: url('../fonts/Icons.eot');
-    src: url('../fonts/Icons.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Icons.woff') format('woff'),
-    url('../fonts/Icons.ttf') format('truetype'),
-    url('../fonts/Icons.svg#Icons') format('svg');
+    src:url('../fonts/Icons.eot?-7zd6o3');
+    src:url('../fonts/Icons.eot?#iefix-7zd6o3') format('embedded-opentype'),
+    url('../fonts/Icons.ttf?-7zd6o3') format('truetype'),
+    url('../fonts/Icons.woff?-7zd6o3') format('woff'),
+    url('../fonts/Icons.svg?-7zd6o3#Icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-[class*='icon-']:before{
-    display: inline-block;
+
+[class^="icon-"], [class*=" icon-"] {
     font-family: 'Icons', sans-serif;
     font-style: normal;
     font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
     line-height: 1;
+
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
 }
-.icon-diamond:before{content:'\0041';}
-.icon-envelope:before{content:'\0042';}
-.icon-facebook:before{content:'\0043';}
-.icon-gplus:before{content:'\0044';}
-.icon-shield:before{content:'\0045';}
-.icon-time:before{content:'\0046';}
-.icon-tree:before{content:'\0047';}
-.icon-twitter:before{content:'\0048';}
+.icon-control:before {
+    content: "\e600";
+}
+.icon-diamond:before {
+    content: "\e601";
+}
+.icon-envelope:before {
+    content: "\e602";
+}
+.icon-facebook:before {
+    content: "\e603";
+}
+.icon-gplus:before {
+    content: "\e604";
+}
+.icon-group-work:before {
+    content: "\e605";
+}
+.icon-one-place:before {
+    content: "\e606";
+}
+.icon-shield:before {
+    content: "\e607";
+}
+.icon-time:before {
+    content: "\e608";
+}
+.icon-twitter:before {
+    content: "\e609";
+}
 
 /**/
 
@@ -186,7 +212,7 @@ nav {
 /****************** css zajawki **********************/
 .zajawka {
     background-color: #192a27;
-    background-image: url("../images/zajawka.jpg");
+    background-image: url("../images/zajawka2.jpg");
     background-position: right;
     background-repeat: no-repeat;
     width: auto;
@@ -207,7 +233,7 @@ nav {
 
 #tekst_zajawki p {
     border: 0;
-    /*background-color: rgba(255,0,255,0.08);*/
+
 }
 
 #tekst_zajawki h1 {
@@ -216,30 +242,68 @@ nav {
 
 /*************** formularz ***************************/
 .formularz {
+
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #386FA7;
+}
+
+.formularz input {
+    border: 1px, solid, #ccc;
+    /*padding: 10px;*/
+    margin: 20px;
+    width: 90%;
+    height: 35px;
+    color: #555566;
+}
+
+.formularz .thx {
+    position: relative;
+    margin: 0 auto;
+    color: #222222;
+}
+
+.formularz form {
+    border: solid 1px black;
+
+}
+
+.form {
     display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 222;
+    width: auto;
+    height: auto;
+    background-color: rgba(237,240,243,0.8);
+}
+
+.inp {
+
 }
 
 /****************** css zajawki **********************/
 
 .utilities {
-    background-color: white;
-    border-color: white;
+    background-color: #589ADA;
+    color: white ;
     /*width: 50%;*/
     margin: auto;
 }
 
-/*.utilities1 {*/
-    /*position: relative;*/
-    /*width: 30%;*/
+.utilities1 {
+    position: relative;
+    min-height: 512px;
     /*margin: auto;*/
     /*background-color: white;*/
     /*border-color: white;*/
-/*}*/
-
-div p {
-    background-color: inherit;
-    border-color: inherit;
 }
+
 footer {
     clear:both;
     text-align:center;
@@ -248,12 +312,10 @@ footer {
 
 div .txt {
     width: 50%;
-    margin-top: auto;
-    /*margin-right: 50%;*/
-    float: left;
-    background-color: transparent;
-    border-color: transparent;
-    text-align: justify;
+    text-align: center;
+    display: block;
+    padding-left: 3%;
+    padding-top: 5%;
     }
 
 div .photo {
@@ -261,13 +323,29 @@ div .photo {
     margin-left: 50%;
     margin-top: auto;
     /*width: 10%;*/
-    background-color: transparent;
-    border-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+div #core {
+    color:#fff;
+    border:none;
+    font-style: normal;
+    font-size: 2em;
+    font-weight: 600;
+}
 
+div #core2 {
+    color:#fff;
+    border:none;
+    font-style: normal;
+    margin:20px 20%;
+    background-color: transparent;
+    line-height: 1.8;
+}
 
-/*  FEATURES  */
+/*  F E A T U R E S  */
 
 #features{
     width: 100%;
@@ -297,24 +375,35 @@ div .photo {
 }
 #features p {
     color:#fff;
+    font-size: 1.2em;
     border:none;
     font-style: normal;
 }
 
 
-/* TEAM */
+/* T E A M */
 
 #team {
     height:700px;
     max-height: 800px;
     background-color: #556;
-    background-image: url(../images/team-photo.JPG);
-    background-position: center;
+    background-image: url(../images/team-photo.jpg);
+    background-position: center center;
     background-size: cover;
 }
+#team h2 {
+    color:#fff;
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1.6em;
+    padding-bottom: .2em;
+    border-bottom: solid #fff 1px;
+    width:200px;
+}
 
-
-/*  SOCIAL MEDIA  */
+/*  S O C I A L   M E D I A  */
 
 #sm {
     width: 100%;
@@ -393,7 +482,7 @@ div .photo {
 
 
 
-/* FOOTER */
+/* F O O T E R */
 
 footer {
     background-color: #556;
