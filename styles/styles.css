@@ -186,7 +186,7 @@ nav {
 /****************** css zajawki **********************/
 .zajawka {
     background-color: #192a27;
-    background-image: url("../images/zajawka.jpg");
+    background-image: url("../images/zajawka2.jpg");
     background-position: right;
     background-repeat: no-repeat;
     width: auto;
@@ -217,16 +217,31 @@ nav {
 /*************** formularz ***************************/
 .formularz {
 
-    width: 300PX;
+    width: 400px;
     position: absolute;
     top: 40%;
     left: 40%;
     background-color: #386FA7;
+}
 
+.formularz input {
+    border: 1px, solid, #ccc;
+    /*padding: 10px;*/
+    margin: 20px;
+    width: 90%;
+    height: 35px;
+    color: #555566;
+}
+
+.formularz .thx {
+    position: relative;
+    margin: 0 auto;
+    color: #222222;
 }
 
 .formularz form {
     border: solid 1px black;
+
 }
 
 .form {
