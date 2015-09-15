@@ -254,8 +254,8 @@ div .photo {
     margin-top: auto;
     /*width: 10%;*/
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 
@@ -302,7 +302,7 @@ div .photo {
     height:700px;
     max-height: 800px;
     background-color: #556;
-    background-image: url(../images/team-photo.JPG);
+    background-image: url(../images/team-photo.jpg);
     background-position: center center;
     background-size: cover;
 }
