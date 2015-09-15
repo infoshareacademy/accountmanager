@@ -298,8 +298,8 @@ div .photo {
     margin-top: auto;
     /*width: 10%;*/
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 div #core {
@@ -361,11 +361,21 @@ div #core2 {
     height:700px;
     max-height: 800px;
     background-color: #556;
-    background-image: url(../images/team-photo.JPG);
+    background-image: url(../images/team-photo.jpg);
     background-position: center center;
     background-size: cover;
 }
-
+#team h2 {
+    color:#fff;
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1.6em;
+    padding-bottom: .2em;
+    border-bottom: solid #fff 1px;
+    width:200px;
+}
 
 /*  S O C I A L   M E D I A  */
 
