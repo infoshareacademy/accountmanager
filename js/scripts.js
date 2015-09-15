@@ -1,14 +1,20 @@
 function validateForm(e){
     e.preventDefault();
-    var imie = document.getElementById('Imie').value;
-    var email = document.getElementById('Email').value;
+    var imie = document.getElementById('Imie');
+    var email = document.getElementById('Email');
 
-    if(!imie || imie == " "){
+    if(!imie.value.trim()){
         imie.value = 'pole jest wymagane!';
+    } else {
+
     }
-    if(!email || email == " "){
+
+    if(!email.value.trim()){
         email.value = 'pole jest wymagane!';
+    } else {
+
     }
-        console.log(imie + ' ' + email);
+
+    console.log(imie + ' ' + email);
 }
 document.getElementById('submit-btn').addEventListener('click', validateForm);
