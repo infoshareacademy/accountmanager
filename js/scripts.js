@@ -15,9 +15,7 @@ function validateForm(e){
         imie.validated = true;
     }
 
-    if(!email.value.trim() || email.value == "E-mail..." || email.value == "pole jest wymagane!"){
-        email.value = 'Pole jest wymagane!';
-    } else if(!validateEmail(email.value)){
+    if(!validateEmail(email.value)){
         email.value = 'Nieprawidłowy adres e-mail...';
     } else {
         email.validated = true;
@@ -30,21 +28,6 @@ function validateForm(e){
 }  // Walidacja formularza
 
 document.getElementById('submit-btn').addEventListener('click', validateForm);
-
-
-function clearText(field){
-    if(field.defaultValue == field.value){
-        field.value = "";
-    }
-    else if(field.value == ""){
-        field.value = field.defaultValue;
-    }
-} // czyszczenie tekstu "value" w inputach
-
-document.getElementById('Imie').addEventListener('blur', function(e){ clearText(e.target); });
-document.getElementById('Email').addEventListener('blur', function(e){ clearText(e.target); });
-document.getElementById('Imie').addEventListener('focus', function(e){ clearText(e.target); });
-document.getElementById('Email').addEventListener('focus', function(e){ clearText(e.target); });
 
 
 
