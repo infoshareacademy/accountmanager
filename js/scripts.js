@@ -53,3 +53,7 @@ function setAsClicked (a) {
     a.className += " clicked";
 }
 
+// ************** katban - obsluga klikacza w zajawca *******************
+
+//***********************************************************************
+
