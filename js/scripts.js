@@ -57,6 +57,10 @@ function setAsClicked (a) {
 }
 
 // ************** katban - obsluga klikacza w zajawca *******************
-
+$(document).ready(function(){
+    $('.btnzaj').click(function(){
+        $('.form').show();
+    })
+})
 //***********************************************************************
 
