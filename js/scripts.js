@@ -39,3 +39,11 @@ function setAsClicked (a) {
     a.className += " clicked";
 }
 
+// ************** katban - obsluga klikacza w zajawca *******************
+$(document).ready(function(){
+    $('.btnzaj').click(function(){
+        $('.form').show();
+    })
+})
+//***********************************************************************
+
