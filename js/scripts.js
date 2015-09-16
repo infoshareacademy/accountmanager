@@ -27,8 +27,10 @@ function validateForm(e){
         document.getElementById('cntform').innerHTML = "<p>Dziękujęmy<br> Wkrótce się z Państwem skonaktujemy</p>";
     }
 
-}
+}  // Walidacja formularza
+
 document.getElementById('submit-btn').addEventListener('click', validateForm);
+
 
 function clearText(field){
     if(field.defaultValue == field.value){
@@ -37,7 +39,8 @@ function clearText(field){
     else if(field.value == ""){
         field.value = field.defaultValue;
     }
-}
+} // czyszczenie tekstu "value" w inputach
+
 document.getElementById('Imie').addEventListener('blur', function(e){ clearText(e.target); });
 document.getElementById('Email').addEventListener('blur', function(e){ clearText(e.target); });
 document.getElementById('Imie').addEventListener('focus', function(e){ clearText(e.target); });
