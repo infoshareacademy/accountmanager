@@ -21,7 +21,20 @@ document.getElementById('submit-btn').addEventListener('click', validateForm);
 
 //menu  animacja po naciśnięciu
 
+//$(document).ready(function() {
+//    $('.menulink').click(function() {
+//        setAsClicked(this);
+//    })
+//})
+
+//var menuitems = document.getElementsByClassName('menulink');
+//for (var i = 0; i < menuitems.length; i++) {
+//    console.log(menuitems[i]);
+//    menuitems[i].onclick = "setAsClicked(menuitems[i])";
+//}
+
 function setAsClicked (a) {
+    console.log('set as clicked runed!!');
     var links = document.getElementsByClassName("menulink");
     for (var i = 0; i < links.length; i++) {
         links[i].className = "menulink";
