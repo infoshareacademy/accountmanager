@@ -29,6 +29,7 @@ function validateForm(e){
 document.getElementById('submit-btn').addEventListener('click', validateForm);
 
 
+//menu start//
 
 function setAsClicked (a) {
     console.log('set as clicked runed!!');
@@ -38,6 +39,7 @@ function setAsClicked (a) {
             }
     a.className += " clicked";
 }
+//menu end//
 
 // ************** katban - obsluga klikacza w zajawca *******************
 $(document).ready(function(){
