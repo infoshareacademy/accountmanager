@@ -386,35 +386,39 @@ nav {
 
 .utility_odd {
     position: relative;
-    height: 400px;
-    padding: 50px;
+    height: 300px;
+    padding: 25px;
 }
 
 div .txt_odd {
     width: 17%;
-    height: 400px;
+    height: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     position: absolute;
     left: 30%;
     text-align: center;
     display: block;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: 0 solid transparent;
+    /*white-space: pre-wrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*border: 0 solid transparent;*/
     margin: 0; !important;
 }
 
-div .txt_odd:hover {
-    background-color: #EDF0F3;
-    text-overflow: inherit;
-    overflow: visible;
-}
+/*div .txt_odd:hover {*/
+    /*background-color: #EDF0F3;*/
+    /*text-overflow: inherit;*/
+    /*overflow: visible;*/
+/*}*/
 
 div .photo_odd {
-    width: 40%;
-    height: 400px;
+    width: 17%;
+    height: 200px;
     position: absolute;
     left: 50%;
+    text-align: center;
+    display: block;
     margin:0;
     padding:0;
     border: none;
@@ -424,14 +428,14 @@ div .photo_odd {
 
 .utility_even {
 position: relative;
-height: 400px;
+height: 300px;
 padding: 50px;
 background-color: #EDF0F3;
 }
 
 div .photo_even {
     width: 17%;
-    height: 400px;
+    height: 200px;
     position: absolute;
     left: 30%;
     text-align: center;
@@ -444,12 +448,14 @@ div .photo_even {
 
 div .txt_even {
     width: 17%;
-    height: 400px;
+    height: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     position: absolute;
     left: 50%;
     margin: 0;
-    padding: 0;
     background-color: inherit;
+    vertical-align: middle;
     white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -466,10 +472,9 @@ div #core {
 color:#386FA7;
 border:none;
 font-style: normal;
-font-size: 3em;
 font-weight: 600;
 text-align: center;
-max-width: 300px;
+max-width: 400px;
 margin: auto;
 }
 
@@ -477,25 +482,21 @@ div #core2 {
 color:#444;
 border:none;
 font-style: normal;
-font-size: 2em;
 background-color: transparent;
 line-height: 1.8;
 text-align: center;
-width: 350px;
+width: 450px;
 margin: auto;
 margin-top: 25px;
 }
 
-.core_functions i{
-    position: absolute;
-    left: 2%;
-    /*top: 35%;*/
-    line-height: 0;
-    padding-right: 10px;
-    display: block;
-    vertical-align: middle;
+.core_functions i {
     color: #589ADA;
-    font-size: 250px;
+    font-size: 150px;
+    position: relative;
+    top: 15%;
+    /*right: -10%;*/
+    /*vertical-align: middle;*/
 }
 
 /*  F E A T U R E S  */
