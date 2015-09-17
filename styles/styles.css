@@ -57,6 +57,9 @@
 .icon-tree:before {
      content: "\e60a";
  }
+.icon-menu:before {
+    content: "\e60b";
+}
 
 /**/
 
@@ -260,7 +263,7 @@ nav {
 
     width: 400px;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 40%;
     background-color: #386FA7;
 }
@@ -281,7 +284,7 @@ nav {
 }
 
 .formularz form {
-    border: solid 1px black;
+
 
 }
 
@@ -305,7 +308,7 @@ nav {
     position: relative;
 }
 .err {
-    color:#ff3333;
+    color:#F3CA61;
     font-size: .8em;
     position: absolute;
     top: 0;
@@ -313,15 +316,23 @@ nav {
 
 }
 .err-inp {
-    border-color:#ff3333;
+    border-color:#F3CA61;
 }
 #cntform {
-    padding:10px;
+    padding:10px 30px;
 
 
 }
 #cntform h3 {
     color: #FFF;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+#cntform p {
+    color: #FFF;
+    text-align: center;
+    line-height: .6;
 }
 
 /****************** css zajawki **********************/
