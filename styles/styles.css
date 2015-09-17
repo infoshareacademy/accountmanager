@@ -182,21 +182,21 @@ ul, li {
     background-position: center;
 }
 nav {
-    position: relative;
+    position: fixed;
     height: 100px;
-    width: auto;
+    width: 100%;
     background-color: #589ADA;
     margin: 0 auto;
     -webkit-box-shadow: 0 16px 12px -12px #589ADA;
     -moz-box-shadow: 0 16px 12px -12px #589ADA;
-    box-shadow: 0 16px 12px -12px #589ADA;
+    box-shadow: 0 7px 12px 0px rgba(13, 24, 37, 0.56);
+    z-index: 99;
 }
 .navi {
     display: inline-block;
     height: 100px;
     width: 1020px;
     float: right;
-    display: none;
     }
 .navi li {
     display: inline-block;
@@ -219,13 +219,59 @@ nav {
     text-align: center;
 }
 .clicked {
-    background-color: #386FA7
+    background-color: #386FA7 !important;
 }
 #showmenu {
  margin-left: 300px;
     position: absolute;
 }
+#hamburgerpic {
+    display: none;
+}
 
+@media (max-width: 1180px) {
+    .navi{
+        display: none;
+        position: relative;
+    }
+    #mnav{
+        position: absolute;
+        top: 20px;
+        right: 2px;
+    }
+    .navi li {
+        background-color: rgba(85, 132, 179, 0.6);
+    }
+    .navi li.clicked {
+        background-color: rgba(56, 111, 167, 0.75) !important;
+    }
+    #hamburgerpic {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 8px;
+    }
+    #hamburgerpic i{
+        font-size: 4em;
+        color: #fff;
+    }
+    #mnav:hover ul.navi {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin-top: 15px;
+    }
+    #mnav:hover ul.navi li{
+        float:none;
+        display: block;
+        height: 60px;
+            }
+    #mnav:hover ul.navi li a{
+        height: 60px;
+        line-height: 60px;
+    }
+}
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
