@@ -66,7 +66,12 @@ $(document).ready(function(){
         $('.menulink').removeClass('clicked');
         $(this).addClass('clicked');
     });
+    $('#mnav').mouseleave(function () {
+        $('.menulink').removeClass('clicked');
+    })
 });
+
+
 //menu end//
 
 
