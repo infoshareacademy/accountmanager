@@ -54,6 +54,9 @@
 .icon-twitter:before {
     content: "\e609";
 }
+.icon-tree:before {
+     content: "\e60a";
+ }
 
 /**/
 
@@ -286,6 +289,12 @@ nav {
 .inp {
 
 }
+
+.error {
+    color:#ff3333;
+
+}
+
 
 /****************** css zajawki **********************/
 

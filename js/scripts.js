@@ -8,10 +8,9 @@ function validateForm(e){
         return re.test(em);
     }
 
-    if(!imie.value.trim() || imie.value == "Name..." || imie.value == "pole jest wymagane!"){
+    if(!imie.value.trim() || imie.value == "pole jest wymagane!"){
         imie.value = 'Pole jest wymagane!';
     } else {
-        //imie.value = "Gratulujemy udało się";
         imie.validated = true;
     }
 
