@@ -33,6 +33,12 @@ document.getElementById('submit-btn').addEventListener('click', validateForm);
 //    menuitems[i].onclick = "setAsClicked(menuitems[i])";
 //}
 
+$(document).ready(function() {
+    $('.showmenu').click(function() {
+        $('.navi').slideToggle("fast");
+    });
+});
+
 function setAsClicked (a) {
     console.log('set as clicked runed!!');
     var links = document.getElementsByClassName("menulink");
