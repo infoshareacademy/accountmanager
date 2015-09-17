@@ -42,6 +42,14 @@ function setAsClicked (a) {
 $(document).ready(function(){
     $('.btnzaj').click(function(){
         $('.form').show();
+    });
+    //
+    $('.form').click(function(event){
+        event.stopPropagation();
+        $(this).hide();
+    });
+    $('#cntform').click(function(event){
+        event.stopPropagation()
     })
 })
 //***********************************************************************
