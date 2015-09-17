@@ -46,6 +46,7 @@ $(document).ready(function() {
 
 
 function setAsClicked (a) {
+    console.log('set as clicked runed!!');
     var links = document.getElementsByClassName("menulink");
     for (var i = 0; i < links.length; i++) {
         links[i].className = "menulink";
@@ -69,3 +70,6 @@ $(document).ready(function(){
 })
 //***********************************************************************
 
+
+
+// koniec menu
