@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 
@@ -33,15 +34,15 @@
 <div class="zajawka">
     <div id="tekst_zajawki"><h1>Papikaan AM - simplify your life!</h1>
     <p>Czy kiedykolwiek szukałeś ważnego adresu w swoim notesie? Jak dużo czasu Ci to zajęło? Od dziś te informacje
-        będziesz miał zawsze dostępne.</p></div>
+        będziesz miał zawsze dostępne.</p><div class="btnzaj">aaa</div></div>
 
-    <div class="form"><div class="formularz">
+    <div class="form"><div id="cntform" class="formularz">
         <form action="" method="get">
             <div class="thx">Dziękujemy za zaufanie.</div>
             <label for="Imie"></label>
-            <input type="text" name="Imie" id="Imie" value="Name..."/><br>
+            <input type="text" name="Imie" id="Imie" placeholder="Name..."/><br>
             <label for="Email"></label>
-            <input type="email" name="Email" id="Email" value="E-mail..."/><br>
+            <input type="email" name="Email" id="Email" placeholder="E-mail..."/><br>
 
 
             <input type="submit" id="submit-btn" value="Wyślij"/>
@@ -50,7 +51,7 @@
 </div></div>
 
 <a name="utilities"></a>
-<div class="utilities">
+<div class="core_functions">
 
     <div class="utilities1">
         <div class="txt">
@@ -58,7 +59,7 @@
             <p id="core2">Wide set of labels and folders allows you to easily organize your accounts</p>
         </div>
         <div class="photo">
-            <img src="images/svg/one-place.svg">
+            <i class="icon-one-place"></i>
         </div>
     </div>
 
@@ -69,7 +70,7 @@
             <p id="core2">Time box the action - we will notify you when it's time to get back to your Cutomer</p>
         </div>
         <div class="photo">
-            <img src="images/svg/envelope.svg">
+            <i class="icon-control"></i>
         </div>
     </div>
 
@@ -80,7 +81,7 @@
             <p id="core2">Give access to the account you need to every Team member you need</p>
         </div>
         <div class="photo">
-            <img src="images/svg/envelope.svg">
+            <i class="icon-group-work"></i>
         </div>
     </div>
 </div>
