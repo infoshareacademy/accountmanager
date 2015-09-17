@@ -45,6 +45,12 @@ $(document).ready(function() {
 
 
 //menu start//
+$(document).ready(function() {
+    $('#showmenu').click(function() {
+        $('.navi').slideToggle("fast");
+    });
+});
+
 
 function setAsClicked (a) {
     console.log('set as clicked runed!!');
