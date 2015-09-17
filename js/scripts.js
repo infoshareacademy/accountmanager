@@ -1,32 +1,47 @@
-function validateForm(e){
-    e.preventDefault();
-    var imie = document.getElementById('Imie');
-    var email = document.getElementById('Email');
+$(document).ready(function() {
 
-    function validateEmail(em) {
-        var re = /\S+@\S+\.\S+/;
-        return re.test(em);
-    }
+    $('#submit-btn').click(function(event){
 
-    if(!imie.value.trim() || imie.value == "pole jest wymagane!"){
-        imie.value = 'Pole jest wymagane!';
-    } else {
-        imie.validated = true;
-    }
+        event.preventDefault();
+        var imie = $('#Imie');
+        var email = $('#Email');
 
-    if(!validateEmail(email.value)){
-        email.value = 'Nieprawidłowy adres e-mail...';
-    } else {
-        email.validated = true;
-    }
+        function validateEmail(em) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(em);
+        }
 
-    if (email.validated && imie.validated){
-        document.getElementById('cntform').innerHTML = "<p>Dziękujęmy<br> Wkrótce się z Państwem skonaktujemy</p>";
-    }
+        if (!imie.val().trim()) {
+            imie.parent().find('.err').show();
+            imie.parent().find('.err').html('Pole jest wymagane!');
+            imie.addClass('err-inp');
+        } else {
+            imie.validated = true;
+        }
 
-}  // Walidacja formularza
+        if (!validateEmail(email.val())) {
+            email.parent().find('.err').show();
+            email.parent().find('.err').html('Nieprawidłowy adres e-mail...');
+            email.addClass('err-inp');
+        } else {
+            email.validated = true;
+        }
 
-document.getElementById('submit-btn').addEventListener('click', validateForm);
+        if (email.validated && imie.validated) {
+           $('#cntform').html("<h3>Dziękujęmy za zaufannie</h3> <p>Wkrótce się z Państwem skonaktujemy</p>");
+        }
+
+
+        $("input").focus(function() {
+            $( this ).parent().find('.err').fadeOut( 100 );
+            $( this ).removeClass('err-inp');
+        });
+    }); // Walidacja formularza
+
+
+
+
+});
 
 
 //menu start//

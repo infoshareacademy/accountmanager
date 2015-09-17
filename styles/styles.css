@@ -301,12 +301,28 @@ nav {
 .inp {
 
 }
-
-.error {
+.form-group{
+    position: relative;
+}
+.err {
     color:#ff3333;
+    font-size: .8em;
+    position: absolute;
+    top: 0;
+    right: 17px;
 
 }
+.err-inp {
+    border-color:#ff3333;
+}
+#cntform {
+    padding:10px;
 
+
+}
+#cntform h3 {
+    color: #FFF;
+}
 
 /****************** css zajawki **********************/
 
