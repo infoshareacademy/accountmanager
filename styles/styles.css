@@ -382,84 +382,120 @@ nav {
 }
 
 /****************** css zajawki **********************/
+/***************** css utilities *********************/
 
-.core_functions {
-    background-color: #589ADA;
-    color: white ;
-    /*width: 50%;*/
-    margin: auto;
-}
-
-.utilities1 {
+.utility_odd {
     position: relative;
-    min-height: 512px;
-    /*margin: auto;*/
-    /*background-color: white;*/
-    /*border-color: white;*/
+    height: 400px;
+    padding: 50px;
 }
 
-footer {
-    clear:both;
-    text-align:center;
-    padding:5px;
-}
-
-div .txt {
-    width: 50%;
-    height: 100%;
-    min-height: 512px;
-    margin-left: 0;
-    margin-top: 0;
+div .txt_odd {
+    width: 17%;
+    height: 400px;
     position: absolute;
+    left: 30%;
     text-align: center;
     display: block;
-    /*padding-left: 3%;*/
-    /*padding-top: 5%;*/
-    }
-
-div .photo {
-    width: 50%;
-    height: 100%;
-    min-height: 512px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0 solid transparent;
+    margin: 0; !important;
 }
 
-.photo i{
-    position: relative;
-    left: 2%;
-    top: 35%;
-    line-height: 0;
-    padding-right: 10px;
-    vertical-align: middle;
-    color: white;
-    font-size: 200px;
+div .txt_odd:hover {
+    background-color: #EDF0F3;
+    text-overflow: inherit;
+    overflow: visible;
+}
+
+div .photo_odd {
+    width: 40%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin:0;
+    padding:0;
+    border: none;
+    overflow: visible;
+    vertical-align: text-top;
+}
+
+.utility_even {
+position: relative;
+height: 400px;
+padding: 50px;
+background-color: #EDF0F3;
+}
+
+div .photo_even {
+    width: 17%;
+    height: 400px;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    display: block;
+    border: none;
+    overflow: visible;
+
+    vertical-align: text-top;
+}
+
+div .txt_even {
+    width: 17%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid transparent;
+}
+
+div .txt_even:hover {
+    background-color: #EDF0F3;
+    text-overflow: inherit;
+    overflow: visible;
 }
 
 div #core {
-    color:#fff;
-    border:none;
-    font-style: normal;
-    /*margin:15% 5px;*/
-    margin-top: 25%;
-    margin-right: 5px;
-    font-size: 2em;
-    font-weight: 600;
-    text-align: center;
-    /*width: 200px;*/
+color:#386FA7;
+border:none;
+font-style: normal;
+font-size: 3em;
+font-weight: 600;
+text-align: center;
+max-width: 300px;
+margin: auto;
 }
 
 div #core2 {
-    color:#fff;
-    border:none;
-    font-style: normal;
-    /*margin:20%;*/
-    margin-right: 5px;
-    background-color: transparent;
-    line-height: 1.8;
-    text-align: center;
-    /*width: 200px;*/
+color:#444;
+border:none;
+font-style: normal;
+font-size: 2em;
+background-color: transparent;
+line-height: 1.8;
+text-align: center;
+width: 350px;
+margin: auto;
+margin-top: 25px;
+}
+
+.core_functions i{
+    position: absolute;
+    left: 2%;
+    /*top: 35%;*/
+    line-height: 0;
+    padding-right: 10px;
+    display: block;
+    vertical-align: middle;
+    color: #589ADA;
+    font-size: 250px;
 }
 
 /*  F E A T U R E S  */
@@ -614,4 +650,12 @@ footer p {
 footer p span{
     font-size: 1.16em;
     color:#EDF0F3;
+}
+
+/*to jest fragment, ktory znajdowal sie w mojej sekcji*/
+
+footer {
+    clear:both;
+    text-align:center;
+    padding:5px;
 }
