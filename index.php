@@ -27,7 +27,7 @@
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka">Product</a></li>
+            <li class="menulink"><a href="#zajawka">Home</a></li>
             <li class="menulink"><a href="#utilities">Why us?</a></li>
             <li class="menulink"><a href="#features">Values</a></li>
             <li class="menulink"><a href="#team">Team</a></li>
@@ -131,10 +131,10 @@
 
 <section id="sm">
     <h2>Contact us</h2>
-    <p> Proin auctor mauris nec ligula tristique tempor. Quisque sit amet purus neque.
-        Etiam egestas ante eget elementum accumsan. Cras ut neque vel tellus blandit
-        consectetur id sit amet neque. Nam posuere varius vehicula. Sed non congue neque.</p>
-    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Napisz do nas"><i class="icon-envelope"></i>Napisz do nas</a>
+    <p>Do you have any quetions? Suggestions?<br><br>
+        We want to make your life easier so please let us know what you need!<br>
+        Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
+    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question"><i class="icon-envelope"></i>Get in touch</a>
 
     <br/>
     <div>
@@ -146,12 +146,7 @@
 </section>
 
 <footer>
-   <p>
-       <span>CONTACT<br/>
-       papikaanteam@gmail.com<br/></span>
-       <br/>
-       <br/>
-       &copy; Papikaan Account Manager</p>
+   <p>&copy; Papikaan Account Manager</p>
 </footer>
 
 <script type="text/javascript" src="js/scripts.js"></script>
