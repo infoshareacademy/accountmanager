@@ -49,9 +49,8 @@
         <div class="btnzaj">Try us out</div></div>
 
     <div class="form"><div id="cntform" class="formularz">
-        <form action="" id="contact-form" method="POST">
-            <h3>Wypełnij formularz, </h3><p>aby poznać szczegóły naszego produktu</p>
-        <form action="" method="get">
+
+            <form action="" id="contact-form" method="POST">
             <h3>Don't be shy</h3><p>We won't spam you :)</p>
             <div class="form-group">
                 <label for="Imie"></label><span class="err"></span>
