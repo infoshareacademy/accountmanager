@@ -284,6 +284,7 @@ nav {
     height: 960px;
     color: #EDF0F3;
 
+
 }
 
 #tekst_zajawki {
@@ -294,6 +295,8 @@ nav {
     max-width: 700px;
     border: solid 1px #F3CA61;
     padding: 20px;
+    padding-left: 60px;
+    padding-left: 60px;
 }
 
 #tekst_zajawki p {
@@ -311,18 +314,17 @@ nav {
     border-radius: 3px;
     padding: 5px 10px 5px 10px;
     margin: 5px;
-    /*border: solid 1px #F3CA61;*/
     text-decoration: none;
     display: inline-block;
     background-color: rgba(237,240,242,0.2);
-    /*color: #589ADA;*/
     margin-bottom: 20px;
+
 }
 
 .btnzaj:hover {
     background-color: rgba(237,240,242,0.8);
     text-decoration: none;
-    /*border-color: #386FA7;*/
+    color: #222;
 }
 
 /*************** formularz ***************************/
