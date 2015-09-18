@@ -1,3 +1,7 @@
+<?php
+    $lang = 'pl';
+    include_once('db.php');
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -39,14 +43,15 @@
 <a name="zajawka"></a>
 <div class="zajawka">
     <div id="tekst_zajawki">
-    <p>Too many accounts? <br>Customers/Partners lost in action?<br>Redundant phone numbers?
+    <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
         <br> </p>
         <h1>Let us organise your business</h1>
         <div class="btnzaj">Try us out</div></div>
 
     <div class="form"><div id="cntform" class="formularz">
-        <form action="" method="get">
-            <h3>Wypełnij formularz, </h3><p>aby poznać szczegóły naszego produktu</p>
+
+            <form action="" id="contact-form" method="POST">
+            <h3>Don't be shy</h3><p>We won't spam you :)</p>
             <div class="form-group">
                 <label for="Imie"></label><span class="err"></span>
                 <input type="text" name="imie" id="Imie" placeholder="Name..."/><br>
@@ -87,7 +92,7 @@
     <section class="utility_odd">
         <div class="txt_odd">
             <h2 id="core">Work in group</h2>
-            <article id="core2">Give access to the account you need to every Team member you need</article>
+            <article id="core2">In case of need you can give access to an account to any Team member</article>
         </div>
         <div class="photo_odd">
             <i class="icon-group-work"></i>
