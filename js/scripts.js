@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         if (!imie.val().trim()) {
             imie.parent().find('.err').show();
-            imie.parent().find('.err').html('Pole jest wymagane!');
+            imie.parent().find('.err').html('Come on, what\'s your name? :)');
             imie.addClass('err-inp');
         } else {
             imie.validated = true;
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
         if (!validateEmail(email.val())) {
             email.parent().find('.err').show();
-            email.parent().find('.err').html('Nieprawidłowy adres e-mail...');
+            email.parent().find('.err').html('Hm, this address seems incorrect. Please double check it');
             email.addClass('err-inp');
         } else {
             email.validated = true;
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
         if (email.validated && imie.validated) {
             $('#contact-form').submit();
-            $('#cntform').html("<h3>Dziękujęmy za zaufannie</h3> <p>Wkrótce się z Państwem skonaktujemy</p>");
+            $('#cntform').html("<h3>Thanks!</h3> <p>We will get in touch soon</p>");
 
         }
 
