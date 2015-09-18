@@ -396,20 +396,19 @@ div .txt_odd {
     max-width: 500px;
     height: 250px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     position: absolute;
     left: 32%;
-    text-align: center;
-    display: block;
-    /*white-space: pre-wrap;*/
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
-    /*border: 0 solid transparent;*/
-    margin: 0; !important;
+    margin: 0;
+    background-color: inherit;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid transparent;
 }
 
 div .txt_odd:hover {
-    background-color: #EDF0F3;
     text-overflow: inherit;
     overflow: visible;
 }
