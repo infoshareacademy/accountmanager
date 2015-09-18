@@ -275,8 +275,9 @@ nav {
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
-    background-color: #192a27;
+    background-color: #292a2f;
     background-image: url("../images/zajawka2.jpg");
+    background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     width: auto;
