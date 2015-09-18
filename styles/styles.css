@@ -275,8 +275,9 @@ nav {
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
-    background-color: #192a27;
+    background-color: #292a2f;
     background-image: url("../images/zajawka2.jpg");
+    background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     width: auto;
@@ -302,6 +303,26 @@ nav {
 
 #tekst_zajawki h1 {
     color: #EDF0F3;
+}
+
+.btnzaj {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    /*border: solid 1px #F3CA61;*/
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(237,240,242,0.2);
+    /*color: #589ADA;*/
+    margin-bottom: 20px;
+}
+
+.btnzaj:hover {
+    background-color: rgba(237,240,242,0.8);
+    text-decoration: none;
+    /*border-color: #386FA7;*/
 }
 
 /*************** formularz ***************************/
@@ -395,20 +416,19 @@ div .txt_odd {
     max-width: 500px;
     height: 250px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     position: absolute;
     left: 32%;
-    text-align: center;
-    display: block;
-    /*white-space: pre-wrap;*/
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
-    /*border: 0 solid transparent;*/
-    margin: 0; !important;
+    margin: 0;
+    background-color: inherit;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid transparent;
 }
 
 div .txt_odd:hover {
-    background-color: #EDF0F3;
     text-overflow: inherit;
     overflow: visible;
 }
