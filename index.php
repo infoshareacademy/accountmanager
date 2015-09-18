@@ -61,7 +61,7 @@
                 <input type="email" name="email" id="Email" placeholder="E-mail..."/><br>
             </div>
 
-            <input type="submit" id="submit-btn" value="Wyślij"/>
+            <input type="submit" id="submit-btn" value="Sure, contact me"/>
         </form>
     </div>
 </div></div>
@@ -105,21 +105,21 @@
 <section id="features" >
     <div class="column">
         <i class="icon-diamond"></i>
-        <p>We are details focused</p>
+        <p>Add value to your business</p>
     </div>
     <div class="column">
         <i class="icon-shield"></i>
-        <p>Safety is our goal</p>
+        <p>Protect sensitive data</p>
 
     </div>
     <div class="column">
         <i class="icon-time"></i>
-        <p>You will save your time <br/><b>We promise</b></p>
+        <p>Don't waste your time</p>
 
     </div>
     <div class="column">
         <i class="icon-tree"></i>
-        <p>Steady growth <br/><b>Guaranted</b></p>
+        <p>Develop good practice</p>
 
     </div>
 </section>
