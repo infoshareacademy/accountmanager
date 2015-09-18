@@ -18,9 +18,7 @@ if(sizeof($_POST)>0){
     $name =  (string)addslashes($_POST['Imie']);
     $email =  (string)addslashes($_POST['Email']);
     $date = date("Y-m-d");
-   // $lang = "pl";
 
-    //echo $name . " " .$email  . " " . $date  . " " . $lang . "<br>";
     // id, name, email, date, lang
     $sql = "INSERT INTO users SET name='".$name."', email='".$email."', date='".$date."', lang='".$lang."'";
     // echo $sql;exit;
