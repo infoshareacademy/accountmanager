@@ -7,16 +7,13 @@ $conn = mysqli_connect($servername, $username, $password, $dbname, 3307);
 if(!$conn){
     die("Connection failed: ". mysqli_connect_error());
 } else {
-
     // echo "ok";
-
-
 }
 
 
 if(sizeof($_POST)>0){
-    $name =  (string)addslashes($_POST['Imie']);
-    $email =  (string)addslashes($_POST['Email']);
+    $name =  (string)addslashes($_POST['imie']);
+    $email =  (string)addslashes($_POST['email']);
     $date = date("Y-m-d");
 
     // id, name, email, date, lang

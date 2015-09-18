@@ -50,7 +50,7 @@
 
     <div class="form"><div id="cntform" class="formularz">
 
-            <form action="" id="contact-form" method="POST">
+            <form action="" id="contact-form" method="post">
             <h3>Don't be shy</h3><p>We won't spam you :)</p>
             <div class="form-group">
                 <label for="Imie"></label><span class="err"></span>
