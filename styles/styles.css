@@ -632,7 +632,7 @@ margin-top: 25px;
 #btn-sm i{
     line-height: 0;
     padding-right: 10px;
-    vertical-align: middle;
+    vertical-align: top;
     color: #589ADA;
     font-size: 20px;
 }
