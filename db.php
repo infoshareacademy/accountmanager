@@ -15,8 +15,8 @@ if(!$conn){
 
 
 if(sizeof($_POST)>0){
-    $name =  (string)addslashes($_POST['Imie']);
-    $email =  (string)addslashes($_POST['Email']);
+    $name =  (string)addslashes($_POST['imie']);
+    $email =  (string)addslashes($_POST['email']);
     $date = date("Y-m-d");
 
     // id, name, email, date, lang
