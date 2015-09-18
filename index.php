@@ -1,5 +1,5 @@
 <?php
-    $lang = 'pl';
+    $lang = 'en';
     include_once('db.php');
 ?>
 <!DOCTYPE html>
