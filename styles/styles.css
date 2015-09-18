@@ -305,6 +305,26 @@ nav {
     color: #EDF0F3;
 }
 
+.btnzaj {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    /*border: solid 1px #F3CA61;*/
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(237,240,242,0.2);
+    /*color: #589ADA;*/
+    margin-bottom: 20px;
+}
+
+.btnzaj:hover {
+    background-color: rgba(237,240,242,0.8);
+    text-decoration: none;
+    /*border-color: #386FA7;*/
+}
+
 /*************** formularz ***************************/
 .formularz {
 
