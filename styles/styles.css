@@ -392,11 +392,12 @@ nav {
 
 div .txt_odd {
     width: 17%;
-    height: 200px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    max-width: 500px;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: absolute;
-    left: 30%;
+    left: 32%;
     text-align: center;
     display: block;
     /*white-space: pre-wrap;*/
@@ -406,53 +407,56 @@ div .txt_odd {
     margin: 0; !important;
 }
 
-/*div .txt_odd:hover {*/
-    /*background-color: #EDF0F3;*/
-    /*text-overflow: inherit;*/
-    /*overflow: visible;*/
-/*}*/
+div .txt_odd:hover {
+    background-color: #EDF0F3;
+    text-overflow: inherit;
+    overflow: visible;
+}
 
 div .photo_odd {
     width: 17%;
+    max-width: 500px;
     height: 200px;
     position: absolute;
-    left: 50%;
+    right: 32%;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
     display: block;
     margin:0;
-    padding:0;
     border: none;
-    overflow: visible;
     vertical-align: text-top;
 }
 
 .utility_even {
 position: relative;
 height: 300px;
-padding: 50px;
+padding: 25px;
 background-color: #EDF0F3;
 }
 
 div .photo_even {
     width: 17%;
+    max-width: 500px;
     height: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     position: absolute;
-    left: 30%;
+    left: 32%;
     text-align: center;
     display: block;
     border: none;
-    overflow: visible;
-
     vertical-align: text-top;
 }
 
 div .txt_even {
     width: 17%;
-    height: 200px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    max-width: 500px;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 0;
     position: absolute;
-    left: 50%;
+    right: 32%;
     margin: 0;
     background-color: inherit;
     vertical-align: middle;
@@ -463,7 +467,6 @@ div .txt_even {
 }
 
 div .txt_even:hover {
-    background-color: #EDF0F3;
     text-overflow: inherit;
     overflow: visible;
 }
@@ -485,14 +488,14 @@ font-style: normal;
 background-color: transparent;
 line-height: 1.8;
 text-align: center;
-width: 450px;
+/*width: 450px;*/
 margin: auto;
 margin-top: 25px;
 }
 
 .core_functions i {
     color: #589ADA;
-    font-size: 150px;
+    font-size: 200px;
     position: relative;
     top: 15%;
     /*right: -10%;*/
