@@ -1,3 +1,7 @@
+<?php
+    $lang = 'pl';
+    include_once('db.php');
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -43,7 +47,7 @@
         będziesz miał zawsze dostępne.</p><div class="btnzaj">aaa</div></div>
 
     <div class="form"><div id="cntform" class="formularz">
-        <form action="" method="get">
+        <form action="" id="contact-form" method="POST">
             <h3>Wypełnij formularz, </h3><p>aby poznać szczegóły naszego produktu</p>
             <div class="form-group">
                 <label for="Imie"></label><span class="err"></span>

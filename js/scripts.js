@@ -28,7 +28,9 @@ $(document).ready(function() {
         }
 
         if (email.validated && imie.validated) {
-           $('#cntform').html("<h3>Dziękujęmy za zaufannie</h3> <p>Wkrótce się z Państwem skonaktujemy</p>");
+            $('#contact-form').submit();
+            $('#cntform').html("<h3>Dziękujęmy za zaufannie</h3> <p>Wkrótce się z Państwem skonaktujemy</p>");
+
         }
 
 
@@ -89,7 +91,7 @@ $(document).ready(function(){
     $('#cntform').click(function(event){
         event.stopPropagation()
     })
-})
+});
 //***********************************************************************
 
 
