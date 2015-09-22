@@ -1,4 +1,4 @@
-/*FONTS + ICONS*/
+/* F O N T S  +  I C O N S */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,300italic,300,600,600italic,700italic,700&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic&subset=latin,latin-ext);
 
@@ -524,6 +524,7 @@ margin-top: 25px;
     /*vertical-align: middle;*/
 }
 
+
 /*  F E A T U R E S  */
 
 #features{
@@ -545,7 +546,6 @@ margin-top: 25px;
     background-color: transparent;
     border: none;
     overflow: hidden;
-
     vertical-align: text-top;
 }
 #features i {
@@ -582,6 +582,7 @@ margin-top: 25px;
     width:200px;
 }
 
+
 /*  S O C I A L   M E D I A  */
 
 #sm {
@@ -609,6 +610,13 @@ margin-top: 25px;
     background-color: transparent;
     line-height: 1.8;
 }
+#btn-sm i{
+    line-height: 0;
+    padding-right: 10px;
+    vertical-align: top;
+    color: #589ADA;
+    font-size: 20px;
+}
 #btn-sm {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -629,14 +637,6 @@ margin-top: 25px;
     text-decoration: none;
     border-color: #386FA7;
 }
-#btn-sm i{
-    line-height: 0;
-    padding-right: 10px;
-    vertical-align: top;
-    color: #589ADA;
-    font-size: 20px;
-}
-
 #sm div{
     background-color: transparent;
     border:none;
@@ -660,12 +660,11 @@ margin-top: 25px;
 }
 
 
-
 /* F O O T E R */
 
 footer {
     background-color: #556;
-    padding: 20px;
+    padding: 5px;
 }
 footer p {
     text-align: center;
@@ -678,10 +677,3 @@ footer p span{
     color:#EDF0F3;
 }
 
-/*to jest fragment, ktory znajdowal sie w mojej sekcji*/
-
-footer {
-    clear:both;
-    text-align:center;
-    padding:5px;
-}
