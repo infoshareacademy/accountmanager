@@ -275,11 +275,8 @@ nav {
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
-    background-color: #292a2f;
-    background-image: url("../images/zajawka2.jpg");
+    background: #292a2f url("../images/zajawka2.jpg") no-repeat right;
     background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
     width: auto;
     height: 960px;
     color: #EDF0F3;
@@ -338,7 +335,7 @@ nav {
 }
 
 .formularz input {
-    border: 1px, solid, #ccc;
+    border: 1px solid #ccc;
     /*padding: 10px;*/
     margin: 20px;
     width: 90%;
