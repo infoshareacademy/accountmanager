@@ -71,8 +71,8 @@
 
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
-            <h2 id="core">All contacts in one place</h2>
-            <article id="core2">Wide set of labels and folders allows you to easily organize your accounts</article>
+            <h2 id="functionsHeader">All contacts in one place</h2>
+            <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
         <div class="photoSectionOdd">
             <i class="icon-one-place"></i>
@@ -84,15 +84,15 @@
             <i class="icon-control"></i>
         </div>
         <div class="txtSectionEven">
-            <h2 id="core">Have control</h2>
-            <article id="core2">Time box the action - we will notify you when it's time to get back to your Customer</article>
+            <h2 id="functionsHeader">Have control</h2>
+            <article id="functionsDescription">Time box the action - we will notify you when it's time to get back to your Customer</article>
         </div>
     </section>
 
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
-            <h2 id="core">Work in group</h2>
-            <article id="core2">In case of need you can give access to an account to any Team member</article>
+            <h2 id="functionsHeader">Work in group</h2>
+            <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
         <div class="photoSectionOdd">
             <i class="icon-group-work"></i>

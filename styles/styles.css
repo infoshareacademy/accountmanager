@@ -493,7 +493,7 @@ div .txtSectionEven:hover {
     overflow: visible;
 }
 
-div #core {
+div #functionsHeader {
 color:#386FA7;
 border:none;
 font-style: normal;
@@ -503,7 +503,7 @@ max-width: 400px;
 margin: auto;
 }
 
-div #core2 {
+div #functionsDescription {
 color:#444;
 border:none;
 font-style: normal;
@@ -515,7 +515,7 @@ margin: auto;
 margin-top: 25px;
 }
 
-.core_functions i {
+.functionsMainContener i {
     color: #589ADA;
     font-size: 200px;
     position: relative;
