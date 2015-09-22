@@ -1,47 +1,44 @@
 $(document).ready(function() {
 
     $('#submit-btn').click(function(event){
-
         event.preventDefault();
         var imie = $('#Imie');
         var email = $('#Email');
 
-        function validateEmail(em) {
+        function validateEmail(em)
+        {
             var re = /\S+@\S+\.\S+/;
-            return re.test(em);
+            return re.test(em.val());
         }
 
-        if (!imie.val().trim()) {
-            imie.parent().find('.err').show();
-            imie.parent().find('.err').html('Come on, what\'s your name? :)');
-            imie.addClass('err-inp');
-        } else {
-            imie.validated = true;
+        function validateName(nameFiled)
+        {
+            return nameFiled.val().trim().length !== 0;
         }
 
-        if (!validateEmail(email.val())) {
-            email.parent().find('.err').show();
-            email.parent().find('.err').html('Hm, this address seems incorrect. Please double check it');
-            email.addClass('err-inp');
-        } else {
-            email.validated = true;
-        }
-
-        if (email.validated && imie.validated) {
+        if(validateName(imie) && validateEmail(email)) {
             $('#contact-form').submit();
             $('#cntform').html("<h3>Thanks!</h3> <p>We will get in touch soon</p>");
-
+        } else {
+            if(!validateName(imie)){
+                imie.parent().find('.err').show();
+                imie.parent().find('.err').html('Come on, what\'s your name? :)');
+                imie.addClass('err-inp');
+            }
+            if(!validateEmail(email)){
+                email.parent().find('.err').show();
+                email.parent().find('.err').html('Hm, this address seems incorrect. Please double check it');
+                email.addClass('err-inp');
+            }
         }
 
 
-        $("input").focus(function() {
+        $("input").focus(function()
+        {
             $( this ).parent().find('.err').fadeOut( 100 );
             $( this ).removeClass('err-inp');
         });
     }); // Walidacja formularza
-
-
-
 
 });
 
