@@ -538,6 +538,7 @@ margin-top: 25px;
 }
 #features .column {
     width:22%;
+    height: 180px;
     display: inline-block;
     margin:0;
     padding:0;
@@ -545,18 +546,29 @@ margin-top: 25px;
     background-color: transparent;
     border: none;
     overflow: hidden;
-
+    position: relative;
     vertical-align: text-top;
 }
 #features i {
     font-size: 6em;
     color: #fff;
+    /*display: none;*/
+    /*position: ;*/
 }
+
+#features i:hover {
+    font-size: 7em;
+    text-align: center;
+}
+
 #features p {
+    width: 100%;
     color:#fff;
     font-size: 1.2em;
     border:none;
     font-style: normal;
+    position: absolute;
+    bottom: 0;
 }
 
 
