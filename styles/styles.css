@@ -553,13 +553,10 @@ margin-top: 25px;
 #features i {
     font-size: 6em;
     color: #fff;
-    /*display: none;*/
-    /*position: ;*/
 }
 
 #features i:hover {
     font-size: 7em;
-    text-align: center;
 }
 
 #features p {
