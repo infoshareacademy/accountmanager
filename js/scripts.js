@@ -40,6 +40,29 @@ $(document).ready(function() {
         });
     }); // Walidacja formularza
 
+    $(window).scroll(function() {
+        var presentWindowPosition = $(window).scrollTop();
+        var elementsToAnimate = [
+                $('#tekst_zajawki'),
+                $('#feature-1'),
+                $('#feature-2'),
+                $('#feature-3')
+        ];
+        var windowHeight = $(window).height();
+
+
+        for (var i = 0; i < elementsToAnimate.length; i++){
+            if($(elementsToAnimate[i]).length){
+                var divPosition = elementsToAnimate[i].offset().top;
+
+                if(divPosition > presentWindowPosition && divPosition < (presentWindowPosition + windowHeight)){
+                    console.log('Window: ' + presentWindowPosition + " Div: " + divPosition + " Wysokość okna: " + windowHeight);
+
+                }
+             }
+        }
+    })
+
 });
 
 
