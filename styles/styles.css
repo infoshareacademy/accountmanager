@@ -404,13 +404,13 @@ nav {
 /****************** css zajawki **********************/
 /***************** css utilities *********************/
 
-.utility_odd {
+.functionsModuleOdd {
     position: relative;
     height: 300px;
     padding: 25px;
 }
 
-div .txt_odd {
+div .txtSectionOdd {
     width: 17%;
     max-width: 500px;
     height: 250px;
@@ -427,12 +427,12 @@ div .txt_odd {
     border: 1px solid transparent;
 }
 
-div .txt_odd:hover {
+div .txtSectionOdd:hover {
     text-overflow: inherit;
     overflow: visible;
 }
 
-div .photo_odd {
+div .photoSectionOdd {
     width: 17%;
     max-width: 500px;
     height: 200px;
@@ -447,14 +447,14 @@ div .photo_odd {
     vertical-align: text-top;
 }
 
-.utility_even {
+.functionsModuleEven {
 position: relative;
 height: 300px;
 padding: 25px;
 background-color: #EDF0F3;
 }
 
-div .photo_even {
+div .photoSectionEven {
     width: 17%;
     max-width: 500px;
     height: 200px;
@@ -468,7 +468,7 @@ div .photo_even {
     vertical-align: text-top;
 }
 
-div .txt_even {
+div .txtSectionEven {
     width: 17%;
     max-width: 500px;
     height: 250px;
@@ -485,12 +485,12 @@ div .txt_even {
     border: 1px solid transparent;
 }
 
-div .txt_even:hover {
+div .txtSectionEven:hover {
     text-overflow: inherit;
     overflow: visible;
 }
 
-div #core {
+div #functionsHeader {
 color:#386FA7;
 border:none;
 font-style: normal;
@@ -500,7 +500,7 @@ max-width: 400px;
 margin: auto;
 }
 
-div #core2 {
+div #functionsDescription {
 color:#444;
 border:none;
 font-style: normal;
@@ -512,7 +512,7 @@ margin: auto;
 margin-top: 25px;
 }
 
-.core_functions i {
+.functionsMainContener i {
     color: #589ADA;
     font-size: 200px;
     position: relative;

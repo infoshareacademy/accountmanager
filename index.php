@@ -67,34 +67,34 @@
 </div></div>
 
 <a name="utilities"></a>
-<div class="core_functions">
+<div class="functionsMainContener">
 
-    <section class="utility_odd">
-        <div class="txt_odd">
-            <h2 id="core">All contacts in one place</h2>
-            <article id="core2">Wide set of labels and folders allows you to easily organize your accounts</article>
+    <section class="functionsModuleOdd">
+        <div class="txtSectionOdd">
+            <h2 id="functionsHeader">All contacts in one place</h2>
+            <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
-        <div class="photo_odd">
+        <div class="photoSectionOdd">
             <i class="icon-one-place"></i>
         </div>
     </section>
 
-    <section class="utility_even">
-        <div class="photo_even">
+    <section class="functionsModuleEven">
+        <div class="photoSectionEven">
             <i class="icon-control"></i>
         </div>
-        <div class="txt_even">
-            <h2 id="core">Have control</h2>
-            <article id="core2">Time box the action - we will notify you when it's time to get back to your Customer</article>
+        <div class="txtSectionEven">
+            <h2 id="functionsHeader">Have control</h2>
+            <article id="functionsDescription">Time box the action - we will notify you when it's time to get back to your Customer</article>
         </div>
     </section>
 
-    <section class="utility_odd">
-        <div class="txt_odd">
-            <h2 id="core">Work in group</h2>
-            <article id="core2">In case of need you can give access to an account to any Team member</article>
+    <section class="functionsModuleOdd">
+        <div class="txtSectionOdd">
+            <h2 id="functionsHeader">Work in group</h2>
+            <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
-        <div class="photo_odd">
+        <div class="photoSectionOdd">
             <i class="icon-group-work"></i>
         </div>
     </section>
