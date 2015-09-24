@@ -1,4 +1,4 @@
-/*FONTS + ICONS*/
+/* F O N T S  +  I C O N S */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,300italic,300,600,600italic,700italic,700&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic&subset=latin,latin-ext);
 
@@ -290,11 +290,8 @@ nav {
 /****************** css logo menu **********************/
 /****************** css zajawki **********************/
 .zajawka {
-    background-color: #292a2f;
-    background-image: url("../images/zajawka2.jpg");
+    background: #292a2f url("../images/zajawka2.jpg") no-repeat right;
     background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
     width: auto;
     height: 960px;
     color: #EDF0F3;
@@ -353,7 +350,7 @@ nav {
 }
 
 .formularz input {
-    border: 1px, solid, #ccc;
+    border: 1px solid #ccc;
     /*padding: 10px;*/
     margin: 20px;
     width: 90%;
@@ -422,13 +419,13 @@ nav {
 /****************** css zajawki **********************/
 /***************** css utilities *********************/
 
-.utility_odd {
+.functionsModuleOdd {
     position: relative;
     height: 300px;
     padding: 25px;
 }
 
-div .txt_odd {
+div .txtSectionOdd {
     width: 17%;
     max-width: 500px;
     height: 250px;
@@ -445,12 +442,12 @@ div .txt_odd {
     border: 1px solid transparent;
 }
 
-div .txt_odd:hover {
+div .txtSectionOdd:hover {
     text-overflow: inherit;
     overflow: visible;
 }
 
-div .photo_odd {
+div .photoSectionOdd {
     width: 17%;
     max-width: 500px;
     height: 200px;
@@ -465,14 +462,14 @@ div .photo_odd {
     vertical-align: text-top;
 }
 
-.utility_even {
+.functionsModuleEven {
 position: relative;
 height: 300px;
 padding: 25px;
 background-color: #EDF0F3;
 }
 
-div .photo_even {
+div .photoSectionEven {
     width: 17%;
     max-width: 500px;
     height: 200px;
@@ -486,7 +483,7 @@ div .photo_even {
     vertical-align: text-top;
 }
 
-div .txt_even {
+div .txtSectionEven {
     width: 17%;
     max-width: 500px;
     height: 250px;
@@ -503,12 +500,12 @@ div .txt_even {
     border: 1px solid transparent;
 }
 
-div .txt_even:hover {
+div .txtSectionEven:hover {
     text-overflow: inherit;
     overflow: visible;
 }
 
-div #core {
+div #functionsHeader {
 color:#386FA7;
 border:none;
 font-style: normal;
@@ -518,7 +515,7 @@ max-width: 400px;
 margin: auto;
 }
 
-div #core2 {
+div #functionsDescription {
 color:#444;
 border:none;
 font-style: normal;
@@ -530,7 +527,7 @@ margin: auto;
 margin-top: 25px;
 }
 
-.core_functions i {
+.functionsMainContener i {
     color: #589ADA;
     font-size: 200px;
     position: relative;
@@ -538,6 +535,7 @@ margin-top: 25px;
     /*right: -10%;*/
     /*vertical-align: middle;*/
 }
+
 
 /*  F E A T U R E S  */
 
@@ -553,6 +551,7 @@ margin-top: 25px;
 }
 #features .column {
     width:22%;
+    height: 180px;
     display: inline-block;
     margin:0;
     padding:0;
@@ -560,18 +559,26 @@ margin-top: 25px;
     background-color: transparent;
     border: none;
     overflow: hidden;
-
+    position: relative;
     vertical-align: text-top;
 }
 #features i {
     font-size: 6em;
     color: #fff;
 }
+
+#features i:hover {
+    font-size: 7em;
+}
+
 #features p {
+    width: 100%;
     color:#fff;
     font-size: 1.2em;
     border:none;
     font-style: normal;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -596,6 +603,7 @@ margin-top: 25px;
     border-bottom: solid #fff 1px;
     width:200px;
 }
+
 
 /*  S O C I A L   M E D I A  */
 
@@ -624,6 +632,13 @@ margin-top: 25px;
     background-color: transparent;
     line-height: 1.8;
 }
+#btn-sm i{
+    line-height: 0;
+    padding-right: 10px;
+    vertical-align: top;
+    color: #589ADA;
+    font-size: 20px;
+}
 #btn-sm {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -644,14 +659,6 @@ margin-top: 25px;
     text-decoration: none;
     border-color: #386FA7;
 }
-#btn-sm i{
-    line-height: 0;
-    padding-right: 10px;
-    vertical-align: top;
-    color: #589ADA;
-    font-size: 20px;
-}
-
 #sm div{
     background-color: transparent;
     border:none;
@@ -675,12 +682,11 @@ margin-top: 25px;
 }
 
 
-
 /* F O O T E R */
 
 footer {
     background-color: #556;
-    padding: 20px;
+    padding: 5px;
 }
 footer p {
     text-align: center;
