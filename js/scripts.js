@@ -46,32 +46,29 @@ $(document).ready(function() {
 });
 
 
+
 //menu start//
-//$(document).ready(function() {
-//    $('#showmenu').click(function() {
-//        $('.navi').slideToggle("fast");
-//    });
-//});
-
-//function setAsClicked (a) {
-//    var links = document.getElementsByClassName("menulink");
-//    for (var i = 0; i < links.length; i++) {
-//        links[i].className = "menulink";
-//            }
-//    a.className += " clicked";
-//}
-
-
 
 $(document).ready(function(){
     $('.menulink').click(function(){
         $('.menulink').removeClass('clicked');
         $(this).addClass('clicked');
     });
-    $('#mnav').mouseleave(function () {
-        $('.menulink').removeClass('clicked');
-    })
 });
+    //$('#mnav').mouseleave(function () {
+    //    $('.menulink').removeClass('clicked');
+    //});
+    $(window).scroll(function() {
+        if($(window).scrollTop() === 0){
+            $('#menubar').removeClass('scrolled');
+        } else {
+            $('#menubar').addClass('scrolled');
+        }
+        //$('#menubar').addClass('scrolled');
+        //if($(window).scrollTop == 0) {
+        //    $('#menubar').removeClass('scrolled');
+        //}
+    });
 
 
 //menu end//

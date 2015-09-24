@@ -221,6 +221,21 @@ nav {
 .clicked {
     background-color: #386FA7 !important;
 }
+#menubar.scrolled {
+    height: 50px;
+}
+#menubar.scrolled .mnav {
+    height: 50px;
+}
+#menubar.scrolled .menulink {
+    height: 50px;
+}
+#menubar.scrolled #logo {
+    display: none;
+}
+#menubar.scrolled .navi li a {
+    line-height: 50px;
+}
 #showmenu {
  margin-left: 300px;
     position: absolute;
