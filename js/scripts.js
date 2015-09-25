@@ -94,3 +94,27 @@ $(document).ready(function(){
 
 
 // koniec menu
+
+
+// game
+
+$(document).ready(function(){
+    $('#Ania').click(function(){
+            $('#Kasia').show();
+        }
+    )
+});
+
+$(document).ready(function(){
+    $('#Kasia').click(function(){
+            $('#Pawel').show();
+        }
+    )
+});
+
+$(document).ready(function(){
+    $('#Pawel').click(function(){
+            $('#Piotr').show();
+        }
+    )
+});

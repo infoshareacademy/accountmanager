@@ -692,12 +692,14 @@ background-color: beige;
     height: 200px;
     width: 300px;
     box-shadow: 2px 3px 80px #222222;
+    display: none;
 }
 
 #Ania {
     position: fixed;
     top: 150px;
     left: 100px;
+    display: block;
 }
 
 #Kasia {
