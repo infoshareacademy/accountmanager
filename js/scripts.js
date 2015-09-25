@@ -90,7 +90,10 @@ $(document).ready(function(){
     })
 });
 //***********************************************************************
-
-
-
-// koniec menu
+// *******************   parallax   *************************************
+$(document).ready(function(){
+    $('.parallax-window').parallax({
+        imageSrc:'images/team-photo.jpg'
+    });
+});
+// *****************koniec - parallax ***********************************
