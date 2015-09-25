@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Bad+Script|Josefin+Slab' rel='stylesheet' type='text/css'>
     <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
@@ -28,7 +29,7 @@
         </div>
         <ul class="navi">
             <li class="menulink"><a href="#zajawka">Home</a></li>
-            <li class="menulink"><a href="#utilities">Why us?</a></li>
+            <li class="menulink"><a href="#functions">Why us?</a></li>
             <li class="menulink"><a href="#features">Values</a></li>
             <li class="menulink"><a href="#team">Team</a></li>
             <li class="menulink"><a>FAQ</a></li>
@@ -43,15 +44,20 @@
 <a name="zajawka"></a>
 <div class="zajawka">
     <div id="tekst_zajawki">
-    <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
-        <br> </p>
+        <p>Too many accounts? <br>
+        Customers lost in action?<br>
+        Redundant phone numbers?<br>
+        </p>
         <h1>Let us organise your business</h1>
-        <div class="btnzaj">Try us out</div></div>
+        <div class="btnzaj">Try us out</div>
+    </div>
 
-    <div class="form"><div id="cntform" class="formularz">
+    <div class="form">
+        <div id="cntform" class="formularz">
 
             <form action="" id="contact-form" method="post">
-            <h3>Don't be shy</h3><p>We won't spam you :)</p>
+                <h3>Don't be shy</h3>
+                <p>We won't spam you :)</p>
             <div class="form-group">
                 <label for="Imie"></label><span class="err"></span>
                 <input type="text" name="imie" id="Imie" placeholder="Name..."/><br>
@@ -62,12 +68,12 @@
             </div>
 
             <input type="submit" id="submit-btn" value="Sure, contact me"/>
-        </form>
+            </form>
+        </div>
     </div>
-</div></div>
+</div>
 
-<a name="utilities"></a>
-<div class="functionsMainContener">
+<div class="functionsMainContener" id="functions">
 
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
@@ -131,10 +137,11 @@
 
 <section id="sm">
     <h2>Contact us</h2>
-    <p>Do you have any quetions? Suggestions?<br><br>
+    <p>Do you have any questions? Suggestions?<br><br>
         We want to make your life easier so please let us know what you need!<br>
         Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
-    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question"><i class="icon-envelope"></i>Get in touch</a>
+    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question">
+        <i class="icon-envelope"></i>Get in touch</a>
 
     <br/>
     <div>
@@ -145,9 +152,51 @@
     </div>
 </section>
 
+<div class="visitCard">
+    <div class="visitCardPhoto">
+    </div>
+    <p class="visitCardTxt">fghjkjhghjhghj</p>
+</div>
+
 <footer>
    <p>&copy; Papikaan Account Manager</p>
 </footer>
+
+<div class="visitCardAnia">
+    <div class="visitCardPhoto">
+    </div>
+    <p class="visitCardTxt">
+        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
+        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
+    </p>
+</div>
+
+<div class="visitCardKasia">
+    <div class="visitCardPhoto">
+    </div>
+    <p class="visitCardTxt">
+        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
+        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
+    </p>
+</div>
+
+<div class="visitCardPawel">
+    <div class="visitCardPhoto">
+    </div>
+    <p class="visitCardTxt">
+        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
+        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
+    </p>
+</div>
+
+<div class="visitCardPiotr">
+    <div class="visitCardPhoto">
+    </div>
+    <p class="visitCardTxt">
+        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
+        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
+    </p>
+</div>
 
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
