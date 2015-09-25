@@ -177,8 +177,8 @@ ul, li {
 }
 #logo:hover {
     background-image: url("http://4.bp.blogspot.com/-4_oTlZxoFNo/UQvZBrt1wnI/AAAAAAAAHwY/PoCj7aUvjhM/s1600/cookie_monster_by_neorame-d4yb0b5.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
     background-position: center;
 }
 nav {
@@ -189,7 +189,7 @@ nav {
     margin: 0 auto;
     -webkit-box-shadow: 0 16px 12px -12px #589ADA;
     -moz-box-shadow: 0 16px 12px -12px #589ADA;
-    box-shadow: 0 7px 12px 0px rgba(13, 24, 37, 0.56);
+    box-shadow: 0 7px 12px 0 rgba(13, 24, 37, 0.56);
     z-index: 99;
 }
 .navi {
@@ -218,7 +218,7 @@ nav {
     width: 170px;
     text-align: center;
 }
-.clicked {
+.navi .clicked {
     background-color: #386FA7 !important;
 }
 #showmenu {
@@ -404,18 +404,27 @@ nav {
 /****************** css zajawki **********************/
 /***************** css utilities *********************/
 
+.functionsMainContener i {
+    color: #589ADA;
+    font-size: 200px;
+    position: relative;
+    top: 15%;
+    /*right: -10%;*/
+    /*vertical-align: middle;*/
+}
+
 .functionsModuleOdd {
     position: relative;
     height: 300px;
     padding: 25px;
 }
 
-div .txtSectionOdd {
+.txtSectionOdd {
     width: 17%;
     max-width: 500px;
     height: 250px;
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     position: absolute;
     left: 32%;
     margin: 0;
@@ -427,12 +436,12 @@ div .txtSectionOdd {
     border: 1px solid transparent;
 }
 
-div .txtSectionOdd:hover {
+.txtSectionOdd:hover {
     text-overflow: inherit;
     overflow: visible;
 }
 
-div .photoSectionOdd {
+.photoSectionOdd {
     width: 17%;
     max-width: 500px;
     height: 200px;
@@ -454,7 +463,7 @@ padding: 25px;
 background-color: #EDF0F3;
 }
 
-div .photoSectionEven {
+.photoSectionEven {
     width: 17%;
     max-width: 500px;
     height: 200px;
@@ -468,7 +477,7 @@ div .photoSectionEven {
     vertical-align: text-top;
 }
 
-div .txtSectionEven {
+.txtSectionEven {
     width: 17%;
     max-width: 500px;
     height: 250px;
@@ -485,12 +494,12 @@ div .txtSectionEven {
     border: 1px solid transparent;
 }
 
-div .txtSectionEven:hover {
+.txtSectionEven:hover {
     text-overflow: inherit;
     overflow: visible;
 }
 
-div #functionsHeader {
+#functionsHeader {
 color:#386FA7;
 border:none;
 font-style: normal;
@@ -500,7 +509,7 @@ max-width: 400px;
 margin: auto;
 }
 
-div #functionsDescription {
+#functionsDescription {
 color:#444;
 border:none;
 font-style: normal;
@@ -510,15 +519,6 @@ text-align: center;
 /*width: 450px;*/
 margin: auto;
 margin-top: 25px;
-}
-
-.functionsMainContener i {
-    color: #589ADA;
-    font-size: 200px;
-    position: relative;
-    top: 15%;
-    /*right: -10%;*/
-    /*vertical-align: middle;*/
 }
 
 
@@ -684,3 +684,39 @@ footer p span{
     color:#EDF0F3;
 }
 
+/*****************************************  VISIT CARDS  -  GAME   ***********************************************/
+
+
+.visitCard {
+background-color: beige;
+    height: 200px;
+    width: 300px;
+    position: fixed;
+    top: 200px;
+    left: 100px;
+    box-shadow: 2px 3px 80px #222222;
+}
+
+.visitCardPhoto {
+    background-image: url('../images/visit-cards-game/ania.png');
+    background-size: contain;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.visitCardTxt {
+    font-family: 'Waiting for the Sunrise', cursive;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    box-sizing: border-box;
+    margin: 0; !important;
+    overflow: hidden;
+    z-index: 35;
+}
