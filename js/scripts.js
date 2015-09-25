@@ -1,31 +1,29 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('#submit-btn').click(function(event){
+    $('#submit-btn').click(function (event) {
         event.preventDefault();
         var imie = $('#Imie');
         var email = $('#Email');
 
-        function validateEmail(em)
-        {
+        function validateEmail(em) {
             var re = /\S+@\S+\.\S+/;
             return re.test(em.val());
         }
 
-        function validateName(nameFiled)
-        {
+        function validateName(nameFiled) {
             return nameFiled.val().trim().length !== 0;
         }
 
-        if(validateName(imie) && validateEmail(email)) {
+        if (validateName(imie) && validateEmail(email)) {
             $('#contact-form').submit();
             $('#cntform').html("<h3>Thanks!</h3> <p>We will get in touch soon</p>");
         } else {
-            if(!validateName(imie)){
+            if (!validateName(imie)) {
                 imie.parent().find('.err').show();
                 imie.parent().find('.err').html('Come on, what\'s your name? :)');
                 imie.addClass('err-inp');
             }
-            if(!validateEmail(email)){
+            if (!validateEmail(email)) {
                 email.parent().find('.err').show();
                 email.parent().find('.err').html('Hm, this address seems incorrect. Please double check it');
                 email.addClass('err-inp');
@@ -33,61 +31,49 @@ $(document).ready(function() {
         }
 
 
-        $("input").focus(function()
-        {
-            $( this ).parent().find('.err').fadeOut( 100 );
-            $( this ).removeClass('err-inp');
+        $("input").focus(function () {
+            $(this).parent().find('.err').fadeOut(100);
+            $(this).removeClass('err-inp');
         });
     }); // Walidacja formularza
 
 });
 
 
-
 //menu start//
 
-$(document).ready(function(){
-    $('.menulink').click(function(){
+$(document).ready(function () {
+    $('.menulink').click(function () {
         $('.menulink').removeClass('clicked');
         $(this).addClass('clicked');
     });
 });
-    //$('#mnav').mouseleave(function () {
-    //    $('.menulink').removeClass('clicked');
-    //});
-    $(window).scroll(function() {
-        if($(window).scrollTop() === 0){
-            $('#menubar').removeClass('scrolled');
-        } else {
-            $('#menubar').addClass('scrolled');
-        }
-        //$('#menubar').addClass('scrolled');
-        //if($(window).scrollTop == 0) {
-        //    $('#menubar').removeClass('scrolled');
-        //}
-    });
-
+$(window).scroll(function () {
+    if ($(window).scrollTop() === 0) {
+        $('#menubar').removeClass('scrolled');
+    } else {
+        $('#menubar').addClass('scrolled');
+    }
+});
 
 //menu end//
 
 
-
 // ************** katban - obsluga klikacza w zajawca *******************
-$(document).ready(function(){
-    $('.btnzaj').click(function(){
+$(document).ready(function () {
+    $('.btnzaj').click(function () {
         $('.form').show();
     });
     //
-    $('.form').click(function(event){
+    $('.form').click(function (event) {
         event.stopPropagation();
         $(this).hide();
     });
-    $('#cntform').click(function(event){
+    $('#cntform').click(function (event) {
         event.stopPropagation()
     })
 });
 //***********************************************************************
-
 
 
 // koniec menu
