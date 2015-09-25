@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/parallax.min.js"></script>
 </head>
 <body>
 
@@ -124,7 +125,7 @@
     </div>
 </section>
 
-<section id="team">
+<section id="team" class="parallax-window" data-parallax="scroll" data-image-src="../images/team-photo.jpg">
     <h2>Our Team</h2>
     <!-- Photo of our team -->
 </section>
