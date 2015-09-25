@@ -572,10 +572,10 @@ margin-top: 25px;
 #team {
     height:700px;
     max-height: 800px;
-    background-color: #556;
-    background-image: url(../images/team-photo.jpg);
-    background-position: center center;
-    background-size: cover;
+    /*background-color: #556;*/
+    /*background-image: url(../images/team-photo.jpg);*/
+    /*background-position: center center;*/
+    /*background-size: cover;*/
 }
 #team h2 {
     color:#fff;
@@ -588,6 +588,12 @@ margin-top: 25px;
     border-bottom: solid #fff 1px;
     width:200px;
 }
+
+.parallax-window {
+    min-height: 300px;
+    background: transparent;
+}
+
 
 
 /*  S O C I A L   M E D I A  */
