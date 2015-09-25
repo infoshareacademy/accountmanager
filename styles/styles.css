@@ -691,32 +691,103 @@ footer p span{
 background-color: beige;
     height: 200px;
     width: 300px;
-    position: fixed;
-    top: 200px;
-    left: 100px;
     box-shadow: 2px 3px 80px #222222;
 }
 
-.visitCardPhoto {
-    background-image: url('../images/visit-cards-game/ania.png');
+#Ania {
+    position: fixed;
+    top: 150px;
+    left: 100px;
+}
+
+#Kasia {
+    position: fixed;
+    top: 150px;
+    left: 450px;
+}
+
+#Pawel {
+    position: fixed;
+    top: 400px;
+    left: 300px;
+}
+#Piotr {
+    position: fixed;
+    top: 400px;
+    left: 700px;
+}
+
+.visitCard div{
     background-size: contain;
     height: 110px;
     width: 110px;
+    opacity: 0.7;
     border-radius: 50%;
-    position: absolute;
-    right: 25px;
-    top: 25px;
 }
 
-.visitCardTxt {
-    font-family: 'Waiting for the Sunrise', cursive;
+.visitCard .photo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.visitCard .photo:hover {
     width: 120px;
-    height: 100px;
+    height: 120px;
+}
+
+.visitCard:hover{
+transform: rotate(25deg)
+}
+
+.visitCard p:hover{
+    transform: rotate(-25deg)
+}
+
+#Kasia div {
+    background-image: url('../images/visit-cards-game/kasia.jpg');
+}
+
+#Kasia p {
+    font-family: 'Bad Script', cursive;
+}
+
+#Ania div {
+    background-image: url('../images/visit-cards-game/ania.png');
+}
+
+#Pawel div {
+    background-image: url('../images/visit-cards-game/pawel.jpg');
+}
+
+#Pawel p {
+    font-family: 'Josefin Slab', serif;
+}
+
+#Piotr div {
+    background-image: url('../images/visit-cards-game/piotr.png');
+}
+
+#Piotr p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.visitCard p {
+    display: block;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 21px;
+    width: 130px;
+    height: 120px;
     position: absolute;
     left: 25px;
     bottom: 25px;
     box-sizing: border-box;
     margin: 0; !important;
     overflow: hidden;
-    z-index: 35;
+    z-index: 50;
+}
+
+.visitCard p::first-letter {
+    font-size: 50px;
+    font-weight: 300;
 }

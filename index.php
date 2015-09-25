@@ -152,47 +152,40 @@
     </div>
 </section>
 
-<div class="visitCard">
-    <div class="visitCardPhoto">
-    </div>
-    <p class="visitCardTxt">fghjkjhghjhghj</p>
-</div>
-
 <footer>
    <p>&copy; Papikaan Account Manager</p>
 </footer>
 
-<div class="visitCardAnia">
-    <div class="visitCardPhoto">
+<div class="visitCard" id="Ania">
+    <div class="photo">
     </div>
-    <p class="visitCardTxt">
+    <p class="txt">
+        Dear User,
+
+    </p>
+</div>
+
+<div class="visitCard" id="Kasia">
+    <div class="photo">
+    </div>
+    <p class="txt">
+       How are you doing?
+    </p>
+</div>
+
+<div class="visitCard" id="Pawel">
+    <div class="photo">
+    </div>
+    <p class="txt">
         dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
         fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
     </p>
 </div>
 
-<div class="visitCardKasia">
-    <div class="visitCardPhoto">
+<div class="visitCard" id="Piotr">
+    <div class="photo">
     </div>
-    <p class="visitCardTxt">
-        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
-        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
-    </p>
-</div>
-
-<div class="visitCardPawel">
-    <div class="visitCardPhoto">
-    </div>
-    <p class="visitCardTxt">
-        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
-        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
-    </p>
-</div>
-
-<div class="visitCardPiotr">
-    <div class="visitCardPhoto">
-    </div>
-    <p class="visitCardTxt">
+    <p class="txt">
         dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
         fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
     </p>
