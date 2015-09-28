@@ -708,17 +708,6 @@ background-color: beige;
     left: 450px;
 }
 
-#Pawel {
-    position: fixed;
-    top: 400px;
-    left: 300px;
-}
-#Piotr {
-    position: fixed;
-    top: 400px;
-    left: 700px;
-}
-
 .visitCard div{
     background-size: contain;
     height: 110px;

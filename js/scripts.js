@@ -98,23 +98,15 @@ $(document).ready(function(){
 
 // game
 
-$(document).ready(function(){
-    $('#Ania').click(function(){
-            $('#Kasia').show();
-        }
-    )
-});
+function changePosition (visitCard) {
+    var positionTop = (Math.random() * 350);
+    var positionLeft = (Math.random() * 600);
+    $(visitCard).offset({top: positionTop, left: positionLeft});
+}
 
-$(document).ready(function(){
-    $('#Kasia').click(function(){
-            $('#Pawel').show();
-        }
-    )
-});
 
-$(document).ready(function(){
-    $('#Pawel').click(function(){
-            $('#Piotr').show();
-        }
-    )
+$('#Ania').click(function() {
+    $(this).hide();
+    changePosition('#Kasia');
+    $('#Kasia').show();
 });
