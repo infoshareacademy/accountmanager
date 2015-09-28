@@ -91,9 +91,20 @@ $(document).ready(function(){
 });
 //***********************************************************************
 // *******************   parallax   *************************************
-$(document).ready(function(){
-    $('.parallax-window').parallax({
-        imageSrc:'images/team-photo.jpg'
-    });
+
+function toParallax() {
+    var z;
+}
+
+$(document).ready(function() {
+    var fotoTeam = document.getElementById('team'), fotoZajawka = document.getElementById('zajawka');
+    var parallaxfoto = [fotoZajawka, fotoTeam];
+
+    parallaxfoto.forEach(function(foto){
+        $(window).scroll(function(event) {
+            var scroll = $(window).scrollTop();
+            foto.style.backgroundPositionY = scroll / 2 + 'px';
+        })
+    })
 });
 // *****************koniec - parallax ***********************************
