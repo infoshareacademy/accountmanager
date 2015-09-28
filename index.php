@@ -42,7 +42,7 @@
 
 <a name="zajawka"></a>
 <div class="zajawka">
-    <div id="tekst_zajawki">
+    <div id="tekst_zajawki" class="animate">
     <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
         <br> </p>
         <h1>Let us organise your business</h1>
@@ -74,13 +74,13 @@
             <h2 id="functionsHeader">All contacts in one place</h2>
             <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
-        <div class="photoSectionOdd">
+        <div class="photoSectionOdd animate">
             <i class="icon-one-place"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
-        <div class="photoSectionEven">
+        <div class="photoSectionEven animate">
             <i class="icon-control"></i>
         </div>
         <div class="txtSectionEven">
@@ -94,7 +94,7 @@
             <h2 id="functionsHeader">Work in group</h2>
             <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
-        <div class="photoSectionOdd">
+        <div class="photoSectionOdd animate">
             <i class="icon-group-work"></i>
         </div>
     </section>

@@ -38,30 +38,43 @@ $(document).ready(function() {
             $( this ).parent().find('.err').fadeOut( 100 );
             $( this ).removeClass('err-inp');
         });
+
     }); // Walidacja formularza
 
+
+
+
+
+
+    //  A N I M A C J A
+    var windowHeight = $(window).height();
+    var presentWindowPosition = 0;
+    var elementsToAnimate = $('.animate');
+    $('.animate').hide();
+
+    function checkIfPresent(element){
+        presentWindowPosition = $(window).scrollTop();
+        var divPosition = element.offset().top;
+        console.log('element ' + element + (divPosition < (presentWindowPosition + windowHeight)));
+        return (divPosition < (presentWindowPosition + windowHeight));
+    }
+
+    function animateElement(elem){
+        elem.fadeIn(2000);
+    }
+
     $(window).scroll(function() {
-        var presentWindowPosition = $(window).scrollTop();
-        var elementsToAnimate = [
-                $('#tekst_zajawki'),
-                $('#feature-1'),
-                $('#feature-2'),
-                $('#feature-3')
-        ];
-        var windowHeight = $(window).height();
-
-
-        for (var i = 0; i < elementsToAnimate.length; i++){
-            if($(elementsToAnimate[i]).length){
-                var divPosition = elementsToAnimate[i].offset().top;
-
-                if(divPosition > presentWindowPosition && divPosition < (presentWindowPosition + windowHeight)){
-                    console.log('Window: ' + presentWindowPosition + " Div: " + divPosition + " Wysokość okna: " + windowHeight);
-
-                }
-             }
+        for (var i = 0; i < elementsToAnimate.length; i++) {
+            if(checkIfPresent($(elementsToAnimate[i]))){
+               // animateElement($(elementsToAnimate[i]));
+               // console.log($(elementsToAnimate[i]));
+                $(elementsToAnimate[i]).fadeIn(2000);
+                //elementsToAnimate.splice(i, 1);
+            }
         }
+
     })
+
 
 });
 
