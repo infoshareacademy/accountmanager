@@ -98,15 +98,28 @@ $(document).ready(function(){
 
 // game
 
-function changePosition (visitCard) {
-    var positionTop = (Math.random() * 350);
-    var positionLeft = (Math.random() * 600);
-    $(visitCard).offset({top: positionTop, left: positionLeft});
-}
+(function() {
+    var visitCardsTransitions = {
+        Ania: 'Kasia',
+        Kasia: 'Piotr',
+        Piotr: 'Pawel'
+    };
+
+    function changePosition (visitCard) {
+        var positionTop = (Math.random() * 350);
+        var positionLeft = (Math.random() * 600);
+        $(visitCard).offset({top: positionTop, left: positionLeft});
+    }
 
 
-$('#Ania').click(function() {
-    $(this).hide();
-    changePosition('#Kasia');
-    $('#Kasia').show();
-});
+    $('.visitCard').click(function() {
+        var currentCardId = $(this).attr('id');
+        var nextCardId = '#' + visitCardsTransitions[currentCardId];
+
+        $(this).hide();
+        changePosition(nextCardId);
+        $(nextCardId).show();
+    });
+
+}());
+
