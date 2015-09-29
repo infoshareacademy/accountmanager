@@ -177,8 +177,6 @@ ul, li {
 }
 #logo:hover {
     background-image: url("http://4.bp.blogspot.com/-4_oTlZxoFNo/UQvZBrt1wnI/AAAAAAAAHwY/PoCj7aUvjhM/s1600/cookie_monster_by_neorame-d4yb0b5.png");
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat;*/
     background-position: center;
 }
 nav {
@@ -688,27 +686,21 @@ footer p span{
 
 
 .visitCard {
-background-color: beige;
+    background-color: beige;
     height: 200px;
     width: 300px;
     box-shadow: 2px 3px 80px #222222;
     display: none;
+    position: fixed;
 }
 
 #Ania {
-    position: fixed;
     top: 150px;
     left: 100px;
     display: block;
 }
 
-#Kasia {
-    position: fixed;
-    top: 150px;
-    left: 450px;
-}
-
-.visitCard div{
+.visitCard div {
     background-size: contain;
     height: 110px;
     width: 110px;

@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Bad+Script|Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Bad+Script|Josefin+Slab" rel="stylesheet" type="text/css">
     <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
@@ -44,9 +44,9 @@
 <a name="zajawka"></a>
 <div class="zajawka">
     <div id="tekst_zajawki">
-        <p>Too many accounts? <br>
-        Customers lost in action?<br>
-        Redundant phone numbers?<br>
+        <p>Too many accounts? <br/>
+        Customers lost in action?<br/>
+        Redundant phone numbers?<br/>
         </p>
         <h1>Let us organise your business</h1>
         <div class="btnzaj">Try us out</div>
@@ -156,6 +156,8 @@
    <p>&copy; Papikaan Account Manager</p>
 </footer>
 
+<!--hidden divs for visitCardGame -->
+
 <div class="visitCard" id="Ania">
     <div class="photo">
     </div>
@@ -190,6 +192,8 @@
         fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
     </p>
 </div>
+
+<!--end of section containing hidden divs-->
 
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
