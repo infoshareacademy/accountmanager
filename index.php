@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/parallax.min.js"></script>
 </head>
 <body>
 
