@@ -46,8 +46,8 @@ $(document).ready(function(){
             var theID = aArray[i];
             //console.log(theID);
             //console.log(aArray);
-            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-            var divHeight = $(theID).height(); // get the height of the div in question
+            var divPos = $(theID).offset().top; - 1; // get the offset of the div from the top of page
+            var divHeight = $(theID).height();// get the height of the div in question
             if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                 $("a[href='" + theID + "']").addClass("clicked scrolled");
                 console.log('in ' + theID);
