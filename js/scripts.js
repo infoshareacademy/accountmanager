@@ -42,19 +42,24 @@ $(document).ready(function () {
 
 //menu start//
 
-$(document).ready(function () {
-    $('.menulink').click(function () {
-        $('.menulink').removeClass('clicked');
-        $(this).addClass('clicked');
-    });
-});
+//$(document).ready(function () {
+//    $('.menulink').click(function () {
+//        $('.menulink').removeClass('clicked');
+//        $(this).addClass('clicked');
+//    });
+//});
 $(window).scroll(function () {
+    //$('.clicked').removeClass('clicked');
     if ($(window).scrollTop() === 0) {
         $('#menubar').removeClass('scrolled');
     } else {
         $('#menubar').addClass('scrolled');
     }
 });
+
+
+
+
 
 //menu end//
 
