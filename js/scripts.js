@@ -92,8 +92,13 @@ $(document).ready(function(){
 //***********************************************************************
 // *******************   parallax   *************************************
 
-function toParallax() {
-    var z;
+function toParallax(idName) {
+    //idName.forEach(function(idName){
+    return document.getElementById(idName);
+    //    //console.log(idName);
+    //});
+
+    //console.log(idName);
 }
 
 $(document).ready(function() {

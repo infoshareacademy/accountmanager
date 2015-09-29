@@ -42,7 +42,7 @@
 
 
 <a name="zajawka"></a>
-<div class="zajawka">
+<div class="zajawka" id="zajawka">
     <div id="tekst_zajawki">
     <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
         <br> </p>
@@ -125,7 +125,7 @@
     </div>
 </section>
 
-<section id="team" class="parallax-window" data-parallax="scroll" data-image-src="../images/team-photo.jpg">
+<section id="team">
     <h2>Our Team</h2>
     <!-- Photo of our team -->
 </section>
