@@ -571,11 +571,13 @@ margin-top: 25px;
 
 #team {
     height:700px;
-    max-height: 800px;
-    background-color: #556;
-    background-image: url(../images/team-photo.jpg);
-    background-position: center center;
+    width: auto;
+    /*max-height: 800px;*/
+    /*background-color: #556;*/
+    /*background-image: url(../images/team-photo.jpg);*/
+    /*background-position: center center;*/
     background-size: cover;
+    background: #292a2f url("../images/team-photo.jpg") no-repeat;
 }
 #team h2 {
     color:#fff;

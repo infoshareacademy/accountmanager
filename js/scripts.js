@@ -94,21 +94,25 @@ $(document).ready(function(){
 
 function toParallax(idName) {
     //idName.forEach(function(idName){
-    return document.getElementById(idName);
+    //return document.getElementById(idName);
     //    //console.log(idName);
     //});
 
     //console.log(idName);
+    return idName.map(idName, function(id){
+        return document.getElementById(id);
+    })
 }
 
 $(document).ready(function() {
     var fotoTeam = document.getElementById('team'), fotoZajawka = document.getElementById('zajawka');
     var parallaxfoto = [fotoZajawka, fotoTeam];
 
-    parallaxfoto.forEach(function(foto){
+    parallaxfoto.forEach(function(foto) {
         $(window).scroll(function(event) {
+            var offset = $(foto).offset().top - (window.innerHeight - foto.clientHeight);
             var scroll = $(window).scrollTop();
-            foto.style.backgroundPositionY = scroll / 2 + 'px';
+            foto.style.backgroundPositionY = (scroll - offset) / 2 + 'px';
         })
     })
 });
