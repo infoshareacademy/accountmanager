@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function () {
 
     $('#submit-btn').click(function(event){
         event.preventDefault();
@@ -44,36 +44,37 @@ $(document).ready(function() {
 
 
 
-
-
     //  A N I M A C J A
-    var windowHeight = $(window).height();
+    var windowHeight = window.innerHeight;
     var presentWindowPosition = 0;
-    var elementsToAnimate = $('.animate');
-    $('.animate').hide();
+    var $elementsToAnimate = $('.animate');
 
-    function checkIfPresent(element){
+    function checkIfPresent(element)
+    {
+
         presentWindowPosition = $(window).scrollTop();
         var divPosition = element.offset().top;
-        console.log('element ' + element + (divPosition < (presentWindowPosition + windowHeight)));
+        console.log(divPosition +' ' + presentWindowPosition);
         return (divPosition < (presentWindowPosition + windowHeight));
     }
 
-    function animateElement(elem){
-        elem.fadeIn(2000);
+    function animateElementsOnShow ($elements)
+    {
+        $elements.hide();
+        $elements.each( function() {
+            if( checkIfPresent( $(this) ) ) {
+                $(this).fadeIn(2000);
+            }
+        });
+
+        $(window).scroll(function () {
+            $elements.each( function() {
+                if( checkIfPresent( $(this) ) ) { $(this).fadeIn(2000); }
+            });
+        });
     }
 
-    $(window).scroll(function() {
-        for (var i = 0; i < elementsToAnimate.length; i++) {
-            if(checkIfPresent($(elementsToAnimate[i]))){
-               // animateElement($(elementsToAnimate[i]));
-               // console.log($(elementsToAnimate[i]));
-                $(elementsToAnimate[i]).fadeIn(2000);
-                //elementsToAnimate.splice(i, 1);
-            }
-        }
-
-    })
+    animateElementsOnShow($elementsToAnimate);
 
 
 });
