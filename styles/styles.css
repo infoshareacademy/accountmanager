@@ -694,6 +694,10 @@ footer p span{
     position: fixed;
 }
 
+.visitCard:checked {
+    counter-increment: visitCard;
+}
+
 #Ania {
     top: 150px;
     left: 100px;
@@ -773,4 +777,47 @@ transform: rotate(25deg)
 .visitCard p::first-letter {
     font-size: 50px;
     font-weight: 300;
+}
+
+.sum {
+    position: fixed;
+    bottom: 15px;
+}
+
+.sum:after{
+    content: counter(visitCard);
+}
+
+
+.timer {
+    position:fixed;
+    bottom: 45px;
+}
+
+
+.timer span {
+    display:block;
+    background: #cccccc;
+    height:25px;
+    animation:timer 30s linear;
+}
+
+.timer span:before {
+    content:"Hurry up !";
+    display:block;
+    text-align:center;
+    font-size: 16px;
+    color:red;
+    z-index:3;
+}
+
+@keyframes timer {
+    0% {
+        width:100px;
+    }
+
+    100% {
+        width:300px;
+        display:block;
+    }
 }

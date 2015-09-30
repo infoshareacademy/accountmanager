@@ -156,7 +156,7 @@
    <p>&copy; Papikaan Account Manager</p>
 </footer>
 
-<!--hidden divs for visitCardGame -->
+<!--hidden divs, timer and result section for visitCardGame -->
 
 <div class="visitCard" id="Ania">
     <div class="photo">
@@ -192,6 +192,12 @@
         fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
     </p>
 </div>
+
+<div class="timer">
+    <span></span>
+</div>
+
+<div class="sum">wynik:</div>
 
 <!--end of section containing hidden divs-->
 
