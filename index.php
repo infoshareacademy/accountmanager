@@ -15,10 +15,16 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/jquery-2.1.4.min.js"></script>
+<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
 </head>
 <body>
 
-<nav class="menu">
+<div id="nav-anchor"></div>
+
+<nav id="menubar">
+
     <div id="logo">
     </div>
 
@@ -27,12 +33,12 @@
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka">Home</a></li>
-            <li class="menulink"><a href="#utilities">Why us?</a></li>
-            <li class="menulink"><a href="#features">Values</a></li>
-            <li class="menulink"><a href="#team">Team</a></li>
-            <li class="menulink"><a>FAQ</a></li>
-            <li class="menulink"><a href="#sm">Contact</a></li>
+            <li class="menulink"><a href="#zajawka" class="smoothScroll">Home</a></li>
+            <li class="menulink"><a href="#whyus" class="smoothScroll">Why us?</a></li>
+            <li class="menulink"><a href="#values" class="smoothScroll">Values</a></li>
+            <li class="menulink" ><a href="#team" class="smoothScroll">Team</a></li>
+<!--            <li class="menulink"><a class="smoothScroll">FAQ</a></li>-->
+            <li class="menulink"><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
     </div>
 
@@ -72,13 +78,14 @@
     </div>
 </div>
 
-
-<div class="core_functions" id="utilities">
+<div class="core_functions" id="whyus">
 
     <section class="utility_odd">
         <div class="txt_odd">
             <h2 id="core">All contacts in one place</h2>
             <article id="core2">Wide set of labels and folders allows you to easily organize your accounts</article>
+            </div>
+        </section>
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
             <h2 id="functionsHeader">All contacts in one place</h2>
@@ -110,9 +117,7 @@
     </section>
 </div>
 
-
-<a class="clearfix"></a>
-<section id="features">
+<section id="values">
     <div class="column">
         <i class="icon-diamond"></i>
 
@@ -136,14 +141,15 @@
         <p>Develop good practice</p>
 
     </div>
+    <div class="clearfix" style="height: 50px"></div>
 </section>
 
 <section id="team">
-    <h2>Our Team</h2>
-    <!-- Photo of our team -->
+       <h2>Our Team</h2>
+<!--     Photo of our team-->
 </section>
 
-<section id="sm">
+<section id="contact">
     <h2>Contact us</h2>
 
     <p>Do you have any quetions? Suggestions?<br><br>
