@@ -195,7 +195,7 @@ nav {
 .navi {
     display: inline-block;
     height: 100px;
-    width: 1020px;
+    width: 850px;
     float: right;
     }
 .navi li {
@@ -212,7 +212,6 @@ nav {
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    /*padding: 40px 20px;*/
     height: 100px;
     line-height: 100px;
     width: 170px;
@@ -235,6 +234,7 @@ nav {
 }
 #menubar.scrolled .navi li a {
     line-height: 50px;
+    height: 50px;
 }
 #showmenu {
     margin-left: 300px;
@@ -244,7 +244,7 @@ nav {
     display: none;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1000px) {
     .navi {
         display: none;
         position: relative;
@@ -327,8 +327,10 @@ nav {
     #menubar.scrolled #mnav:hover ul.navi li a {
         height: 40px;
         line-height: 40px;
+        background-size: contain;
     }
 }
+
     /****************** css logo menu **********************/
     /****************** css zajawki **********************/
     .zajawka {
@@ -463,6 +465,9 @@ nav {
 
     /****************** css zajawki **********************/
     /***************** css utilities *********************/
+    #whyus {
+        padding-top: 50px;
+    }
     .functionsModuleOdd {
         position: relative;
         height: 300px;
@@ -581,18 +586,18 @@ nav {
     }
 
     /*  F E A T U R E S  */
-    #features {
+    #values {
         width: 100%;
         background-color: #589ADA;
         position: relative;
         margin: 0;
         text-align: center;
         min-height: 180px;
-        padding: 50px 0;
+        padding: 50px 0 0;
         border: none;
     }
 
-    #features .column {
+    #values .column {
         width: 22%;
         height: 180px;
         display: inline-block;
@@ -606,16 +611,16 @@ nav {
         vertical-align: text-top;
     }
 
-    #features i {
+    #values i {
         font-size: 6em;
         color: #fff;
     }
 
-    #features i:hover {
+    #values i:hover {
         font-size: 7em;
     }
 
-    #features p {
+    #values p {
         width: 100%;
         color: #fff;
         font-size: 1.2em;
@@ -648,7 +653,7 @@ nav {
     }
 
     /*  S O C I A L   M E D I A  */
-    #sm {
+    #contact {
         width: 100%;
         background-color: #589ADA;
         position: relative;
@@ -659,7 +664,7 @@ nav {
         border: none;
     }
 
-    #sm h2 {
+    #contact h2 {
         color: #fff;
         border: none;
         font-style: normal;
@@ -667,7 +672,7 @@ nav {
         font-weight: 600;
     }
 
-    #sm p {
+    #contact p {
         color: #fff;
         border: none;
         font-style: normal;
@@ -706,29 +711,29 @@ nav {
         border-color: #386FA7;
     }
 
-    #sm div {
+    #contact div {
         background-color: transparent;
         border: none;
     }
 
-    #sm div p {
+    #contact div p {
         margin: 10px;
         font-weight: 600;
     }
 
-    #sm div i {
+    #contact div i {
         vertical-align: middle;
         margin-right: 5px;
     }
 
-    #sm div a {
+    #contact div a {
         color: #EDF0F3;
         text-decoration: none;
         margin-right: 10px;
         line-height: 2;
     }
 
-    #sm div a:hover {
+    #contact div a:hover {
         color: #ffffff;
     }
 
@@ -756,3 +761,8 @@ nav {
         text-align: center;
         padding: 5px;
     }
+/*#whyus, #values, #team, #contact {*/
+    /*height: 800px;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
