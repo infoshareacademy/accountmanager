@@ -174,12 +174,16 @@ ul, li {
     background-image: url("http://treasurechestofmemories.com/wp-content/uploads/2014/01/Cookie-jar.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
 }
 #logo:hover {
     background-image: url("http://4.bp.blogspot.com/-4_oTlZxoFNo/UQvZBrt1wnI/AAAAAAAAHwY/PoCj7aUvjhM/s1600/cookie_monster_by_neorame-d4yb0b5.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 nav {
     position: fixed;
@@ -217,7 +221,7 @@ nav {
     width: 170px;
     text-align: center;
 }
-.clicked {
+.active {
     background-color: #386FA7 !important;
 }
 #menubar.scrolled {
@@ -266,7 +270,7 @@ nav {
         background-color: rgba(85, 132, 179, 0.6);
     }
 
-    .navi li.clicked {
+    .navi li.active {
         background-color: rgba(56, 111, 167, 0.75) !important;
     }
 
