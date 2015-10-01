@@ -108,7 +108,7 @@ $(document).ready(function(){
     function changePosition (visitCard) {
         var positionTop = (Math.random() * 350);
         var positionLeft = (Math.random() * 600);
-        $(visitCard).offset({top: positionTop, left: positionLeft});
+        $(visitCard).css({top: positionTop, left: positionLeft});
     }
 
 
