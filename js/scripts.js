@@ -112,7 +112,7 @@ $(document).ready(function() {
         $(window).scroll(function(event) {
             var offset = $(foto).offset().top - (window.innerHeight - foto.clientHeight) / 2;
             var scroll = $(window).scrollTop();
-            foto.style.backgroundPositionY = (scroll - offset) / 2 + 'px';
+            foto.style.backgroundPositionY = ((scroll - offset) / 4) + 'px';
         })
     })
 });
