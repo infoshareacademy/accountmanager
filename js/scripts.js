@@ -132,7 +132,7 @@ showFirstVCard = (function () {
     $('.functionalitiesIcon').click(function () {
         changePosition('#vCard1');
         $('#vCard1').show();
-        console.log('test');
+        $('.functionalitiesIcon').off('click');
     });
 
 }());
