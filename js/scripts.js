@@ -98,19 +98,22 @@ $(document).ready(function(){
 
 // game
 
-(function() {
-    var visitCardsTransitions = {
-        Ania: 'Kasia',
-        Kasia: 'Piotr',
-        Piotr: 'Pawel'
-    };
+var $vCardInputContainer = $('.vCardInput');
 
-    function changePosition (visitCard) {
+$vCardInputContainer.text('dodatkowy tekst');
+
+function changePosition (visitCard) {
         var positionTop = (Math.random() * 350);
         var positionLeft = (Math.random() * 600);
         $(visitCard).css({top: positionTop, left: positionLeft});
     }
 
+(function() {
+    var visitCardsTransitions = {
+        vCard1: 'vCard2',
+        vCard2: 'vCard3',
+        vCard3: 'vCard4'
+    };
 
     $('.visitCard').click(function() {
         var currentCardId = $(this).attr('id');
@@ -119,7 +122,17 @@ $(document).ready(function(){
         $(this).hide();
         changePosition(nextCardId);
         $(nextCardId).show();
+
     });
 
 }());
 
+showFirstVCard = (function () {
+
+    $('.functionalitiesIcon').click(function () {
+        changePosition('#vCard1');
+        $('#vCard1').show();
+        console.log('test');
+    });
+
+}());
