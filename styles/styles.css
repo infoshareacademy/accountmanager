@@ -470,9 +470,7 @@ nav {
 
     /****************** css zajawki **********************/
     /***************** css utilities *********************/
-    #whyus {
-        padding-top: 50px;
-    }
+   
     .functionsModuleOdd {
         position: relative;
         height: 300px;
@@ -581,7 +579,7 @@ nav {
         margin-top: 25px;
     }
 
-    .functionsMainContener i {
+    .core_functions i {
         color: #589ADA;
         font-size: 200px;
         position: relative;

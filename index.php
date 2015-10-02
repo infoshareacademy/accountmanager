@@ -77,12 +77,6 @@
 
 <div class="core_functions" id="whyus">
 
-    <section class="utility_odd">
-        <div class="txt_odd">
-            <h2 id="core">All contacts in one place</h2>
-            <article id="core2">Wide set of labels and folders allows you to easily organize your accounts</article>
-            </div>
-        </section>
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
             <h2 id="functionsHeader">All contacts in one place</h2>
