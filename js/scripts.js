@@ -89,20 +89,8 @@ $(document).ready(function(){
         event.stopPropagation()
     })
 });
-//***********************************************************************
+
 // *******************   parallax   *************************************
-
-function toParallax(idName) {
-    //idName.forEach(function(idName){
-    //return document.getElementById(idName);
-    //    //console.log(idName);
-    //});
-
-    //console.log(idName);
-    return idName.map(idName, function(id){
-        return document.getElementById(id);
-    })
-}
 
 $(document).ready(function() {
     var fotoTeam = document.getElementById('team'), fotoZajawka = document.getElementById('zajawka');
@@ -110,7 +98,7 @@ $(document).ready(function() {
 
     parallaxfoto.forEach(function(foto) {
         $(window).scroll(function(event) {
-            var offset = $(foto).offset().top - (window.innerHeight - foto.clientHeight) / 2;
+            var offset = $(foto).offset().top + 50 - (window.innerHeight - foto.clientHeight) / 2;
             var scroll = $(window).scrollTop();
             foto.style.backgroundPositionY = ((scroll - offset) / 4) + 'px';
         })
