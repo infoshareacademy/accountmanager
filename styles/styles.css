@@ -698,12 +698,6 @@ footer p span{
     counter-increment: visitCard;
 }
 
-#Ania {
-    top: 150px;
-    left: 100px;
-    display: block;
-}
-
 .visitCard div {
     background-size: contain;
     height: 110px;
@@ -731,31 +725,31 @@ transform: rotate(25deg)
     transform: rotate(-25deg)
 }
 
-#Kasia div {
+#vCard2 div {
     background-image: url('../images/visit-cards-game/kasia.jpg');
 }
 
-#Kasia p {
+#vCard2 p {
     font-family: 'Bad Script', cursive;
 }
 
-#Ania div {
+#vCard1 div {
     background-image: url('../images/visit-cards-game/ania.png');
 }
 
-#Pawel div {
+#vCard3 div {
     background-image: url('../images/visit-cards-game/pawel.jpg');
 }
 
-#Pawel p {
+#vCard3 p {
     font-family: 'Josefin Slab', serif;
 }
 
-#Piotr div {
+#vCard4 div {
     background-image: url('../images/visit-cards-game/piotr.png');
 }
 
-#Piotr p {
+#vCard4 p {
     font-family: 'Roboto', sans-serif;
 }
 
