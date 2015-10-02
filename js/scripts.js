@@ -46,35 +46,65 @@ $(function () {
 
     //  A N I M A C J A
     var windowHeight = window.innerHeight;
-    var presentWindowPosition = 0;
     var $elementsToAnimate = $('.animate');
+    var animations = {
+        'animate': {
+            opacity: 1
+        },
+        'moveTop': {
+            top: 0
+        },
+        'moveBottom': {
+            top: 10
+        },
+        'moveRight': {
+            marginLeft: 10
+        },
+        'moveLeft': {
+            marginLeft: -10
+        }
+    };
 
     function checkIfPresent(element)
     {
-
         presentWindowPosition = $(window).scrollTop();
         var divPosition = element.offset().top;
-        console.log(divPosition +' ' + presentWindowPosition);
         return (divPosition < (presentWindowPosition + windowHeight));
     }
 
     function animateElementsOnShow ($elements)
     {
-        $elements.hide();
-        $elements.each( function() {
-            if( checkIfPresent( $(this) ) ) {
-                $(this).fadeIn(2000);
-            }
-        });
+        $elements.css({ opacity: 0 });
 
         $(window).scroll(function () {
             $elements.each( function() {
-                if( checkIfPresent( $(this) ) ) { $(this).fadeIn(2000); }
+                var $element = $(this);
+
+                if( checkIfPresent( $(this) ) ) {
+                    $(this).attr('class').split(/\s+/).forEach(function (className) {
+                        $element.animate(animations[className], 600);
+                    });
+                }
             });
         });
     }
 
     animateElementsOnShow($elementsToAnimate);
+
+    var mnoz = 1;
+    $elementsToAnimate.each( function() {
+        var $element = $(this);
+
+        if( checkIfPresent( $(this) ) ) {
+            $(this).attr('class').split(/\s+/).forEach(function (className) {
+
+                $element.delay( mnoz*200 ).animate(animations[className], 400);
+
+            });
+            mnoz++;
+        }
+
+    });
 
 
 });

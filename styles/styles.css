@@ -546,6 +546,7 @@ margin-top: 25px;
     overflow: hidden;
     position: relative;
     vertical-align: text-top;
+    top:20px;
 }
 #features i {
     font-size: 6em;

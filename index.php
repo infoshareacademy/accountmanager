@@ -27,12 +27,12 @@
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka">Home</a></li>
-            <li class="menulink"><a href="#utilities">Why us?</a></li>
-            <li class="menulink"><a href="#features">Values</a></li>
-            <li class="menulink"><a href="#team">Team</a></li>
-            <li class="menulink"><a>FAQ</a></li>
-            <li class="menulink"><a href="#sm">Contact</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#zajawka">Home</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#utilities">Why us?</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#features">Values</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#team">Team</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a>FAQ</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#sm">Contact</a></li>
         </ul>
     </div>
 
@@ -42,11 +42,11 @@
 
 <a name="zajawka"></a>
 <div class="zajawka">
-    <div id="tekst_zajawki" class="animate">
-    <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
-        <br> </p>
-        <h1>Let us organise your business</h1>
-        <div class="btnzaj">Try us out</div></div>
+    <div id="tekst_zajawki" >
+        <p class="animate fadeIn moveLeft">Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers? <br> </p>
+        <h1 class="animate fadeIn moveLeft">Let us organise your business</h1>
+        <a class="btnzaj animate fadeIn moveLeft">Try us out</a>
+    </div>
 
     <div class="form"><div id="cntform" class="formularz">
 
@@ -74,13 +74,13 @@
             <h2 id="functionsHeader">All contacts in one place</h2>
             <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
-        <div class="photoSectionOdd animate">
+        <div class="photoSectionOdd animate moveRight">
             <i class="icon-one-place"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
-        <div class="photoSectionEven animate">
+        <div class="photoSectionEven animate moveLeft">
             <i class="icon-control"></i>
         </div>
         <div class="txtSectionEven">
@@ -94,7 +94,7 @@
             <h2 id="functionsHeader">Work in group</h2>
             <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
-        <div class="photoSectionOdd animate">
+        <div class="photoSectionOdd animate moveRight">
             <i class="icon-group-work"></i>
         </div>
     </section>
@@ -103,21 +103,21 @@
 
 <a name="features" class="clearfix"></a>
 <section id="features" >
-    <div class="column">
+    <div class="column animate moveTop">
         <i class="icon-diamond"></i>
         <p>Add value to your business</p>
     </div>
-    <div class="column">
+    <div class="column animate moveTop">
         <i class="icon-shield"></i>
         <p>Protect sensitive data</p>
 
     </div>
-    <div class="column">
+    <div class="column animate moveTop">
         <i class="icon-time"></i>
         <p>Don't waste your time</p>
 
     </div>
-    <div class="column">
+    <div class="column animate moveTop">
         <i class="icon-tree"></i>
         <p>Develop good practice</p>
 
