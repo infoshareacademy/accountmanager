@@ -220,6 +220,7 @@ nav {
     line-height: 100px;
     width: 170px;
     text-align: center;
+    text-transform: uppercase;
 }
 .active {
     background-color: #386FA7 !important;

@@ -31,12 +31,12 @@
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka" class="smoothScroll">Home</a></li>
-            <li class="menulink"><a href="#whyus" class="smoothScroll">Why us?</a></li>
-            <li class="menulink"><a href="#values" class="smoothScroll">Values</a></li>
-            <li class="menulink" ><a href="#team" class="smoothScroll">Team</a></li>
+            <li class="menulink"><a href="#zajawka" class="smoothScroll">home</a></li>
+            <li class="menulink"><a href="#whyus" class="smoothScroll">what</a></li>
+            <li class="menulink"><a href="#values" class="smoothScroll">why</a></li>
+            <li class="menulink" ><a href="#team" class="smoothScroll">who</a></li>
 <!--            <li class="menulink"><a class="smoothScroll">FAQ</a></li>-->
-            <li class="menulink"><a href="#contact" class="smoothScroll">Contact</a></li>
+            <li class="menulink"><a href="#contact" class="smoothScroll">contact</a></li>
         </ul>
     </div>
 
