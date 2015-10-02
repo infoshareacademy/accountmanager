@@ -113,13 +113,23 @@ $(document).ready(function(){
 
 
     $('.visitCard').click(function() {
-        var currentCardId = $(this).attr('id');
-        var nextCardId = '#' + visitCardsTransitions[currentCardId];
+        //var currentCardId = $(this).attr('id');
+        //var nextCardId = '#' + visitCardsTransitions[currentCardId];
 
-        $(this).hide();
-        changePosition(nextCardId);
-        $(nextCardId).show();
+        //$(this).hide();
+        //changePosition(nextCardId);
+        //$(nextCardId).show().css({display: 'inline-block'});
+        $(this).addClass('theLast');
+
+        $('.theLast').animate({
+            height: '+=500'
+            ,width :'+=500'
+            ,opacity: 0.4
+            ,marginLeft: "1in",
+            marginTop: "2in",}, 1500);
     });
+
+
 
 }());
 

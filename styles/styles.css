@@ -787,8 +787,21 @@ transform: rotate(25deg)
 .sum:after{
     content: counter(visitCard);
 }
+/*****************************************8*/
+/*.game {*/
 
+    /*transition: rotate 1s;*/
 
+/*}*/
+
+/*:hover .theLast {*/
+    /*transform: rotate(90deg);*/
+/*}*/
+
+/*:hover .game {*/
+    /*transform: rotate(180deg);*/
+/*}*/
+/***********************************************/
 .timer {
     position:fixed;
     bottom: 45px;
