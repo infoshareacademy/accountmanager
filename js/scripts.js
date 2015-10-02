@@ -100,7 +100,7 @@ $(document).ready(function(){
 
 var $vCardInputContainer = $('.vCardInput');
 
-$vCardInputContainer.text('dodatkowy tekst');
+//$vCardInputContainer.text('dodatkowy tekst');
 
 function changePosition (visitCard) {
         var positionTop = (Math.random() * 500);
@@ -115,6 +115,7 @@ function changePosition (visitCard) {
         var nextCard = config.vCards[currentCardId].nextVCard;
 
         $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
+        $(this).find('.vCardInput').text(nextCard.text);
         $(this).attr('id', nextCard.name);
         changePosition(this);
         $(this).animate({
@@ -129,6 +130,11 @@ function changePosition (visitCard) {
 showFirstVCard = (function () {
 
     $('.functionalitiesIcon').click(function () {
+        var $vCardId = "config.vCards.vCard1";
+
+        $('#vCard1').find('.photo').css({backgroundImage: 'url(' + $vCardId.photo +')'});
+        $('#vCard1').find('.vCardInput').text($vCard1.text);
+        $(this).attr('id', nextCard.name);
         changePosition('#vCard1');
         $('#vCard1').show().animate({
             opacity: 0.25
