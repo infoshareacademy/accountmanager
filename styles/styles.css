@@ -569,15 +569,18 @@ margin-top: 25px;
 
 
 /* T E A M */
-
+/*nie można tutaj zastosować skróconej notacji bo się wszystko p***suje*/
 #team {
-    height:700px;
+    height:800px;
+    width: auto;
     max-height: 800px;
     background-color: #556;
     background-image: url(../images/team-photo.jpg);
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
 #team h2 {
     color:#fff;
     font-size: 2em;

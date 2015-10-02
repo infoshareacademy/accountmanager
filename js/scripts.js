@@ -156,8 +156,19 @@ $(document).ready(function(){
         event.stopPropagation()
     })
 });
-//***********************************************************************
 
+// *******************   parallax   *************************************
 
+$(document).ready(function() {
+    var fotoZajawka = document.getElementById('zajawka'), fotoTeam = document.getElementById('team');
+    var parallaxfoto = [fotoZajawka, fotoTeam];
 
-// koniec menu
+    parallaxfoto.forEach(function(foto) {
+        $(window).scroll(function(event) {
+            var offset = $(foto).offset().top + 50 - (window.innerHeight - foto.clientHeight) / 2;
+            var scroll = $(window).scrollTop();
+            foto.style.backgroundPositionY = ((scroll - offset) / 4) + 'px';
+        })
+    })
+});
+// *****************koniec - parallax ***********************************

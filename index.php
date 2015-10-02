@@ -41,7 +41,7 @@
 
 
 <a name="zajawka"></a>
-<div class="zajawka">
+<div class="zajawka"  id="zajawka">
     <div id="tekst_zajawki" >
         <p class="animate fadeIn moveLeft">Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers? <br> </p>
         <h1 class="animate fadeIn moveLeft">Let us organise your business</h1>
