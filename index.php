@@ -80,13 +80,13 @@
             <h2 id="functionsHeader">All contacts in one place</h2>
             <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
-        <div class="photoSectionOdd">
+        <div class="photoSectionOdd functionalitiesIcon">
             <i class="icon-one-place"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
-        <div class="photoSectionEven">
+        <div class="photoSectionEven functionalitiesIcon">
             <i class="icon-control"></i>
         </div>
         <div class="txtSectionEven">
@@ -100,7 +100,7 @@
             <h2 id="functionsHeader">Work in group</h2>
             <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
-        <div class="photoSectionOdd">
+        <div class="photoSectionOdd functionalitiesIcon">
             <i class="icon-group-work"></i>
         </div>
     </section>
@@ -158,36 +158,36 @@
 
 <!--hidden divs, timer and result section for visitCardGame -->
 
-<div class="visitCard" id="Ania">
+<div class="visitCard" id="vCard1">
     <div class="photo">
     </div>
-    <p class="txt">
+    <p class="vCardInput">
         Dear User,
 
     </p>
 </div>
 
-<div class="visitCard" id="Kasia">
+<div class="visitCard" id="vCard2">
     <div class="photo">
     </div>
-    <p class="txt">
+    <p class="vCardInput">
        How are you doing?
     </p>
 </div>
 
-<div class="visitCard" id="Pawel">
+<div class="visitCard" id="vCard3">
     <div class="photo">
     </div>
-    <p class="txt">
+    <p class="vCardInput">
         dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
         fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
     </p>
 </div>
 
-<div class="visitCard" id="Piotr">
+<div class="visitCard" id="vCard4">
     <div class="photo">
     </div>
-    <p class="txt">
+    <p class="vCardInput">
         dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
         fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
     </p>
