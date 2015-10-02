@@ -47,6 +47,7 @@ $(function () {
     //  A N I M A C J A
     var windowHeight = window.innerHeight;
     var $elementsToAnimate = $('.animate');
+    var speed = 100;
     var animations = {
         'animate': {
             opacity: 1
@@ -55,15 +56,16 @@ $(function () {
             top: 0
         },
         'moveBottom': {
-            top: 10
+            bottom: 0
         },
         'moveRight': {
-            marginLeft: 10
+            right: 10
         },
         'moveLeft': {
-            marginLeft: -10
+            left: 0
         }
     };
+
 
     function checkIfPresent(element)
     {
@@ -75,37 +77,39 @@ $(function () {
     function animateElementsOnShow ($elements)
     {
         $elements.css({ opacity: 0 });
+        $('.moveTop').css({top : 20 });
+        $('.moveBottom').css({ bottom : 20  });
+        $('.moveLeft').css({ left : 50  });
+        $('.moveRight').css({ right : 50  });
 
         $(window).scroll(function () {
-            $elements.each( function() {
-                var $element = $(this);
 
-                if( checkIfPresent( $(this) ) ) {
-                    $(this).attr('class').split(/\s+/).forEach(function (className) {
-                        $element.animate(animations[className], 600);
+            $elements.each( function(k, v) {
+                speed = speed /3;
+                var $element = $(this);
+                setTimeout( function () {
+                if( checkIfPresent( $element ) ) {
+                    $element.attr('class').split(/\s+/).forEach(function (className) {
+                        $element.animate(animations[className], 400);
                     });
                 }
+                }, k*speed);
             });
         });
     }
-
     animateElementsOnShow($elementsToAnimate);
 
-    var mnoz = 1;
-    $elementsToAnimate.each( function() {
+
+    $elementsToAnimate.each( function(k, v) {
         var $element = $(this);
-
-        if( checkIfPresent( $(this) ) ) {
-            $(this).attr('class').split(/\s+/).forEach(function (className) {
-
-                $element.delay( mnoz*200 ).animate(animations[className], 400);
-
+        setTimeout( function () {
+        if( checkIfPresent( $element )) {
+            $element.attr('class').split(/\s+/).forEach(function (className) {
+                $element.animate(animations[className], 400);
             });
-            mnoz++;
         }
-
+        }, k*speed);
     });
-
 
 });
 

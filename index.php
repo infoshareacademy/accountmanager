@@ -74,14 +74,14 @@
             <h2 id="functionsHeader">All contacts in one place</h2>
             <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
-        <div class="photoSectionOdd animate moveRight">
-            <i class="icon-one-place"></i>
+        <div class="photoSectionOdd">
+            <i class="icon-one-place animate fadeIn moveRight"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
-        <div class="photoSectionEven animate moveLeft">
-            <i class="icon-control"></i>
+        <div class="photoSectionEven">
+            <i class="icon-control animate fadeIn moveLeft"></i>
         </div>
         <div class="txtSectionEven">
             <h2 id="functionsHeader">Have control</h2>
@@ -94,8 +94,8 @@
             <h2 id="functionsHeader">Work in group</h2>
             <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
-        <div class="photoSectionOdd animate moveRight">
-            <i class="icon-group-work"></i>
+        <div class="photoSectionOdd">
+            <i class="icon-group-work animate fadeIn moveRight"></i>
         </div>
     </section>
 </div>
@@ -103,21 +103,21 @@
 
 <a name="features" class="clearfix"></a>
 <section id="features" >
-    <div class="column animate moveTop">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-diamond"></i>
         <p>Add value to your business</p>
     </div>
-    <div class="column animate moveTop">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-shield"></i>
         <p>Protect sensitive data</p>
 
     </div>
-    <div class="column animate moveTop">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-time"></i>
         <p>Don't waste your time</p>
 
     </div>
-    <div class="column animate moveTop">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-tree"></i>
         <p>Develop good practice</p>
 
@@ -130,11 +130,11 @@
 </section>
 
 <section id="sm">
-    <h2>Contact us</h2>
+    <h2 class=" animate fadeIn moveTop">Contact us</h2>
     <p>Do you have any quetions? Suggestions?<br><br>
         We want to make your life easier so please let us know what you need!<br>
         Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
-    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question"><i class="icon-envelope"></i>Get in touch</a>
+    <a href="mailto:papikaanteam@gmail.com" class="btn animate fadeIn moveTop" id="btn-sm" title="Submit your question"><i class="icon-envelope"></i>Get in touch</a>
 
     <br/>
     <div>
@@ -146,7 +146,7 @@
 </section>
 
 <footer>
-   <p>&copy; Papikaan Account Manager</p>
+   <p class="animate fadeIn moveTop">&copy; Papikaan Account Manager</p>
 </footer>
 
 <script type="text/javascript" src="js/scripts.js"></script>
