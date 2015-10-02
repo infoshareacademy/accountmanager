@@ -103,8 +103,8 @@ var $vCardInputContainer = $('.vCardInput');
 $vCardInputContainer.text('dodatkowy tekst');
 
 function changePosition (visitCard) {
-        var positionTop = (Math.random() * 350);
-        var positionLeft = (Math.random() * 600);
+        var positionTop = (Math.random() * 500);
+        var positionLeft = (Math.random() * 200);
         $(visitCard).css({top: positionTop, left: positionLeft});
     }
 
@@ -121,8 +121,9 @@ function changePosition (visitCard) {
 
         $(this).hide();
         changePosition(nextCardId);
-        $(nextCardId).show();
-
+        $(nextCardId).show();animate({
+            opacity: 0.25,
+        },15000);
     });
 
 }());
@@ -131,7 +132,11 @@ showFirstVCard = (function () {
 
     $('.functionalitiesIcon').click(function () {
         changePosition('#vCard1');
-        $('#vCard1').show();
+        $('#vCard1').show().animate({
+            opacity: 0.25
+        },20000, function () {
+            $('#vCard1').removeClass('animatedCard');
+        });
         $('.functionalitiesIcon').off('click');
     });
 

@@ -158,46 +158,35 @@
 
 <!--hidden divs, timer and result section for visitCardGame -->
 
-<div class="visitCard" id="vCard1">
+<div class="visitCard animatedCard" id="vCard1">
     <div class="photo">
     </div>
-    <p class="vCardInput">
-        Dear User,
-
-    </p>
+    <p class="vCardInput"></p>
 </div>
 
-<div class="visitCard" id="vCard2">
+<div class="visitCard animatedCard" id="vCard2">
     <div class="photo">
     </div>
-    <p class="vCardInput">
-       How are you doing?
-    </p>
+    <p class="vCardInput"></p>
 </div>
 
-<div class="visitCard" id="vCard3">
+<div class="visitCard animatedCard" id="vCard3">
     <div class="photo">
     </div>
-    <p class="vCardInput">
-        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
-        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
-    </p>
+    <p class="vCardInput"></p>
 </div>
 
-<div class="visitCard" id="vCard4">
+<div class="visitCard animatedCard" id="vCard4">
     <div class="photo">
     </div>
-    <p class="vCardInput">
-        dfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg
-        fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgfdfghjhg fdfghhgf
-    </p>
+    <p class="vCardInput"></p>
 </div>
 
 <div class="timer">
     <span></span>
 </div>
 
-<div class="sum">wynik:</div>
+<div class="sum">score:</div>
 
 <!--end of section containing hidden divs-->
 

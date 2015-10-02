@@ -712,16 +712,16 @@ footer p span{
     top: 20px;
 }
 
-.visitCard .photo:hover {
+.animatedCard .photo:hover {
     width: 120px;
     height: 120px;
 }
 
-.visitCard:hover{
+.animatedCard:hover{
 transform: rotate(25deg)
 }
 
-.visitCard p:hover{
+.animatedCard p:hover{
     transform: rotate(-25deg)
 }
 
