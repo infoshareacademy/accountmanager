@@ -93,7 +93,7 @@ $(document).ready(function(){
 // *******************   parallax   *************************************
 
 $(document).ready(function() {
-    var fotoTeam = document.getElementById('team'), fotoZajawka = document.getElementById('zajawka');
+    var fotoZajawka = document.getElementById('zajawka'), fotoTeam = document.getElementById('team');
     var parallaxfoto = [fotoZajawka, fotoTeam];
 
     parallaxfoto.forEach(function(foto) {
