@@ -16,6 +16,41 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Bad+Script|Josefin+Slab" rel="stylesheet" type="text/css">
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        var config = {
+            vCards: {
+                vCard1: {
+                    name: 'vCard1',
+                    photo: './images/visit-cards-game/ania.png',
+                    text: 'Finally all the contacts in one place!'
+                },
+
+                vCard2: {
+                    name: 'vCard2',
+                    photo: './images/visit-cards-game/kasia.jpg',
+                    text: 'Finally all the contacts in one place!'
+                },
+
+                vCard3: {
+                    name: 'vCard3',
+                    photo: './images/visit-cards-game/piotr.png',
+                    text: 'Finally all the contacts in one place!'
+                },
+
+                vCard4: {
+                    name: 'vCard4',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: 'Finally all the contacts in one place!'
+                }
+            }
+        };
+
+        config.vCards.vCard1.nextVCard = config.vCards.vCard2;
+        config.vCards.vCard2.nextVCard = config.vCards.vCard3;
+        config.vCards.vCard3.nextVCard = config.vCards.vCard4;
+//        config.vCard4.nextVCard = config.vCard5;
+
+        </script>
 </head>
 <body>
 
@@ -164,27 +199,13 @@
     <p class="vCardInput"></p>
 </div>
 
-<div class="visitCard animatedCard" id="vCard2">
-    <div class="photo">
-    </div>
-    <p class="vCardInput"></p>
-</div>
 
-<div class="visitCard animatedCard" id="vCard3">
-    <div class="photo">
-    </div>
-    <p class="vCardInput"></p>
-</div>
-
-<div class="visitCard animatedCard" id="vCard4">
-    <div class="photo">
-    </div>
-    <p class="vCardInput"></p>
-</div>
 
 <div class="timer">
     <span></span>
 </div>
+
+
 
 <div class="sum">score:</div>
 

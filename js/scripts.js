@@ -109,21 +109,19 @@ function changePosition (visitCard) {
     }
 
 (function() {
-    var visitCardsTransitions = {
-        vCard1: 'vCard2',
-        vCard2: 'vCard3',
-        vCard3: 'vCard4'
-    };
 
     $('.visitCard').click(function() {
         var currentCardId = $(this).attr('id');
-        var nextCardId = '#' + visitCardsTransitions[currentCardId];
+        var nextCard = config.vCards[currentCardId].nextVCard;
 
-        $(this).hide();
-        changePosition(nextCardId);
-        $(nextCardId).show();animate({
-            opacity: 0.25,
-        },15000);
+        $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
+        $(this).attr('id', nextCard.name);
+        changePosition(this);
+        $(this).animate({
+            opacity: 0.25
+        },15000, function () {
+            $(this).removeClass('animatedCard')
+        });
     });
 
 }());

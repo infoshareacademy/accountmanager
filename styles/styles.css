@@ -725,20 +725,8 @@ transform: rotate(25deg)
     transform: rotate(-25deg)
 }
 
-#vCard2 div {
-    background-image: url('../images/visit-cards-game/kasia.jpg');
-}
-
 #vCard2 p {
-    font-family: 'Bad Script', cursive;
-}
-
-#vCard1 div {
-    background-image: url('../images/visit-cards-game/ania.png');
-}
-
-#vCard3 div {
-    background-image: url('../images/visit-cards-game/pawel.jpg');
+    font-family: Bad Script, cursive;
 }
 
 #vCard3 p {
