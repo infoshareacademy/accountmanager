@@ -130,7 +130,7 @@
 </section>
 
 <section id="sm">
-    <h2 class=" animate fadeIn moveTop">Contact us</h2>
+    <h2 class=" animate fadeIn">Contact us</h2>
     <p>Do you have any quetions? Suggestions?<br><br>
         We want to make your life easier so please let us know what you need!<br>
         Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
@@ -146,7 +146,7 @@
 </section>
 
 <footer>
-   <p class="animate fadeIn moveTop">&copy; Papikaan Account Manager</p>
+   <p class="animate fadeIn">&copy; Papikaan Account Manager</p>
 </footer>
 
 <script type="text/javascript" src="js/scripts.js"></script>
