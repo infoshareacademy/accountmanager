@@ -1,6 +1,6 @@
 <?php
-    $lang = 'en';
-    include_once('db.php');
+$lang = 'en';
+include_once('db.php');
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -48,9 +48,9 @@
         config.vCards.vCard1.nextVCard = config.vCards.vCard2;
         config.vCards.vCard2.nextVCard = config.vCards.vCard3;
         config.vCards.vCard3.nextVCard = config.vCards.vCard4;
-//        config.vCard4.nextVCard = config.vCard5;
+        //        config.vCard4.nextVCard = config.vCard5;
 
-        </script>
+    </script>
 </head>
 <body>
 
@@ -80,8 +80,8 @@
 <div class="zajawka">
     <div id="tekst_zajawki">
         <p>Too many accounts? <br/>
-        Customers lost in action?<br/>
-        Redundant phone numbers?<br/>
+            Customers lost in action?<br/>
+            Redundant phone numbers?<br/>
         </p>
         <h1>Let us organise your business</h1>
         <div class="btnzaj">Try us out</div>
@@ -93,16 +93,16 @@
             <form action="" id="contact-form" method="post">
                 <h3>Don't be shy</h3>
                 <p>We won't spam you :)</p>
-            <div class="form-group">
-                <label for="Imie"></label><span class="err"></span>
-                <input type="text" name="imie" id="Imie" placeholder="Name..."/><br>
-            </div>
-            <div class="form-group">
-                <label for="Email"></label><span class="err"></span>
-                <input type="email" name="email" id="Email" placeholder="E-mail..."/><br>
-            </div>
+                <div class="form-group">
+                    <label for="Imie"></label><span class="err"></span>
+                    <input type="text" name="imie" id="Imie" placeholder="Name..."/><br>
+                </div>
+                <div class="form-group">
+                    <label for="Email"></label><span class="err"></span>
+                    <input type="email" name="email" id="Email" placeholder="E-mail..."/><br>
+                </div>
 
-            <input type="submit" id="submit-btn" value="Sure, contact me"/>
+                <input type="submit" id="submit-btn" value="Sure, contact me"/>
             </form>
         </div>
     </div>
@@ -188,7 +188,7 @@
 </section>
 
 <footer>
-   <p>&copy; Papikaan Account Manager</p>
+    <p>&copy; Papikaan Account Manager</p>
 </footer>
 
 <!--hidden divs, timer and result section for visitCardGame -->

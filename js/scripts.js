@@ -130,16 +130,15 @@ function changePosition (visitCard) {
 showFirstVCard = (function () {
 
     $('.functionalitiesIcon').click(function () {
-        var $vCardId = "config.vCards.vCard1";
-
-        $('#vCard1').find('.photo').css({backgroundImage: 'url(' + $vCardId.photo +')'});
-        $('#vCard1').find('.vCardInput').text($vCard1.text);
-        $(this).attr('id', nextCard.name);
-        changePosition('#vCard1');
-        $('#vCard1').show().animate({
+        var $vCardId = "#vCard1";
+debugger;
+        $($vCardId).find('.photo').css({backgroundImage: 'url(' + config.vCards.vCard1.photo +')'});
+        $($vCardId).find('.vCardInput').text(config.vCards.vCard1.text);
+        changePosition($vCardId);
+        $($vCardId).show().animate({
             opacity: 0.25
         },20000, function () {
-            $('#vCard1').removeClass('animatedCard');
+                $($vCardId).toggleClass('animatedCard');
         });
         $('.functionalitiesIcon').off('click');
     });

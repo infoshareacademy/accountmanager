@@ -692,6 +692,9 @@ footer p span{
     box-shadow: 2px 3px 80px #222222;
     display: none;
     position: fixed;
+    top: 100px;
+    left: 100px;
+
 }
 
 .visitCard:checked {
@@ -725,21 +728,21 @@ transform: rotate(25deg)
     transform: rotate(-25deg)
 }
 
-#vCard2 p {
-    font-family: Bad Script, cursive;
-}
+/*#vCard2 p {*/
+    /*font-family: Bad Script, cursive;*/
+/*}*/
 
-#vCard3 p {
-    font-family: 'Josefin Slab', serif;
-}
+/*#vCard3 p {*/
+    /*font-family: 'Josefin Slab', serif;*/
+/*}*/
 
-#vCard4 div {
-    background-image: url('../images/visit-cards-game/piotr.png');
-}
+/*#vCard4 div {*/
+    /*background-image: url('../images/visit-cards-game/piotr.png');*/
+/*}*/
 
-#vCard4 p {
-    font-family: 'Roboto', sans-serif;
-}
+/*#vCard4 p {*/
+    /*font-family: 'Roboto', sans-serif;*/
+/*}*/
 
 .visitCard p {
     display: block;
