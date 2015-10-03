@@ -149,7 +149,7 @@ $(document).ready(function() {
     
                 $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
                 $(this).find('.vCardInput').text(nextCard.text);
-                $('.visitCard').css({opacity: 1});
+                $(this).css({opacity: 1});
                 $(this).attr('id', nextCard.name);
                 changePosition(this);
             })
