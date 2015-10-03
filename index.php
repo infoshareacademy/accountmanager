@@ -1,6 +1,6 @@
 <?php
-$lang = 'en';
-include_once('db.php');
+    $lang = 'en';
+    include_once('db.php');
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -54,7 +54,10 @@ include_once('db.php');
 </head>
 <body>
 
-<nav class="menu">
+<div id="nav-anchor"></div>
+
+<nav id="menubar">
+
     <div id="logo">
     </div>
 
@@ -63,27 +66,25 @@ include_once('db.php');
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka">Home</a></li>
-            <li class="menulink"><a href="#functions">Why us?</a></li>
-            <li class="menulink"><a href="#features">Values</a></li>
-            <li class="menulink"><a href="#team">Team</a></li>
-            <li class="menulink"><a>FAQ</a></li>
-            <li class="menulink"><a href="#sm">Contact</a></li>
+            <li class="menulink"><a href="#zajawka" class="smoothScroll">home</a></li>
+            <li class="menulink"><a href="#whyus" class="smoothScroll">what</a></li>
+            <li class="menulink"><a href="#values" class="smoothScroll">why</a></li>
+            <li class="menulink" ><a href="#team" class="smoothScroll">who</a></li>
+            <!--            <li class="menulink"><a class="smoothScroll">FAQ</a></li>-->
+            <li class="menulink"><a href="#contact" class="smoothScroll">contact</a></li>
         </ul>
     </div>
 
 </nav>
 
 
-
-<a name="zajawka"></a>
-<div class="zajawka">
+<div class="zajawka" id="zajawka">
     <div id="tekst_zajawki">
-        <p>Too many accounts? <br/>
-            Customers lost in action?<br/>
-            Redundant phone numbers?<br/>
-        </p>
+        <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
+            <br></p>
+
         <h1>Let us organise your business</h1>
+
         <div class="btnzaj">Try us out</div>
     </div>
 
@@ -92,7 +93,9 @@ include_once('db.php');
 
             <form action="" id="contact-form" method="post">
                 <h3>Don't be shy</h3>
+
                 <p>We won't spam you :)</p>
+
                 <div class="form-group">
                     <label for="Imie"></label><span class="err"></span>
                     <input type="text" name="imie" id="Imie" placeholder="Name..."/><br>
@@ -108,7 +111,7 @@ include_once('db.php');
     </div>
 </div>
 
-<div class="functionsMainContener" id="functions">
+<div class="core_functions" id="whyus">
 
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
@@ -141,44 +144,49 @@ include_once('db.php');
     </section>
 </div>
 
-
-<a name="features" class="clearfix"></a>
-<section id="features" >
+<section id="values">
     <div class="column">
         <i class="icon-diamond"></i>
+
         <p>Add value to your business</p>
     </div>
     <div class="column">
         <i class="icon-shield"></i>
+
         <p>Protect sensitive data</p>
 
     </div>
     <div class="column">
         <i class="icon-time"></i>
+
         <p>Don't waste your time</p>
 
     </div>
     <div class="column">
         <i class="icon-tree"></i>
+
         <p>Develop good practice</p>
 
     </div>
+    <div class="clearfix" style="height: 50px"></div>
 </section>
 
 <section id="team">
-    <h2>Our Team</h2>
-    <!-- Photo of our team -->
+       <h2>Our Team</h2>
+<!--     Photo of our team-->
 </section>
 
-<section id="sm">
+<section id="contact">
     <h2>Contact us</h2>
-    <p>Do you have any questions? Suggestions?<br><br>
+
+    <p>Do you have any quetions? Suggestions?<br><br>
         We want to make your life easier so please let us know what you need!<br>
         Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
-    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question">
-        <i class="icon-envelope"></i>Get in touch</a>
+    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question"><i
+            class="icon-envelope"></i>Get in touch</a>
 
     <br/>
+
     <div>
         <p> Follow us:</p>
         <a href="http://facebook.com/PapikaanAM" target="_blank"><i class="icon-facebook"></i>Facebook</a>
