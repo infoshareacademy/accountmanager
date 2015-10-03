@@ -110,37 +110,47 @@ function changePosition (visitCard) {
 
 (function() {
 
-    $('.visitCard').click(function() {
-        var currentCardId = $(this).attr('id');
-        var nextCard = config.vCards[currentCardId].nextVCard;
+    $('.visitCard')
+        .click(function() {
+            var currentCardId = $(this).attr('id');
+            var nextCard = config.vCards[currentCardId].nextVCard;
 
-        $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
-        $(this).find('.vCardInput').text(nextCard.text);
-        $(this).attr('id', nextCard.name);
-        changePosition(this);
-        $(this).animate({
-            opacity: 0.25
-        },15000, function () {
-            $(this).removeClass('animatedCard')
+            $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
+            $(this).find('.vCardInput').text(nextCard.text);
+            $(this).attr('id', nextCard.name);
+            changePosition(this);
+        })
+        .click(function () {
+            $(this)
+                .css({opacity: 1})
+                .addClass('animatedCard')
+                .animate({
+                opacity: 0.25
+            },30000, function () {
+                $(this).removeClass('animatedCard')
+            });
         });
-    });
-
 }());
 
-showFirstVCard = (function () {
+showFirstVCard = function () {
 
     $('.functionalitiesIcon').click(function () {
         var $vCardId = "#vCard1";
-debugger;
-        $($vCardId).find('.photo').css({backgroundImage: 'url(' + config.vCards.vCard1.photo +')'});
+
+        $($vCardId).find('.photo').css({backgroundImage: 'url(' + config.vCards.vCard1.photo + ')'});
         $($vCardId).find('.vCardInput').text(config.vCards.vCard1.text);
         changePosition($vCardId);
-        $($vCardId).show().animate({
+        $($vCardId).addClass('animatedCard').show().animate({
             opacity: 0.25
-        },20000, function () {
-                $($vCardId).toggleClass('animatedCard');
+        }, 20000, function () {
+            $($vCardId).removeClass('animatedCard');
         });
         $('.functionalitiesIcon').off('click');
     });
+}();
 
-}());
+jumpUp = function () {
+    $('window').on('scroll',this, function () {
+        $('.visitCard').transition({y: 20px});
+    });
+}();
