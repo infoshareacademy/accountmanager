@@ -117,12 +117,12 @@ function changePosition (visitCard) {
 
             $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
             $(this).find('.vCardInput').text(nextCard.text);
+            $('.visitCard').css({opacity: 1});
             $(this).attr('id', nextCard.name);
             changePosition(this);
         })
         .click(function () {
             $(this)
-                .css({opacity: 1})
                 .addClass('animatedCard')
                 .animate({
                 opacity: 0.25
@@ -146,11 +146,5 @@ showFirstVCard = function () {
             $($vCardId).removeClass('animatedCard');
         });
         $('.functionalitiesIcon').off('click');
-    });
-}();
-
-jumpUp = function () {
-    $('window').on('scroll',this, function () {
-        $('.visitCard').transition({y: 20px});
     });
 }();
