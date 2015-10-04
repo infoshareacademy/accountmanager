@@ -248,7 +248,7 @@ include_once('db.php');
 <div class="visitCard animatedCard" id="vCard1">
     <div class="photo">
     </div>
-    <p class="vCardInput"></p>
+    <p class="vCardInput bigLetter"></p>
 </div>
 
 

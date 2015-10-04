@@ -849,9 +849,9 @@ nav {
         font-size: 22px;
     }
 
-    .visitCard p::first-letter {
+    .bigLetter::first-letter {
         font-size: 35px;
-        font-weight: 300;
+        font-weight: 600;
     }
     
     .sum {

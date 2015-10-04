@@ -163,6 +163,15 @@ $(document).ready(function() {
                         });
                 } else {
                     $(this).removeClass('animatedCard');
+                    $(this).removeClass('bigLetter');
+                    $(this).animate({
+                        height: 600,
+                        width: 900,
+                        opacity: 0
+                    }, 15000, function () {
+                        console.log('puff');
+                        $(this).css({display: null})
+                    });
                     $(this).find('.photo').animate({
                         height: 360,
                         width: 360,
@@ -173,18 +182,10 @@ $(document).ready(function() {
                     $(this).find('.vCardInput').animate({
                         height: 550,
                         width: 800,
-                        fontSize: 32,
+                        fontSize: 82,
                         opacity: 0
                     }, 15000, function () {
                         console.log('text puff')
-                    });
-                    $(this).animate({
-                        height: 600,
-                        width: 900,
-                        opacity: 0
-                    }, 15000, function () {
-                        console.log('puff');
-                        $(this).css({display: null})
                     });
                 }
             });
@@ -251,27 +252,3 @@ $(document).ready(function() {
             }
         })
         }();
-
-//hoverOnAVCard = function () {
-//    $('.animatedCard').hover(function() {
-//        $(this)
-//            .stop(true, false)
-//            .css({
-//                height: 220,
-//                width: 330,
-//                opacity: 1
-//            });
-//    }, function() {
-//        $(this)
-//            .css({
-//                height: 200,
-//                width: 300,
-//                opacity: 0.7
-//            })
-//            .animate({
-//                opacity: 0.25
-//            }, 2000, function () {
-//                $(this).removeClass('animatedCard')
-//            })
-//    });
-//}();
