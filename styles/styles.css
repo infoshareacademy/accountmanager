@@ -482,7 +482,7 @@ nav {
         max-width: 500px;
         height: 250px;
         padding-top: 50px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
         position: absolute;
         left: 32%;
         margin: 0;
@@ -557,7 +557,7 @@ nav {
         overflow: visible;
     }
     
-    div #functionsHeader {
+    div .functionsHeader {
         color: #386FA7;
         border: none;
         font-style: normal;
@@ -567,7 +567,7 @@ nav {
         margin: auto;
     }
     
-    div #functionsDescription {
+    div .functionsDescription {
         color: #444;
         border: none;
         font-style: normal;
@@ -617,6 +617,7 @@ nav {
         font-size: 6em;
         color: #fff;
     }
+
     #values i:hover {
         font-size: 7em;
     }
@@ -640,6 +641,7 @@ nav {
     position: absolute;
     bottom: 0;
 }
+
 /* T E A M */
 
 #team {
@@ -803,6 +805,7 @@ nav {
         width: 110px;
         opacity: 0.7;
         border-radius: 50%;
+        position: fixed;
         z-index: 999;
     }
     
@@ -810,38 +813,44 @@ nav {
         position: absolute;
         right: 20px;
         top: 20px;
+        opacity: 0.4;
     }
     
     .animatedCard .photo:hover {
         width: 120px;
         height: 120px;
+        opacity: 1;
     }
     
-    .animatedCard:hover{
-    transform: rotate(25deg)
-    }
-    
-    .animatedCard p:hover{
-        transform: rotate(-25deg)
-    }
-    
+    /*.animatedCard:hover{*/
+    /*transform: rotate(25deg)*/
+    /*}*/
+
+
     .visitCard p {
-        display: block;
-        font-family: 'Waiting for the Sunrise', cursive;
-        font-size: 21px;
-        width: 130px;
-        height: 120px;
-        position: absolute;
-        left: 25px;
-        bottom: 25px;
-        box-sizing: border-box;
-        margin: 0; !important;
-        overflow: hidden;
-        z-index: 50;
+    display: block;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    width: 160px;
+    height: 140px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    box-sizing: border-box;
+    margin: 0; !important;
+    overflow: hidden;
+    z-index: 50;
     }
-    
+
+    .animatedCard p:hover{
+        width: 180px;
+        height: 160px;
+        font-size: 22px;
+    }
+
     .visitCard p::first-letter {
-        font-size: 50px;
+        font-size: 35px;
         font-weight: 300;
     }
     
@@ -879,10 +888,11 @@ nav {
     
     @keyframes timer {
         0% {
-            width:100px;
+            width: 100px;
         }
-    
+
         100% {
-            width:300px;
-            display:block;
+            width: 300px;
+            display: block;
         }
+    }

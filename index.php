@@ -1,6 +1,6 @@
 <?php
-    $lang = 'en';
-    include_once('db.php');
+$lang = 'en';
+include_once('db.php');
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -22,33 +22,75 @@
                 vCard1: {
                     name: 'vCard1',
                     photo: './images/visit-cards-game/ania.png',
-                    text: 'Finally all the contacts in one place!'
+                    text: '11111 111111 11111!'
                 },
 
                 vCard2: {
                     name: 'vCard2',
                     photo: './images/visit-cards-game/kasia.jpg',
-                    text: 'Finally all the contacts in one place!'
+                    text: '22222 22222 22222 22222!'
                 },
 
                 vCard3: {
                     name: 'vCard3',
                     photo: './images/visit-cards-game/piotr.png',
-                    text: 'Finally all the contacts in one place!'
+                    text: '33333 33333 33333 33333!'
                 },
 
                 vCard4: {
                     name: 'vCard4',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: 'Finally all the contacts in one place!'
+                    text: '4444444 4444444 4444444 4444444!'
+                },
+
+                vCard5: {
+                    name: 'vCard5',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: '5555555 5555555 5555555 5555555 5555555!'
+                },
+
+                vCard6: {
+                    name: 'vCard6',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: 'You can easily update the contacts using \.vCards'
+                },
+
+                vCard7: {
+                    name: 'vCard7',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: '7777777 7777777 7777777 7777777!'
+                },
+
+                vCard8: {
+                    name: 'vCard8',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: '88888888 88888888 88888888 88888888!'
+                },
+
+                vCard9: {
+                    name: 'vCard9',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: '9999999 9999999 9999999 9999999 9999999!'
+                },
+
+                vCard10: {
+                    name: 'vCard10',
+                    photo: './images/visit-cards-game/pawel.jpg',
+                    text: 'Thank you for your attention!'
                 }
+
             }
         };
 
         config.vCards.vCard1.nextVCard = config.vCards.vCard2;
         config.vCards.vCard2.nextVCard = config.vCards.vCard3;
         config.vCards.vCard3.nextVCard = config.vCards.vCard4;
-        //        config.vCard4.nextVCard = config.vCard5;
+        config.vCards.vCard4.nextVCard = config.vCards.vCard5;
+        config.vCards.vCard5.nextVCard = config.vCards.vCard6;
+        config.vCards.vCard6.nextVCard = config.vCards.vCard7;
+        config.vCards.vCard7.nextVCard = config.vCards.vCard8;
+        config.vCards.vCard8.nextVCard = config.vCards.vCard9;
+        config.vCards.vCard9.nextVCard = config.vCards.vCard10;
 
     </script>
 </head>
@@ -115,8 +157,8 @@
 
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
-            <h2 id="functionsHeader">All contacts in one place</h2>
-            <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
+            <h2 class="functionsHeader">All contacts in one place</h2>
+            <article class="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
         <div class="photoSectionOdd functionalitiesIcon">
             <i class="icon-one-place"></i>
@@ -128,15 +170,15 @@
             <i class="icon-control"></i>
         </div>
         <div class="txtSectionEven">
-            <h2 id="functionsHeader">Have control</h2>
-            <article id="functionsDescription">Time box the action - we will notify you when it's time to get back to your Customer</article>
+            <h2 class="functionsHeader">Have control</h2>
+            <article class="functionsDescription">Time box the action - we will notify you when it's time to get back to your Customer</article>
         </div>
     </section>
 
     <section class="functionsModuleOdd">
         <div class="txtSectionOdd">
-            <h2 id="functionsHeader">Work in group</h2>
-            <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
+            <h2 class="functionsHeader">Work in group</h2>
+            <article class="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
         <div class="photoSectionOdd functionalitiesIcon">
             <i class="icon-group-work"></i>
@@ -172,8 +214,8 @@
 </section>
 
 <section id="team">
-       <h2>Our Team</h2>
-<!--     Photo of our team-->
+    <h2>Our Team</h2>
+    <!--     Photo of our team-->
 </section>
 
 <section id="contact">

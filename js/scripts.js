@@ -132,21 +132,19 @@ $(document).ready(function() {
 
 // game
 
-    var $vCardInputContainer = $('.vCardInput');
-     
     function changePosition (visitCard) {
-        var positionTop = (Math.random() * 500);
-        var positionLeft = (Math.random() * 200);
+        var positionTop = (Math.random() * 400);
+        var positionLeft = (Math.random() * 400);
         $(visitCard).css({top: positionTop, left: positionLeft});
     }
-    
+
     (function() {
     
         $('.visitCard')
             .click(function() {
                 var currentCardId = $(this).attr('id');
                 var nextCard = config.vCards[currentCardId].nextVCard;
-    
+
                 $(this).find('.photo').css({backgroundImage: 'url(' + nextCard.photo +')'});
                 $(this).find('.vCardInput').text(nextCard.text);
                 $(this).css({opacity: 1});
@@ -158,12 +156,12 @@ $(document).ready(function() {
                     .addClass('animatedCard')
                     .animate({
                         opacity: 0.25
-                    },30000, function () {
+                    },20000, function () {
                         $(this).removeClass('animatedCard')
                     });
             });
     }());
-    
+
     showFirstVCard = function () {
     
         $('.functionalitiesIcon').click(function () {
@@ -178,5 +176,30 @@ $(document).ready(function() {
                 $($vCardId).removeClass('animatedCard');
             });
             $('.functionalitiesIcon').off('click');
+        });
+    }();
+
+
+    hoverOnAVCard = function () {
+        $('.animatedCard').hover(function() {
+            $(this)
+                .stop(true, false)
+                .css({
+                    height: 220,
+                    width: 330,
+                    opacity: 1
+                });
+        }, function() {
+            $(this)
+                .css({
+                    height: 200,
+                    width: 300,
+                    opacity: 0.7
+                })
+                .animate({
+                    opacity: 0.25
+                },2000, function () {
+                    $(this).removeClass('animatedCard')
+                });
         });
     }();
