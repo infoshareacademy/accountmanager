@@ -38,7 +38,6 @@ $(function () {
             $( this ).parent().find('.err').fadeOut( 100 );
             $( this ).removeClass('err-inp');
         });
-
     }); // Walidacja formularza
 
 
@@ -115,48 +114,75 @@ $(function () {
 
 
 //menu start//
-//$(document).ready(function() {
-//    $('#showmenu').click(function() {
-//        $('.navi').slideToggle("fast");
-//    });
-//});
 
-//function setAsClicked (a) {
-//    var links = document.getElementsByClassName("menulink");
-//    for (var i = 0; i < links.length; i++) {
-//        links[i].className = "menulink";
-//            }
-//    a.className += " clicked";
-//}
-
-
-
-$(document).ready(function(){
-    $('.menulink').click(function(){
-        $('.menulink').removeClass('clicked');
-        $(this).addClass('clicked');
-    });
-    $('#mnav').mouseleave(function () {
-        $('.menulink').removeClass('clicked');
-    })
+$(window).scroll(function () {
+      if ($(window).scrollTop() === 0) {
+        $('#menubar').removeClass('scrolled');
+    } else {
+        $('#menubar').addClass('scrolled');
+    }
 });
 
+// Cache selectors
+var lastId,
+    topMenu = $("#mnav"),
+    topMenuHeight = topMenu.outerHeight()+50,
+// All list items
+    menuItems = topMenu.find("a"),
+// Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop
+    }, 500);
+    e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+    // Get container scroll position
+    var fromTop = $(this).scrollTop()+topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+        if ($(this).offset().top < fromTop)
+            return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href=#"+id+"]").parent().addClass("active");
+    }
+});
 
 //menu end//
 
 
-
 // ************** katban - obsluga klikacza w zajawca *******************
-$(document).ready(function(){
-    $('.btnzaj').click(function(){
+$(document).ready(function () {
+    $('.btnzaj').click(function () {
         $('.form').show();
     });
     //
-    $('.form').click(function(event){
+    $('.form').click(function (event) {
         event.stopPropagation();
         $(this).hide();
     });
-    $('#cntform').click(function(event){
+    $('#cntform').click(function (event) {
         event.stopPropagation()
     })
 });
@@ -169,7 +195,7 @@ $(document).ready(function() {
 
     parallaxfoto.forEach(function(foto) {
         $(window).scroll(function(event) {
-            var offset = $(foto).offset().top + 50 - (window.innerHeight - foto.clientHeight) / 2;
+            var offset = $(foto).offset().top + 90 - (window.innerHeight - foto.clientHeight) / 2;
             var scroll = $(window).scrollTop();
             foto.style.backgroundPositionY = ((scroll - offset) / 4) + 'px';
         })
