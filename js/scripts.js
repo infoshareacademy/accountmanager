@@ -152,13 +152,41 @@ $(document).ready(function() {
                 changePosition(this);
             })
             .click(function () {
-                $(this)
-                    .addClass('animatedCard')
-                    .animate({
-                        opacity: 0.25
-                    },20000, function () {
-                        $(this).removeClass('animatedCard')
+
+                if ($(this).attr('id') != 'vCard10') {
+                    $(this)
+                        .addClass('animatedCard')
+                        .animate({
+                            opacity: 0.25
+                        }, 20000, function () {
+                            $(this).removeClass('animatedCard')
+                        });
+                } else {
+                    $(this).removeClass('animatedCard');
+                    $(this).find('.photo').animate({
+                        height: 360,
+                        width: 360,
+                        opacity: 0
+                    }, 15000, function () {
+                        console.log('photo puff')
                     });
+                    $(this).find('.vCardInput').animate({
+                        height: 550,
+                        width: 800,
+                        fontSize: 32,
+                        opacity: 0
+                    }, 15000, function () {
+                        console.log('text puff')
+                    });
+                    $(this).animate({
+                        height: 600,
+                        width: 900,
+                        opacity: 0
+                    }, 15000, function () {
+                        console.log('puff');
+                        $(this).css({display: null})
+                    });
+                }
             });
     }());
 
@@ -166,40 +194,84 @@ $(document).ready(function() {
     
         $('.functionalitiesIcon').click(function () {
             var $vCardId = "#vCard1";
-    
-            $($vCardId).find('.photo').css({backgroundImage: 'url(' + config.vCards.vCard1.photo + ')'});
-            $($vCardId).find('.vCardInput').text(config.vCards.vCard1.text);
-            changePosition($vCardId);
-            $($vCardId).addClass('animatedCard').show().animate({
-                opacity: 0.25
-            }, 20000, function () {
-                $($vCardId).removeClass('animatedCard');
-            });
-            $('.functionalitiesIcon').off('click');
-        });
-    }();
+
+           switch ($(this).attr('id')) {
+               case "coreFunction1":
+                   $($vCardId).find('.vCardInput').text(config.vCards.vCard1.text1);
+                   break;
+               case "coreFunction2":
+                   $($vCardId).find('.vCardInput').text(config.vCards.vCard1.text2);
+                   break;
+               default:
+                   $($vCardId).find('.vCardInput').text(config.vCards.vCard1.text3);
+               }
+                   $($vCardId).find('.photo').css({backgroundImage: 'url(' + config.vCards.vCard1.photo + ')'});
+                   changePosition($vCardId);
+                   $($vCardId).addClass('animatedCard').show().animate({
+                       opacity: 0.25
+                   }, 20000, function () {
+                       $($vCardId).removeClass('animatedCard');
+                   });
+                   $('.functionalitiesIcon').off('click');
+           });
+        }();
 
 
     hoverOnAVCard = function () {
-        $('.animatedCard').hover(function() {
-            $(this)
-                .stop(true, false)
-                .css({
-                    height: 220,
-                    width: 330,
-                    opacity: 1
-                });
-        }, function() {
-            $(this)
-                .css({
-                    height: 200,
-                    width: 300,
-                    opacity: 0.7
-                })
-                .animate({
-                    opacity: 0.25
-                },2000, function () {
-                    $(this).removeClass('animatedCard')
-                });
-        });
-    }();
+
+        $('.animatedCard').hover(function () {
+
+            if ($(this).attr('id') != 'vCard10') {
+                $(this)
+                    .stop(true, false)
+                    .css({
+                        height: 220,
+                        width: 330,
+                        opacity: 1
+                    });
+            } else {
+                return console.log ('hover in')
+            }
+        }, function () {
+
+            if ($(this).attr('id') != 'vCard10') {
+                $(this)
+                    .css({
+                        height: 200,
+                        width: 300,
+                        opacity: 0.7
+                    })
+                    .animate({
+                        opacity: 0.25
+                    }, 2000, function () {
+                        $(this).removeClass('animatedCard')
+                    })
+            } else {
+                return console.log('hover out')
+            }
+        })
+        }();
+
+//hoverOnAVCard = function () {
+//    $('.animatedCard').hover(function() {
+//        $(this)
+//            .stop(true, false)
+//            .css({
+//                height: 220,
+//                width: 330,
+//                opacity: 1
+//            });
+//    }, function() {
+//        $(this)
+//            .css({
+//                height: 200,
+//                width: 300,
+//                opacity: 0.7
+//            })
+//            .animate({
+//                opacity: 0.25
+//            }, 2000, function () {
+//                $(this).removeClass('animatedCard')
+//            })
+//    });
+//}();

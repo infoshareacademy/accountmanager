@@ -22,55 +22,57 @@ include_once('db.php');
                 vCard1: {
                     name: 'vCard1',
                     photo: './images/visit-cards-game/ania.png',
-                    text: '11111 111111 11111!'
+                    text1: 'Finally all my contacts are well organised!',
+                    text2: 'Daily email notifications -  don\'t worry about outstanding meetings anymore',
+                    text3: 'I can easily hand over my Customers to the other teammate when I go for holidays'
                 },
 
                 vCard2: {
                     name: 'vCard2',
                     photo: './images/visit-cards-game/kasia.jpg',
-                    text: '22222 22222 22222 22222!'
+                    text: 'History of contacts prevents me from harassing my Customers \;\) So helpful!'
                 },
 
                 vCard3: {
                     name: 'vCard3',
                     photo: './images/visit-cards-game/piotr.png',
-                    text: '33333 33333 33333 33333!'
+                    text: 'Wow! I can take notes regarding every undertaken contact'
                 },
 
                 vCard4: {
                     name: 'vCard4',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: '4444444 4444444 4444444 4444444!'
+                    text: 'The reporting option is very useful - now I know who should I contact more often'
                 },
 
                 vCard5: {
                     name: 'vCard5',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: '5555555 5555555 5555555 5555555 5555555!'
+                    text: 'I can attach all the necessary documents to the Customer\'s profile - nice!'
                 },
 
                 vCard6: {
                     name: 'vCard6',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: 'You can easily update the contacts using \.vCards'
+                    text: 'You can easily update the contact details using your \.vCards'
                 },
 
                 vCard7: {
                     name: 'vCard7',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: '7777777 7777777 7777777 7777777!'
+                    text: 'A member of your team can share the calendar with you'
                 },
 
                 vCard8: {
                     name: 'vCard8',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: '88888888 88888888 88888888 88888888!'
+                    text: 'Now I know what type of contact is the most efficient'
                 },
 
                 vCard9: {
                     name: 'vCard9',
                     photo: './images/visit-cards-game/pawel.jpg',
-                    text: '9999999 9999999 9999999 9999999 9999999!'
+                    text: 'Wow - it\'s even possible to mark a meeting as successful or not!'
                 },
 
                 vCard10: {
@@ -160,13 +162,13 @@ include_once('db.php');
             <h2 class="functionsHeader">All contacts in one place</h2>
             <article class="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
-        <div class="photoSectionOdd functionalitiesIcon">
+        <div class="photoSectionOdd functionalitiesIcon" id="coreFunction1">
             <i class="icon-one-place"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
-        <div class="photoSectionEven functionalitiesIcon">
+        <div class="photoSectionEven functionalitiesIcon" id="coreFunction2">
             <i class="icon-control"></i>
         </div>
         <div class="txtSectionEven">
@@ -180,7 +182,7 @@ include_once('db.php');
             <h2 class="functionsHeader">Work in group</h2>
             <article class="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
-        <div class="photoSectionOdd functionalitiesIcon">
+        <div class="photoSectionOdd functionalitiesIcon" id="coreFunction3">
             <i class="icon-group-work"></i>
         </div>
     </section>

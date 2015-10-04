@@ -832,7 +832,7 @@ nav {
     font-family: 'Waiting for the Sunrise', cursive;
     font-size: 18px;
     font-weight: bold;
-    width: 160px;
+    width: 180px;
     height: 140px;
     position: absolute;
     left: 25px;
@@ -844,7 +844,7 @@ nav {
     }
 
     .animatedCard p:hover{
-        width: 180px;
+        width: 200px;
         height: 160px;
         font-size: 22px;
     }
