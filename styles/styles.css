@@ -350,7 +350,7 @@ nav {
     #tekst_zajawki {
         background-color: transparent;
         position: relative;
-        top: 20%;
+        top: 26%;
         margin-left: 6%;
         max-width: 600px;
         /*border: solid 1px #F3CA61;*/
@@ -657,7 +657,7 @@ nav {
 /* T E A M */
 
 #team {
-    height:700px;
+    height:800px;
     max-height: 800px;
     background-color: #556;
     background-image: url(../images/team-photo.jpg);
