@@ -30,28 +30,27 @@
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka" class="smoothScroll">home</a></li>
-            <li class="menulink"><a href="#whyus" class="smoothScroll">what</a></li>
-            <li class="menulink"><a href="#values" class="smoothScroll">why</a></li>
-            <li class="menulink" ><a href="#team" class="smoothScroll">who</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#zajawka" class="smoothScroll">home</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#whyus" class="smoothScroll">what</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#values" class="smoothScroll">why</a></li>
+            <li class="menulink animate fadeIn moveLeft" ><a href="#team" class="smoothScroll">who</a></li>
 <!--            <li class="menulink"><a class="smoothScroll">FAQ</a></li>-->
-            <li class="menulink"><a href="#contact" class="smoothScroll">contact</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#contact" class="smoothScroll">contact</a></li>
         </ul>
     </div>
 
 </nav>
 
 
-<div class="zajawka" id="zajawka">
-    <div id="tekst_zajawki">
-        <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
-            <br></p>
 
-        <h1>Let us organise your business</h1>
 
-        <div class="btnzaj">Try us out</div>
+<div class="zajawka"  id="zajawka">
+    <div id="tekst_zajawki" >
+        <p class="animate fadeIn moveLeft">Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers? <br> </p>
+        <h1 class="animate fadeIn moveLeft">Let us organise your business</h1>
+        <a class="btnzaj animate fadeIn moveLeft">Try us out</a>
     </div>
-
+    
     <div class="form">
         <div id="cntform" class="formularz">
 
@@ -83,13 +82,13 @@
             <article id="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
         <div class="photoSectionOdd">
-            <i class="icon-one-place"></i>
+            <i class="icon-one-place animate fadeIn moveRight"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
         <div class="photoSectionEven">
-            <i class="icon-control"></i>
+            <i class="icon-control animate fadeIn moveLeft"></i>
         </div>
         <div class="txtSectionEven">
             <h2 id="functionsHeader">Have control</h2>
@@ -103,32 +102,30 @@
             <article id="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
         <div class="photoSectionOdd">
-            <i class="icon-group-work"></i>
+            <i class="icon-group-work animate fadeIn moveRight"></i>
         </div>
     </section>
 </div>
 
-<section id="values">
-    <div class="column">
-        <i class="icon-diamond"></i>
 
+<a name="features" class="clearfix"></a>
+<section id="values">
+    <div class="column animate fadeIn moveTop">
+        <i class="icon-diamond"></i>
         <p>Add value to your business</p>
     </div>
-    <div class="column">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-shield"></i>
-
         <p>Protect sensitive data</p>
 
     </div>
-    <div class="column">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-time"></i>
-
         <p>Don't waste your time</p>
 
     </div>
-    <div class="column">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-tree"></i>
-
         <p>Develop good practice</p>
 
     </div>
@@ -136,21 +133,18 @@
 </section>
 
 <section id="team">
-       <h2>Our Team</h2>
-<!--     Photo of our team-->
+    <h2>Our Team</h2>
+    <!-- Photo of our team -->
 </section>
 
 <section id="contact">
-    <h2>Contact us</h2>
-
+    <h2 class=" animate fadeIn">Contact us</h2>
     <p>Do you have any quetions? Suggestions?<br><br>
         We want to make your life easier so please let us know what you need!<br>
         Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
-    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question"><i
-            class="icon-envelope"></i>Get in touch</a>
+    <a href="mailto:papikaanteam@gmail.com" class="btn animate fadeIn moveTop" id="btn-sm" title="Submit your question"><i class="icon-envelope"></i>Get in touch</a>
 
     <br/>
-
     <div>
         <p> Follow us:</p>
         <a href="http://facebook.com/PapikaanAM" target="_blank"><i class="icon-facebook"></i>Facebook</a>
@@ -160,7 +154,7 @@
 </section>
 
 <footer>
-    <p>&copy; Papikaan Account Manager</p>
+   <p class="animate fadeIn">&copy; Papikaan Account Manager</p>
 </footer>
 
 <script type="text/javascript" src="js/scripts.js"></script>

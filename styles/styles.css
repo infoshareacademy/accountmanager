@@ -578,7 +578,6 @@ nav {
         margin: auto;
         margin-top: 25px;
     }
-
     .core_functions i {
         color: #589ADA;
         font-size: 200px;
@@ -587,6 +586,7 @@ nav {
         /*right: -10%;*/
         /*vertical-align: middle;*/
     }
+
 
     /*  F E A T U R E S  */
     #values {
@@ -789,3 +789,10 @@ nav {
     /*padding: 0;*/
     /*margin: 0;*/
 /*}*/
+
+
+/* animiations */
+.moveLeft, .moveBottom, .moveRight, .moveTop {
+    position:relative;
+
+}
