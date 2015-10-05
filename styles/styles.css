@@ -339,7 +339,7 @@ nav {
     /****************** css logo menu **********************/
     /****************** css zajawki **********************/
     .zajawka {
-        background: #292a2f url("../images/zajawka2.jpg") no-repeat right;
+        background: #292a2f url("../images/zajawka2.jpg") no-repeat center center;
         background-size: cover;
         width: auto;
         height: 960px;
@@ -350,10 +350,10 @@ nav {
     #tekst_zajawki {
         background-color: transparent;
         position: relative;
-        top: 40%;
-        margin-left: 10%;
-        max-width: 430px;
-        border: solid 1px #F3CA61;
+        top: 20%;
+        margin-left: 6%;
+        max-width: 600px;
+        /*border: solid 1px #F3CA61;*/
         padding: 20px;
         padding-left: 60px;
         padding-right: 60px;
@@ -361,30 +361,53 @@ nav {
 
     #tekst_zajawki p {
         border: 0;
-
+        font-size: 1.1em;
+        line-height: 1.4;
+        color: #ddd;
+        text-transform: uppercase;
     }
 
     #tekst_zajawki h1 {
         color: #EDF0F3;
+        font-size: 4.25em;
+        line-height: 1;
     }
 
     .btnzaj {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        padding: 5px 10px 5px 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 1.25em;
+        padding: 10px 30px 10px 30px;
         margin: 5px;
+        /*border: solid 1px #2f87bd;*/
         text-decoration: none;
+
         display: inline-block;
-        background-color: rgba(237, 240, 242, 0.2);
+        background-color: #EDF0F3;
+        color: #589ADA;
         margin-bottom: 20px;
+
+        /*-webkit-border-radius: 3px;*/
+        /*-moz-border-radius: 3px;*/
+        /*border-radius: 3px;*/
+        /*padding: 5px 10px 5px 10px;*/
+        /*margin: 5px;*/
+        /*text-decoration: none;*/
+        /*display: inline-block;*/
+        /*background-color: rgba(237, 240, 242, 0.2);*/
+        /*margin-bottom: 20px;*/
 
     }
 
     .btnzaj:hover {
-        background-color: rgba(237, 240, 242, 0.8);
+        background-color: #fff;
         text-decoration: none;
-        color: #222;
+        border-color: #386FA7;
+
+        /*background-color: rgba(237, 240, 242, 0.8);*/
+        /*text-decoration: none;*/
+        /*color: #222;*/
     }
 
     /*************** formularz ***************************/
