@@ -1,6 +1,6 @@
 <?php
-$lang = 'en';
-include_once('db.php');
+    $lang = 'en';
+    include_once('db.php');
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -110,28 +110,27 @@ include_once('db.php');
             <i class="icon-menu"></i>
         </div>
         <ul class="navi">
-            <li class="menulink"><a href="#zajawka" class="smoothScroll">home</a></li>
-            <li class="menulink"><a href="#whyus" class="smoothScroll">what</a></li>
-            <li class="menulink"><a href="#values" class="smoothScroll">why</a></li>
-            <li class="menulink" ><a href="#team" class="smoothScroll">who</a></li>
-            <!--            <li class="menulink"><a class="smoothScroll">FAQ</a></li>-->
-            <li class="menulink"><a href="#contact" class="smoothScroll">contact</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#zajawka" class="smoothScroll">home</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#whyus" class="smoothScroll">what</a></li>
+            <li class="menulink animate fadeIn moveLeft"><a href="#values" class="smoothScroll">why</a></li>
+            <li class="menulink animate fadeIn moveLeft" ><a href="#team" class="smoothScroll">who</a></li>
+<!--            <li class="menulink"><a class="smoothScroll">FAQ</a></li>-->
+            <li class="menulink animate fadeIn moveLeft"><a href="#contact" class="smoothScroll">contact</a></li>
         </ul>
     </div>
 
 </nav>
 
 
-<div class="zajawka" id="zajawka">
-    <div id="tekst_zajawki">
-        <p>Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers?
-            <br></p>
 
-        <h1>Let us organise your business</h1>
 
-        <div class="btnzaj">Try us out</div>
+<div class="zajawka"  id="zajawka">
+    <div id="tekst_zajawki" >
+        <p class="animate fadeIn moveLeft">Too many accounts? <br>Customers lost in action?<br>Redundant phone numbers? <br> </p>
+        <h1 class="animate fadeIn moveLeft">Let us organise <br/>your business</h1>
+        <a class="btnzaj animate fadeIn moveLeft">Try us out</a>
     </div>
-
+    
     <div class="form">
         <div id="cntform" class="formularz">
 
@@ -163,13 +162,13 @@ include_once('db.php');
             <article class="functionsDescription">Wide set of labels and folders allows you to easily organize your accounts</article>
         </div>
         <div class="photoSectionOdd functionalitiesIcon" id="coreFunction1">
-            <i class="icon-one-place"></i>
+            <i class="icon-one-place animate fadeIn moveRight"></i>
         </div>
     </section>
 
     <section class="functionsModuleEven">
         <div class="photoSectionEven functionalitiesIcon" id="coreFunction2">
-            <i class="icon-control"></i>
+            <i class="icon-control animate fadeIn moveLeft"></i>
         </div>
         <div class="txtSectionEven">
             <h2 class="functionsHeader">Have control</h2>
@@ -183,32 +182,30 @@ include_once('db.php');
             <article class="functionsDescription">In case of need you can give access to an account to any Team member</article>
         </div>
         <div class="photoSectionOdd functionalitiesIcon" id="coreFunction3">
-            <i class="icon-group-work"></i>
+            <i class="icon-group-work animate fadeIn moveRight"></i>
         </div>
     </section>
 </div>
 
-<section id="values">
-    <div class="column">
-        <i class="icon-diamond"></i>
 
+<a name="features" class="clearfix"></a>
+<section id="values">
+    <div class="column animate fadeIn moveTop">
+        <i class="icon-diamond"></i>
         <p>Add value to your business</p>
     </div>
-    <div class="column">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-shield"></i>
-
         <p>Protect sensitive data</p>
 
     </div>
-    <div class="column">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-time"></i>
-
         <p>Don't waste your time</p>
 
     </div>
-    <div class="column">
+    <div class="column animate fadeIn moveTop">
         <i class="icon-tree"></i>
-
         <p>Develop good practice</p>
 
     </div>
@@ -217,20 +214,17 @@ include_once('db.php');
 
 <section id="team">
     <h2>Our Team</h2>
-    <!--     Photo of our team-->
+    <!-- Photo of our team -->
 </section>
 
 <section id="contact">
-    <h2>Contact us</h2>
-
+    <h2 class=" animate fadeIn">Contact us</h2>
     <p>Do you have any quetions? Suggestions?<br><br>
         We want to make your life easier so please let us know what you need!<br>
         Do not hesitate to ask - knowledge is the key to success.<br><br>So is our Product, of course.</p>
-    <a href="mailto:papikaanteam@gmail.com" class="btn" id="btn-sm" title="Submit your question"><i
-            class="icon-envelope"></i>Get in touch</a>
+    <a href="mailto:papikaanteam@gmail.com" class="btn animate fadeIn moveTop" id="btn-sm" title="Submit your question"><i class="icon-envelope"></i>Get in touch</a>
 
     <br/>
-
     <div>
         <p> Follow us:</p>
         <a href="http://facebook.com/PapikaanAM" target="_blank"><i class="icon-facebook"></i>Facebook</a>
@@ -240,10 +234,10 @@ include_once('db.php');
 </section>
 
 <footer>
-    <p>&copy; Papikaan Account Manager</p>
+   <p class="animate fadeIn">&copy; Papikaan Account Manager</p>
 </footer>
 
-<!--hidden divs, timer and result section for visitCardGame -->
+<!--hidden div for visitCardGame -->
 
 <div class="visitCard animatedCard" id="vCard1">
     <div class="photo">
@@ -251,17 +245,7 @@ include_once('db.php');
     <p class="vCardInput bigLetter"></p>
 </div>
 
-
-
-<div class="timer">
-    <span></span>
-</div>
-
-
-
-<div class="sum">score:</div>
-
-<!--end of section containing hidden divs-->
+<!--end of section containing hidden div-->
 
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>

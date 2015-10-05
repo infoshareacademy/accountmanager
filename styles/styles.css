@@ -191,9 +191,9 @@ nav {
     width: 100%;
     background-color: #589ADA;
     margin: 0 auto;
-    -webkit-box-shadow: 0 16px 12px -12px #589ADA;
-    -moz-box-shadow: 0 16px 12px -12px #589ADA;
-    box-shadow: 0 7px 12px 0px rgba(13, 24, 37, 0.56);
+    -webkit-box-shadow: 0 2px 4px 0 #589ADA;
+    -moz-box-shadow: 0 2px 4px 0 #589ADA;
+    box-shadow: 0 2px 4px 0 rgba(13, 24, 37, 0.4);
     z-index: 99;
 }
 .navi {
@@ -339,7 +339,7 @@ nav {
     /****************** css logo menu **********************/
     /****************** css zajawki **********************/
     .zajawka {
-        background: #292a2f url("../images/zajawka2.jpg") no-repeat right;
+        background: #292a2f url("../images/zajawka2.jpg") no-repeat center center;
         background-size: cover;
         width: auto;
         height: 960px;
@@ -350,10 +350,10 @@ nav {
     #tekst_zajawki {
         background-color: transparent;
         position: relative;
-        top: 40%;
-        margin-left: 10%;
-        max-width: 430px;
-        border: solid 1px #F3CA61;
+        top: 26%;
+        margin-left: 6%;
+        max-width: 600px;
+        /*border: solid 1px #F3CA61;*/
         padding: 20px;
         padding-left: 60px;
         padding-right: 60px;
@@ -361,30 +361,53 @@ nav {
 
     #tekst_zajawki p {
         border: 0;
-
+        font-size: 1.1em;
+        line-height: 1.4;
+        color: #ddd;
+        text-transform: uppercase;
     }
 
     #tekst_zajawki h1 {
         color: #EDF0F3;
+        font-size: 4.25em;
+        line-height: 1;
     }
 
     .btnzaj {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        padding: 5px 10px 5px 10px;
-        margin: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 1.45em;
+        padding: 10px 30px 10px 30px;
+        margin: 30px 5px 0;
+        /*border: solid 1px #2f87bd;*/
         text-decoration: none;
         display: inline-block;
-        background-color: rgba(237, 240, 242, 0.2);
+        color: #589ADA;
         margin-bottom: 20px;
+        background-color: #fff;
+        border-color: #386FA7;
+
+        /*-webkit-border-radius: 3px;*/
+        /*-moz-border-radius: 3px;*/
+        /*border-radius: 3px;*/
+        /*padding: 5px 10px 5px 10px;*/
+        /*margin: 5px;*/
+        /*text-decoration: none;*/
+        /*display: inline-block;*/
+        /*background-color: rgba(237, 240, 242, 0.2);*/
+        /*margin-bottom: 20px;*/
 
     }
 
     .btnzaj:hover {
-        background-color: rgba(237, 240, 242, 0.8);
+        background-color: #EDF0F3;
         text-decoration: none;
-        color: #222;
+        border-color: #386FA7;
+
+        /*background-color: rgba(237, 240, 242, 0.8);*/
+        /*text-decoration: none;*/
+        /*color: #222;*/
     }
 
     /*************** formularz ***************************/
@@ -586,8 +609,8 @@ nav {
         top: 15%;
     }
 
-/*  F E A T U R E S  */
 
+    /*  F E A T U R E S  */
     #values {
         width: 100%;
         background-color: #589ADA;
@@ -645,13 +668,14 @@ nav {
 /* T E A M */
 
 #team {
-    height:700px;
+    height:800px;
     max-height: 800px;
     background-color: #556;
     background-image: url(../images/team-photo.jpg);
     background-position: center center;
     background-size: cover;
 }
+
 #team h2 {
     color:#fff;
     font-size: 2em;
@@ -664,8 +688,10 @@ nav {
     width:200px;
 }
 
+ 
 
 /*  S O C I A L   M E D I A  */
+
     #contact {
         width: 100%;
         background-color: #589ADA;
@@ -778,9 +804,15 @@ nav {
     /*height: 800px;*/
     /*padding: 0;*/
     /*margin: 0;*/
-    /*}*/
+/*}*/
 
-/*****************************************  VISIT CARDS  -  GAME   ***********************************************/
+
+/* animiations */
+.moveLeft, .moveBottom, .moveRight, .moveTop {
+    position: relative;
+}
+
+/****************  VISIT CARDS  -  GAME   ***********************************************/
 
 
     .visitCard {
