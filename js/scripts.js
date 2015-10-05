@@ -1,3 +1,86 @@
+//**********************************  object for the game  ***************************************************//
+
+var config = {
+    vCards: {
+        vCard1: {
+            name: 'vCard1',
+            photo: './images/visit-cards-game/ania.png',
+            text1: 'Finally all my contacts are well organised!',
+            text2: 'Daily email notifications -  don\'t worry about outstanding meetings anymore',
+            text3: 'I can easily hand over my Customers to the other teammate when I go for holidays'
+        },
+
+        vCard2: {
+            name: 'vCard2',
+            photo: './images/visit-cards-game/kasia.jpg',
+            text: 'History of contacts prevents me from harassing my Customers \;\) So helpful!'
+        },
+
+        vCard3: {
+            name: 'vCard3',
+            photo: './images/visit-cards-game/piotr.png',
+            text: 'Wow! I can take notes regarding every undertaken contact'
+        },
+
+        vCard4: {
+            name: 'vCard4',
+            photo: './images/visit-cards-game/pawel.jpg',
+            text: 'The reporting option is very useful - now I know who should I contact more often'
+        },
+
+        vCard5: {
+            name: 'vCard5',
+            photo: './images/visit-cards-game/ania.png',
+            text: 'I can attach all the necessary documents to the Customer\'s profile - nice!'
+        },
+
+        vCard6: {
+            name: 'vCard6',
+            photo: './images/visit-cards-game/kasia.jpg',
+            text: 'You can easily update the contact details using your \.vCards'
+        },
+
+        vCard7: {
+            name: 'vCard7',
+            photo: './images/visit-cards-game/piotr.png',
+            text: 'A member of your team can share the calendar with you'
+        },
+
+        vCard8: {
+            name: 'vCard8',
+            photo: './images/visit-cards-game/pawel.jpg',
+            text: 'Now I know what type of contact is the most efficient'
+        },
+
+        vCard9: {
+            name: 'vCard9',
+            photo: './images/visit-cards-game/kasia.jpg',
+            text: 'Wow - it\'s even possible to mark a meeting as successful or not!'
+        },
+
+        vCard10: {
+            name: 'vCard10',
+            photo: './images/visit-cards-game/ania.png',
+            text: 'Thank you for your attention!'
+        }
+
+    }
+};
+
+config.vCards.vCard1.nextVCard = config.vCards.vCard2;
+config.vCards.vCard2.nextVCard = config.vCards.vCard3;
+config.vCards.vCard3.nextVCard = config.vCards.vCard4;
+config.vCards.vCard4.nextVCard = config.vCards.vCard5;
+config.vCards.vCard5.nextVCard = config.vCards.vCard6;
+config.vCards.vCard6.nextVCard = config.vCards.vCard7;
+config.vCards.vCard7.nextVCard = config.vCards.vCard8;
+config.vCards.vCard8.nextVCard = config.vCards.vCard9;
+config.vCards.vCard9.nextVCard = config.vCards.vCard10;
+
+
+
+//********************************  end of object *******************************************************//
+
 $(function () {
 
     $('#submit-btn').click(function(event){
