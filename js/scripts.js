@@ -195,7 +195,7 @@ $(document).ready(function() {
 
     parallaxfoto.forEach(function(foto) {
         $(window).scroll(function(event) {
-            var offset = $(foto).offset().top + 50 - (window.innerHeight - foto.clientHeight) / 2;
+            var offset = $(foto).offset().top + 90 - (window.innerHeight - foto.clientHeight) / 2;
             var scroll = $(window).scrollTop();
             foto.style.backgroundPositionY = ((scroll - offset) / 4) + 'px';
         })
