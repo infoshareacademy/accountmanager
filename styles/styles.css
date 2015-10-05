@@ -377,16 +377,16 @@ nav {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
-        font-size: 1.25em;
+        font-size: 1.45em;
         padding: 10px 30px 10px 30px;
-        margin: 5px;
+        margin: 30px 5px 0;
         /*border: solid 1px #2f87bd;*/
         text-decoration: none;
-
         display: inline-block;
-        background-color: #EDF0F3;
         color: #589ADA;
         margin-bottom: 20px;
+        background-color: #fff;
+        border-color: #386FA7;
 
         /*-webkit-border-radius: 3px;*/
         /*-moz-border-radius: 3px;*/
@@ -401,7 +401,7 @@ nav {
     }
 
     .btnzaj:hover {
-        background-color: #fff;
+        background-color: #EDF0F3;
         text-decoration: none;
         border-color: #386FA7;
 
